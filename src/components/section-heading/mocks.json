@@ -1,0 +1,23 @@
+{
+  "mocks": [
+    {
+      "name": "Centered",
+      "props": {
+        "eyebrow": "Why teams choose us",
+        "title": "Everything you need to ship faster",
+        "intro": "<p>One or two sentences that frame the section.</p>",
+        "align": "center",
+        "size": "large"
+      }
+    },
+    {
+      "name": "Left aligned",
+      "props": {
+        "title": "How it works",
+        "intro": "<p>A short supporting sentence.</p>",
+        "align": "left",
+        "size": "medium"
+      }
+    }
+  ]
+}

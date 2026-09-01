@@ -1,0 +1,52 @@
+name: Video Embed
+machineName: video-embed
+description: >-
+  Responsive 16:9 video frame for a YouTube or Vimeo embed URL, with an optional
+  poster image that defers loading the player until someone clicks play. Use the
+  embed URL (youtube.com/embed/ID), not the watch URL.
+status: true
+required:
+  - videoUrl
+props:
+  properties:
+    videoUrl:
+      title: Video Url
+      type: string
+      format: uri-reference
+      examples:
+        - https://www.youtube.com/embed/aqz-KE-bpKQ
+    title:
+      title: Title
+      type: string
+      examples:
+        - Product overview
+    caption:
+      title: Caption
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>A three minute tour of the platform.</p>
+    posterImage:
+      title: Poster Image
+      type: object
+      examples:
+        - src: https://placehold.co/1600x900@2x.png
+          alt: ''
+          width: 1600
+          height: 900
+      $ref: json-schema-definitions://canvas.module/image
+    width:
+      title: Width
+      type: string
+      enum:
+        - narrow
+        - content
+        - wide
+      meta:enum:
+        narrow: Narrow
+        content: Content
+        wide: Wide
+      examples:
+        - content
+slots: []

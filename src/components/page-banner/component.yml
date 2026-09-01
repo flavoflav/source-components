@@ -1,0 +1,66 @@
+name: Page Banner
+machineName: page-banner
+description: >-
+  Compact interior page header - page title, optional eyebrow, intro and
+  breadcrumb, with an optional background photograph. Use this on every page
+  below the homepage; reserve Hero for landing and campaign pages.
+status: true
+required:
+  - title
+props:
+  properties:
+    eyebrow:
+      title: Eyebrow
+      type: string
+      examples:
+        - Resources
+    title:
+      title: Title
+      type: string
+      examples:
+        - Guides and documentation
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>A single sentence describing this section of the site.</p>
+    backgroundImage:
+      title: Background Image
+      type: object
+      examples:
+        - src: https://placehold.co/1920x600@2x.png
+          alt: ''
+          width: 1920
+          height: 600
+      $ref: json-schema-definitions://canvas.module/image
+    background:
+      title: Background
+      type: string
+      enum:
+        - white
+        - light
+        - dark
+        - primary
+      meta:enum:
+        white: White
+        light: Light gray
+        dark: Dark
+        primary: Primary
+      examples:
+        - light
+    align:
+      title: Align
+      type: string
+      enum:
+        - left
+        - center
+      meta:enum:
+        left: Left
+        center: Center
+      examples:
+        - left
+slots:
+  breadcrumb:
+    title: Breadcrumb

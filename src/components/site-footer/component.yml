@@ -1,0 +1,75 @@
+name: Site Footer
+machineName: site-footer
+description: >-
+  Site chrome at the bottom of every page - brand block with tagline and social
+  icons on the left, several Link List columns on the right, and a legal row
+  underneath. Place this in the footer region, not on individual pages.
+status: true
+required: []
+props:
+  properties:
+    logo:
+      title: Logo
+      type: object
+      examples:
+        - src: https://placehold.co/200x48@2x.png
+          alt: Company logo
+          width: 200
+          height: 48
+      $ref: json-schema-definitions://canvas.module/image
+    logoUrl:
+      title: Logo Url
+      type: string
+      format: uri-reference
+      examples:
+        - /
+    siteName:
+      title: Site Name
+      type: string
+      examples:
+        - Acme
+    tagline:
+      title: Tagline
+      type: string
+      examples:
+        - The governed platform for modern digital experiences.
+    copyright:
+      title: Copyright
+      type: string
+      examples:
+        - © 2026 Acme, Inc. All rights reserved.
+    columnCount:
+      title: Column Count
+      type: integer
+      enum:
+        - 2
+        - 3
+        - 4
+        - 5
+      meta:enum:
+        2: Two
+        3: Three
+        4: Four
+        5: Five
+      examples:
+        - 4
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - dark
+        - light
+        - white
+      meta:enum:
+        dark: Dark
+        light: Light gray
+        white: White
+      examples:
+        - dark
+slots:
+  linkColumns:
+    title: Link columns
+  social:
+    title: Social
+  legal:
+    title: Legal links

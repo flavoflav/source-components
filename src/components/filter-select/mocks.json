@@ -1,0 +1,21 @@
+{
+  "mocks": [
+    {
+      "name": "Resource type",
+      "props": {
+        "label": "Type",
+        "fieldName": "type",
+        "options": "Report\nGuide\nDatasheet\nWebinar",
+        "allLabel": "All types"
+      }
+    },
+    {
+      "name": "Industry",
+      "props": {
+        "label": "Industry",
+        "fieldName": "industry",
+        "options": "Financial services\nHealthcare\nPublic sector\nRetail"
+      }
+    }
+  ]
+}

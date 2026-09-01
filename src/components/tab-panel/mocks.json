@@ -1,0 +1,26 @@
+{
+  "mocks": [
+    {
+      "name": "Copy and image",
+      "props": {
+        "label": "Marketing",
+        "title": "Launch campaigns without a release",
+        "body": "<p>Build and publish landing pages the same day.</p>",
+        "image": {
+          "src": "https://placehold.co/1200x900@2x.png",
+          "alt": "",
+          "width": 1200,
+          "height": 900
+        }
+      }
+    },
+    {
+      "name": "Copy only",
+      "props": {
+        "label": "Compliance",
+        "title": "Every change is reviewable",
+        "body": "<ul><li>Full audit history</li><li>One-click revert</li></ul>"
+      }
+    }
+  ]
+}

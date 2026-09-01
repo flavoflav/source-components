@@ -1,0 +1,99 @@
+name: Hero
+machineName: hero
+description: >-
+  Top-of-page banner in three layouts - centered copy, split copy plus
+  image/video, or copy over a darkened background photo. Put Button components
+  in the actions slot rather than using CTA label and URL props. Use Page Banner
+  for short interior page titles instead of shrinking this one.
+status: true
+required:
+  - title
+props:
+  properties:
+    layout:
+      title: Layout
+      type: string
+      enum:
+        - centered
+        - split
+        - backdrop
+      meta:enum:
+        centered: Centered copy
+        split: Split copy and media
+        backdrop: Copy over background image
+      examples:
+        - centered
+    eyebrow:
+      title: Eyebrow
+      type: string
+      examples:
+        - Introducing
+    title:
+      title: Title
+      type: string
+      examples:
+        - A headline that says exactly what this is
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - >-
+          <p>One or two supporting sentences that explain the offer and who it
+          is for.</p>
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/1200x900@2x.png
+          alt: ''
+          width: 1200
+          height: 900
+      $ref: json-schema-definitions://canvas.module/image
+    videoUrl:
+      title: Video Url
+      type: string
+      format: uri-reference
+      examples:
+        - https://www.youtube.com/embed/aqz-KE-bpKQ
+    backgroundImage:
+      title: Background Image
+      type: object
+      examples:
+        - src: https://placehold.co/1920x1080@2x.png
+          alt: ''
+          width: 1920
+          height: 1080
+      $ref: json-schema-definitions://canvas.module/image
+    background:
+      title: Background
+      type: string
+      enum:
+        - white
+        - light
+        - dark
+        - primary
+      meta:enum:
+        white: White
+        light: Light gray
+        dark: Dark
+        primary: Primary
+      examples:
+        - light
+    height:
+      title: Height
+      type: string
+      enum:
+        - auto
+        - medium
+        - tall
+      meta:enum:
+        auto: Auto
+        medium: Medium
+        tall: Tall
+      examples:
+        - medium
+slots:
+  actions:
+    title: Actions

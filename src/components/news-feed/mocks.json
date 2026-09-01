@@ -1,0 +1,27 @@
+{
+  "mocks": [
+    {
+      "name": "Articles, three across",
+      "props": {
+        "title": "Latest news",
+        "intro": "<p>Product updates, research and practical guides.</p>",
+        "entityType": "node--article",
+        "itemCount": 6,
+        "columnCount": 3,
+        "viewAllLabel": "See all news",
+        "viewAllUrl": "/news"
+      }
+    },
+    {
+      "name": "Case studies",
+      "props": {
+        "title": "Customer stories",
+        "entityType": "node--case_study",
+        "itemCount": 4,
+        "columnCount": 2,
+        "cardVariant": "bordered",
+        "background": "light"
+      }
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "title": "Platform",
+  "path": "/platform",
+  "description": "Product page - sticky sub-nav, backdrop hero, tabbed use cases, pricing table and FAQ.",
+  "elements": {
+    "eedf716a-c9b8-53ff-9e1f-f322ab4e3f32": {
+      "type": "js.sub-nav",
+      "props": {
+        "productLabel": "Platform",
+        "productUrl": "/platform",
+        "variant": "light",
+        "sticky": true
+      },
+      "slots": {
+        "items": [
+          "fa237c1f-0eaa-593a-9e79-2976b553bccf",
+          "c983126b-dfe6-5794-9ce1-ae6fc9bb9908",
+          "417673ee-8485-5a2a-85a3-403580e4a9a8",
+          "33369a30-3192-569f-9e35-390f96af1f83",
+          "43c8b2dd-8525-5c29-bec8-69e41f292b28"
+        ],
+        "actions": ["8347b635-654b-54a0-9216-e714dafc6d2b"]
+      }
+    },
+    "fa237c1f-0eaa-593a-9e79-2976b553bccf": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Overview",
+        "url": "/platform",
+        "active": true
+      }
+    },
+    "c983126b-dfe6-5794-9ce1-ae6fc9bb9908": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Components",
+        "url": "/platform/components"
+      }
+    },
+    "417673ee-8485-5a2a-85a3-403580e4a9a8": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Publishing",
+        "url": "/platform/publishing"
+      }
+    },
+    "33369a30-3192-569f-9e35-390f96af1f83": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Governance",
+        "url": "/platform/governance"
+      }
+    },
+    "43c8b2dd-8525-5c29-bec8-69e41f292b28": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Pricing",
+        "url": "/pricing"
+      }
+    },
+    "8347b635-654b-54a0-9216-e714dafc6d2b": {
+      "type": "js.button",
+      "props": {
+        "label": "Book a demo",
+        "url": "/demo",
+        "variant": "primary",
+        "size": "small"
+      }
+    },
+    "6a38e2bf-8fd4-523d-acc6-44189c8e004f": {
+      "type": "js.hero",
+      "props": {
+        "layout": "backdrop",
+        "eyebrow": "The platform",
+        "title": "Everything your team needs to publish, in one governed place",
+        "body": "<p>Components, content, review and release - without three vendors and a stack of integrations.</p>",
+        "backgroundImage": {
+          "src": "/sites/default/files/2026-09/1920x1080-2x-5934bd8a_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1920x1080-2x-5934bd8a_0.png.avif%3Fitok%3D4P5clWoI",
+          "alt": "",
+          "width": 3840,
+          "height": 2160
+        },
+        "height": "tall"
+      },
+      "slots": {
+        "actions": [
+          "81e1dd83-ec29-53c6-816f-6f04bef0d862",
+          "26f9f598-45bd-5e01-ad33-a3901cf7e1d0"
+        ]
+      },
+      "_provenance": {
+        "backgroundImage": {
+          "target_id": 146,
+          "source_url": "https://placehold.co/1920x1080@2x.png"
+        }
+      }
+    },
+    "81e1dd83-ec29-53c6-816f-6f04bef0d862": {
+      "type": "js.button",
+      "props": {
+        "label": "Start free",
+        "url": "/signup",
+        "variant": "primary",
+        "size": "large"
+      }
+    },
+    "26f9f598-45bd-5e01-ad33-a3901cf7e1d0": {
+      "type": "js.button",
+      "props": {
+        "label": "Watch the tour",
+        "url": "/tour",
+        "variant": "outline",
+        "size": "large"
+      }
+    },
+    "b9fc90fc-99c8-5122-9152-4cf821188925": {
+      "type": "js.video-embed",
+      "props": {
+        "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+        "title": "Platform tour",
+        "caption": "<p>A three minute walkthrough of the editor and the review flow.</p>",
+        "posterImage": {
+          "src": "/sites/default/files/2026-09/1600x900-2x-1ed18961_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1600x900-2x-1ed18961_0.png.avif%3Fitok%3DYDgctfcI",
+          "alt": "",
+          "width": 3200,
+          "height": 1800
+        },
+        "width": "content"
+      },
+      "_provenance": {
+        "posterImage": {
+          "target_id": 151,
+          "source_url": "https://placehold.co/1600x900@2x.png"
+        }
+      }
+    },
+    "63fa122b-d8e6-53e0-9cbf-7bd41056fcb8": {
+      "type": "js.tabs",
+      "props": {
+        "title": "One platform, three jobs",
+        "intro": "<p>Pick the view that matches how you work.</p>",
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "panels": [
+          "6c1eaccf-eea3-5114-9cee-ec938ee3319e",
+          "ff8bc793-64a7-5c40-8bcb-d2045e921093",
+          "08e8220d-ee29-5dc9-9afd-6b062b06c361"
+        ]
+      }
+    },
+    "6c1eaccf-eea3-5114-9cee-ec938ee3319e": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Marketing",
+        "title": "Launch campaigns without a release",
+        "body": "<p>Compose landing pages from approved components and publish the same day.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_4.png.avif%3Fitok%3DGpp4Lyqj",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "slots": {
+        "actions": ["6652cc55-cf62-5719-b187-b87cc0148175"]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 141,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "6652cc55-cf62-5719-b187-b87cc0148175": {
+      "type": "js.button",
+      "props": {
+        "label": "See the editor",
+        "url": "/platform/publishing",
+        "variant": "primary"
+      }
+    },
+    "ff8bc793-64a7-5c40-8bcb-d2045e921093": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Engineering",
+        "title": "Own the components, not the pages",
+        "body": "<p>Components are versioned in your repository and reviewed like any other change.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_4.png.avif%3Fitok%3DGpp4Lyqj",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "slots": {
+        "actions": ["010e13f8-f40f-54ea-9542-77bb4aa6999b"]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 141,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "010e13f8-f40f-54ea-9542-77bb4aa6999b": {
+      "type": "js.button",
+      "props": {
+        "label": "Read the docs",
+        "url": "/docs",
+        "variant": "primary"
+      }
+    },
+    "08e8220d-ee29-5dc9-9afd-6b062b06c361": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Compliance",
+        "title": "Every change is reviewable",
+        "body": "<ul><li>Full audit history</li><li>Role-based approval</li><li>One-click revert</li></ul>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_4.png.avif%3Fitok%3DGpp4Lyqj",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 141,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "63e3e786-3838-56aa-af20-2053c2e50994": {
+      "type": "js.feature-split",
+      "props": {
+        "eyebrow": "Component library",
+        "title": "Approved building blocks, not a blank canvas",
+        "body": "<p>Your design system, expressed as components an editor can actually use. Brand rules live in the component, so they cannot be broken by accident.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_4.png.avif%3Fitok%3DGpp4Lyqj",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        },
+        "mediaPosition": "end",
+        "background": "white"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 141,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "86c190b3-2449-5491-82f4-fda61dffaf2e": {
+      "type": "js.step-list",
+      "props": {
+        "title": "From signup to first published page",
+        "intro": "<p>Most teams get there inside a week.</p>",
+        "layout": "horizontal",
+        "numbered": true,
+        "background": "none"
+      },
+      "slots": {
+        "steps": [
+          "f2a4450c-c10d-53cd-bff1-bdebe0b443b9",
+          "6737a818-d98a-5fae-a9c4-fd04245c63e0",
+          "9f2da97a-de8a-548f-b9e9-6ec6d272ecab"
+        ]
+      }
+    },
+    "f2a4450c-c10d-53cd-bff1-bdebe0b443b9": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Connect your content",
+        "body": "<p>Point Northwind at your existing site. Nothing is migrated on day one.</p>"
+      }
+    },
+    "6737a818-d98a-5fae-a9c4-fd04245c63e0": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Import your design system",
+        "body": "<p>We map your tokens and components into the library.</p>"
+      }
+    },
+    "9f2da97a-de8a-548f-b9e9-6ec6d272ecab": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Publish",
+        "body": "<p>Your team builds the first page. Review it, ship it.</p>"
+      }
+    },
+    "326f81a8-3892-5b90-961a-7fa8416df0bb": {
+      "type": "js.data-table",
+      "props": {
+        "title": "Compare plans",
+        "intro": "<p>Everything scales with the number of sites, not seats.</p>",
+        "headers": "Feature | Starter | Growth | Enterprise",
+        "rows": "Sites | 1 | 10 | Unlimited\nEditors | 5 | 50 | Unlimited\nComponent library | Shared | Shared | Private\nSSO | No | Yes | Yes\nAudit log | 7 days | 90 days | Unlimited\nApproval workflow | No | Single step | Multi step\nSupport | Email | Business hours | 24/7 with 1 hour response",
+        "caption": "Pricing correct as of March 2026.",
+        "striped": true
+      }
+    },
+    "b52f8dc6-2c59-586b-a0f9-16e5b0436526": {
+      "type": "js.accordion",
+      "props": {
+        "title": "Frequently asked questions",
+        "background": "light",
+        "width": "narrow"
+      },
+      "slots": {
+        "items": [
+          "8dd1a38a-f864-56ad-9f56-584246f12187",
+          "611daaba-0b4b-5e5e-a4f6-05cf44c05589",
+          "0d3a2403-e8c4-507f-8173-2626d651f1a5",
+          "9f4e1c49-e751-5a8b-8458-e94db0a9e0e1"
+        ]
+      }
+    },
+    "8dd1a38a-f864-56ad-9f56-584246f12187": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Do we have to migrate everything at once?",
+        "answer": "<p>No. Most customers start with one section of the site and expand from there.</p>",
+        "defaultOpen": true
+      }
+    },
+    "611daaba-0b4b-5e5e-a4f6-05cf44c05589": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Can we keep our existing design system?",
+        "answer": "<p>Yes. Your tokens and components come across as the library - we do not impose a theme.</p>"
+      }
+    },
+    "0d3a2403-e8c4-507f-8173-2626d651f1a5": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Where is our content hosted?",
+        "answer": "<p>Your choice of region, or self-hosted on Enterprise.</p>"
+      }
+    },
+    "9f4e1c49-e751-5a8b-8458-e94db0a9e0e1": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "What happens if we leave?",
+        "answer": "<p>Components are in your repository and content is exportable over the API. Nothing is locked in.</p>"
+      }
+    },
+    "054777df-daf4-5db4-b32a-b68f4488e70f": {
+      "type": "js.cta-banner",
+      "props": {
+        "title": "See it on your own content",
+        "body": "<p>Book a working session with an engineer, not a sales deck.</p>",
+        "background": "dark",
+        "layout": "inline"
+      },
+      "slots": {
+        "actions": ["ddc152a9-4865-5b50-a9d2-2d530eefa84b"]
+      }
+    },
+    "ddc152a9-4865-5b50-a9d2-2d530eefa84b": {
+      "type": "js.button",
+      "props": {
+        "label": "Book a demo",
+        "url": "/demo",
+        "variant": "primary",
+        "size": "large"
+      }
+    }
+  },
+  "uuid": "9773ee5d-5824-4cd2-a733-91ea18349045"
+}

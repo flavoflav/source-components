@@ -1,0 +1,67 @@
+name: CTA Banner
+machineName: cta-banner
+description: >-
+  Full-width conversion band - headline, supporting line and one or two buttons
+  on a coloured or photographic panel. This is the single component for every
+  "book a demo", "talk to us" and "start free" band; put Button components in
+  the actions slot.
+status: true
+required:
+  - title
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Ready to see it in action?
+    eyebrow:
+      title: Eyebrow
+      type: string
+      examples:
+        - Get started
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Book a 30 minute walkthrough with our team.</p>
+    backgroundImage:
+      title: Background Image
+      type: object
+      examples:
+        - src: https://placehold.co/1600x600@2x.png
+          alt: ''
+          width: 1600
+          height: 600
+      $ref: json-schema-definitions://canvas.module/image
+    background:
+      title: Background
+      type: string
+      enum:
+        - light
+        - dark
+        - primary
+        - outline
+      meta:enum:
+        light: Light gray
+        dark: Dark
+        primary: Primary
+        outline: Outlined white
+      examples:
+        - primary
+    layout:
+      title: Layout
+      type: string
+      enum:
+        - centered
+        - inline
+      meta:enum:
+        centered: Centered
+        inline: Copy left, buttons right
+      examples:
+        - centered
+slots:
+  actions:
+    title: Actions

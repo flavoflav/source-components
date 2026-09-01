@@ -1,0 +1,22 @@
+{
+  "mocks": [
+    {
+      "name": "Display centered",
+      "props": {
+        "text": "Build once, reuse everywhere",
+        "level": "h1",
+        "size": "display",
+        "align": "center"
+      }
+    },
+    {
+      "name": "Section title",
+      "props": {
+        "text": "How it works",
+        "level": "h2",
+        "size": "large",
+        "align": "left"
+      }
+    }
+  ]
+}

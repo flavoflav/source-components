@@ -1,0 +1,24 @@
+{
+  "mocks": [
+    {
+      "name": "Inline",
+      "props": {
+        "title": "Get the monthly digest",
+        "body": "<p>Product news and practical guides, once a month. No noise.</p>",
+        "action": "/newsletter/subscribe",
+        "buttonLabel": "Subscribe",
+        "consentText": "By subscribing you agree to our privacy policy. Unsubscribe any time.",
+        "background": "light",
+        "layout": "inline"
+      }
+    },
+    {
+      "name": "Stacked on primary",
+      "props": {
+        "title": "Stay in the loop",
+        "background": "primary",
+        "layout": "stacked"
+      }
+    }
+  ]
+}

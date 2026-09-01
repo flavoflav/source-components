@@ -1,0 +1,24 @@
+{
+  "mocks": [
+    {
+      "name": "Plain step",
+      "props": {
+        "title": "Connect your content",
+        "body": "<p>Point the workspace at your existing Drupal site.</p>"
+      }
+    },
+    {
+      "name": "With illustration",
+      "props": {
+        "title": "Compose a page",
+        "body": "<p>Drag components onto the canvas and set their props.</p>",
+        "image": {
+          "src": "https://placehold.co/900x500@2x.png",
+          "alt": "",
+          "width": 900,
+          "height": 500
+        }
+      }
+    }
+  ]
+}

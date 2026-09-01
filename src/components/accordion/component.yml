@@ -1,0 +1,52 @@
+name: Accordion
+machineName: accordion
+description: >-
+  Titled band of collapsible rows - the component behind every FAQ section,
+  "what is included" list and long-form disclosure block. Fill the items slot
+  with Accordion Item components. There is no separate FAQ component; this is
+  it.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Frequently asked questions
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Everything people usually ask before getting started.</p>
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - dark
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        dark: Dark
+      examples:
+        - none
+    width:
+      title: Width
+      type: string
+      enum:
+        - narrow
+        - wide
+      meta:enum:
+        narrow: Narrow
+        wide: Wide
+      examples:
+        - narrow
+slots:
+  items:
+    title: Items

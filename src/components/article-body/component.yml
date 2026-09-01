@@ -1,0 +1,80 @@
+name: Article Body
+machineName: article-body
+description: >-
+  Full reading layout for one article, blog post, news item or case study -
+  title, standfirst, byline, hero image and rich body copy at a comfortable
+  measure. Use this as the main component in a content template for
+  article-style content types; the aside and footer slots take pull quotes, CTAs
+  or Related Articles.
+status: true
+required:
+  - title
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - What changed in the 2026 platform release
+    standfirst:
+      title: Standfirst
+      type: string
+      examples:
+        - The short opening paragraph that sits under the headline.
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - >-
+          <p>The opening paragraph of the article.</p><h2>A section
+          heading</h2><p>More body copy with a <a href="/docs">link</a>.</p>
+    heroImage:
+      title: Hero Image
+      type: object
+      examples:
+        - src: https://placehold.co/1600x900@2x.png
+          alt: ''
+          width: 1600
+          height: 900
+      $ref: json-schema-definitions://canvas.module/image
+    category:
+      title: Category
+      type: string
+      examples:
+        - Product
+    date:
+      title: Date
+      type: string
+      examples:
+        - 12 March 2026
+    authorName:
+      title: Author Name
+      type: string
+      examples:
+        - Jamie Lee
+    authorTitle:
+      title: Author Title
+      type: string
+      examples:
+        - Principal Engineer
+    authorImage:
+      title: Author Image
+      type: object
+      examples:
+        - src: https://placehold.co/200x200@2x.png
+          alt: ''
+          width: 200
+          height: 200
+      $ref: json-schema-definitions://canvas.module/image
+    readingTime:
+      title: Reading Time
+      type: string
+      examples:
+        - 5 min read
+slots:
+  aside:
+    title: Aside
+  footer:
+    title: Footer

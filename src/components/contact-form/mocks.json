@@ -1,0 +1,32 @@
+{
+  "mocks": [
+    {
+      "name": "With aside",
+      "props": {
+        "title": "Talk to our team",
+        "intro": "<p>Tell us what you are working on and we will get back within one business day.</p>",
+        "action": "/contact/submit",
+        "showCompany": true,
+        "showPhone": true,
+        "consentText": "We use your details only to respond to this enquiry.",
+        "background": "light"
+      },
+      "slots": { "aside": ["loc"] },
+      "elements": {
+        "loc": {
+          "type": "location-card",
+          "props": {
+            "name": "London",
+            "addressLines": "1 Example Street\nLondon EC1A 1AA",
+            "phone": "+44 20 7946 0000",
+            "email": "hello@example.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "Form only",
+      "props": { "title": "Get in touch", "showCompany": false }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+name: Filter Select
+machineName: filter-select
+description: >-
+  One dropdown facet inside a Filter Bar. Enter the choices one per line in the
+  Options field - values are slugified automatically, so "Financial services"
+  submits as financial-services.
+status: true
+required:
+  - label
+  - fieldName
+  - options
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Type
+    fieldName:
+      title: Field Name
+      type: string
+      examples:
+        - type
+    options:
+      title: Options
+      type: string
+      examples:
+        - "Report\nGuide\nDatasheet\nWebinar"
+    allLabel:
+      title: All Label
+      type: string
+      examples:
+        - All types
+slots: []

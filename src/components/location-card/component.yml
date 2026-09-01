@@ -1,0 +1,65 @@
+name: Location Card
+machineName: location-card
+description: >-
+  Office, dealer, campus or store details - address, phone, email, opening hours
+  and a map link. Put several in a Card Grid to build an offices page or dealer
+  directory, or drop one into the aside slot of Contact Form.
+status: true
+required:
+  - name
+props:
+  properties:
+    name:
+      title: Name
+      type: string
+      examples:
+        - London
+    addressLines:
+      title: Address Lines
+      type: string
+      examples:
+        - "1 Example Street\nLondon EC1A 1AA"
+    phone:
+      title: Phone
+      type: string
+      examples:
+        - +44 20 7946 0000
+    email:
+      title: Email
+      type: string
+      examples:
+        - hello@example.com
+    hours:
+      title: Hours
+      type: string
+      examples:
+        - Mon-Fri, 9:00-17:30
+    mapUrl:
+      title: Map Url
+      type: string
+      format: uri-reference
+      examples:
+        - https://maps.example.com/london
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/900x600@2x.png
+          alt: ''
+          width: 900
+          height: 600
+      $ref: json-schema-definitions://canvas.module/image
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - filled
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        filled: Filled
+      examples:
+        - plain
+slots: []

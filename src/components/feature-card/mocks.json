@@ -1,0 +1,28 @@
+{
+  "mocks": [
+    {
+      "name": "With icon",
+      "props": {
+        "icon": {
+          "src": "https://placehold.co/96x96@2x.png",
+          "alt": "",
+          "width": 96,
+          "height": 96
+        },
+        "title": "Fast to launch",
+        "body": "<p>One or two sentences describing this capability.</p>",
+        "linkLabel": "Learn more",
+        "url": "/features"
+      }
+    },
+    {
+      "name": "Bordered centered",
+      "props": {
+        "title": "Governed by default",
+        "body": "<p>Every change is reviewable and revertible.</p>",
+        "variant": "bordered",
+        "align": "center"
+      }
+    }
+  ]
+}

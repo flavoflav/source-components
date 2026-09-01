@@ -1,0 +1,30 @@
+{
+  "mocks": [
+    {
+      "name": "Office",
+      "props": {
+        "name": "London",
+        "addressLines": "1 Example Street\nLondon EC1A 1AA",
+        "phone": "+44 20 7946 0000",
+        "email": "hello@example.com",
+        "hours": "Mon-Fri, 9:00-17:30",
+        "mapUrl": "https://maps.example.com/london",
+        "variant": "bordered"
+      }
+    },
+    {
+      "name": "With photo",
+      "props": {
+        "name": "Boston",
+        "addressLines": "53 State Street\nBoston, MA 02109",
+        "image": {
+          "src": "https://placehold.co/900x600@2x.png",
+          "alt": "",
+          "width": 900,
+          "height": 600
+        },
+        "variant": "filled"
+      }
+    }
+  ]
+}

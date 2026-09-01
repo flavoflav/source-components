@@ -1,0 +1,55 @@
+{
+  "mocks": [
+    {
+      "name": "Primary centered",
+      "props": {
+        "eyebrow": "Get started",
+        "title": "Ready to see it in action?",
+        "body": "<p>Book a 30 minute walkthrough with our team.</p>",
+        "background": "primary",
+        "layout": "centered"
+      },
+      "slots": { "actions": ["a", "b"] },
+      "elements": {
+        "a": {
+          "type": "button",
+          "props": {
+            "label": "Book a demo",
+            "url": "/demo",
+            "variant": "secondary",
+            "size": "large"
+          }
+        },
+        "b": {
+          "type": "button",
+          "props": {
+            "label": "Contact sales",
+            "url": "/contact",
+            "variant": "outline",
+            "size": "large"
+          }
+        }
+      }
+    },
+    {
+      "name": "Inline dark",
+      "props": {
+        "title": "Start building today",
+        "background": "dark",
+        "layout": "inline"
+      },
+      "slots": { "actions": ["a"] },
+      "elements": {
+        "a": {
+          "type": "button",
+          "props": {
+            "label": "Create an account",
+            "url": "/signup",
+            "variant": "primary",
+            "size": "large"
+          }
+        }
+      }
+    }
+  ]
+}

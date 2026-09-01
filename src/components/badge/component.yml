@@ -1,0 +1,32 @@
+name: Badge
+machineName: badge
+description: >-
+  Small pill label used for categories, tags, statuses and eyebrow labels.
+  Compose it into card and section slots instead of adding a "category" string
+  prop to every listing component.
+status: true
+required:
+  - label
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - New
+    tone:
+      title: Tone
+      type: string
+      enum:
+        - neutral
+        - primary
+        - dark
+        - outline
+      meta:enum:
+        neutral: Neutral
+        primary: Primary
+        dark: Dark
+        outline: Outline
+      examples:
+        - primary
+slots: []

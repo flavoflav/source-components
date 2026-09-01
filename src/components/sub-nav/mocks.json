@@ -1,0 +1,37 @@
+{
+  "mocks": [
+    {
+      "name": "Product sub nav",
+      "props": {
+        "productLabel": "Platform",
+        "productUrl": "/platform",
+        "variant": "light",
+        "sticky": true
+      },
+      "slots": { "items": ["a", "b", "c"], "actions": ["cta"] },
+      "elements": {
+        "a": {
+          "type": "nav-item",
+          "props": { "label": "Overview", "url": "/platform", "active": true }
+        },
+        "b": {
+          "type": "nav-item",
+          "props": { "label": "Features", "url": "/platform/features" }
+        },
+        "c": {
+          "type": "nav-item",
+          "props": { "label": "Pricing", "url": "/platform/pricing" }
+        },
+        "cta": {
+          "type": "button",
+          "props": {
+            "label": "Get a demo",
+            "url": "/demo",
+            "variant": "primary",
+            "size": "small"
+          }
+        }
+      }
+    }
+  ]
+}

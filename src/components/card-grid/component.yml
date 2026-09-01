@@ -1,0 +1,76 @@
+name: Card Grid
+machineName: card-grid
+description: >-
+  The workhorse content band - optional eyebrow/title/intro above a responsive
+  grid of any card components, with an optional row of actions underneath. This
+  one component replaces the feature grid, capability grid, solutions grid,
+  resources grid, story grid and product grid patterns; put Card, Feature Card,
+  Stat Card, Article Card, Story Card, Resource Card, Person Card or CTA Tile
+  components into its items slot.
+status: true
+required: []
+props:
+  properties:
+    eyebrow:
+      title: Eyebrow
+      type: string
+      examples:
+        - Capabilities
+    title:
+      title: Title
+      type: string
+      examples:
+        - Built for the way your team works
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>A sentence or two introducing the cards below.</p>
+    columnCount:
+      title: Column Count
+      type: integer
+      enum:
+        - 2
+        - 3
+        - 4
+      meta:enum:
+        2: Two
+        3: Three
+        4: Four
+      examples:
+        - 3
+    align:
+      title: Align
+      type: string
+      enum:
+        - left
+        - center
+      meta:enum:
+        left: Left
+        center: Center
+      examples:
+        - center
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - dark
+        - primary
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        dark: Dark
+        primary: Primary
+      examples:
+        - light
+slots:
+  items:
+    title: Items
+  actions:
+    title: Actions

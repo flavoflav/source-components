@@ -1,0 +1,36 @@
+{
+  "mocks": [
+    {
+      "name": "Plain link",
+      "props": { "label": "Pricing", "url": "/pricing" }
+    },
+    {
+      "name": "With dropdown",
+      "props": { "label": "Products", "url": "/products" },
+      "slots": { "panel": ["list"] },
+      "elements": {
+        "list": {
+          "type": "link-list",
+          "props": { "layout": "stacked" },
+          "slots": { "items": ["a", "b"] }
+        },
+        "a": {
+          "type": "link-item",
+          "props": {
+            "label": "Platform",
+            "url": "/platform",
+            "description": "The core product."
+          }
+        },
+        "b": {
+          "type": "link-item",
+          "props": {
+            "label": "Integrations",
+            "url": "/integrations",
+            "description": "Connect your stack."
+          }
+        }
+      }
+    }
+  ]
+}

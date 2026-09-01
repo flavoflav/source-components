@@ -1,0 +1,64 @@
+name: Button
+machineName: button
+description: >-
+  A single call-to-action link styled as a button. Drop one or more into the
+  action slots of Hero, CTA Banner, Card and similar components rather than
+  adding ctaLabel/ctaUrl string props to every section component.
+status: true
+required:
+  - label
+  - url
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Get started
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /contact
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - primary
+        - secondary
+        - outline
+        - ghost
+        - link
+      meta:enum:
+        primary: Primary
+        secondary: Secondary
+        outline: Outline
+        ghost: Ghost
+        link: Text link
+      examples:
+        - primary
+    size:
+      title: Size
+      type: string
+      enum:
+        - small
+        - medium
+        - large
+      meta:enum:
+        small: Small
+        medium: Medium
+        large: Large
+      examples:
+        - medium
+    fullWidth:
+      title: Full Width
+      type: boolean
+      examples:
+        - false
+    openInNewTab:
+      title: Open In New Tab
+      type: boolean
+      examples:
+        - false
+slots: []

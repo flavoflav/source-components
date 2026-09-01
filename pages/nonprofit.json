@@ -1,0 +1,780 @@
+{
+  "title": "Wellspring Trust",
+  "path": "/nonprofit",
+  "description": "Non-profit page - matched-giving bar, mission hero, impact stats, programmes, community voices, transparent finances table, ways to give and a donation CTA.",
+  "elements": {
+    "76e81317-bf06-5320-83df-185633eb9981": {
+      "type": "js.announcement-bar",
+      "props": {
+        "message": "Every gift before 30 June is matched pound for pound by the Ridgeway Foundation.",
+        "linkLabel": "Give now",
+        "linkUrl": "/donate",
+        "tone": "primary",
+        "dismissible": true
+      }
+    },
+    "650ac464-b6d7-55ef-84eb-de908ceb4ff9": {
+      "type": "js.hero",
+      "props": {
+        "layout": "backdrop",
+        "eyebrow": "Clean water, permanently",
+        "title": "1.2 million people still walk three hours for water",
+        "body": "<p>Wellspring Trust builds and maintains water systems with the communities that own them. Not for them - with them.</p>",
+        "backgroundImage": {
+          "src": "/sites/default/files/2026-09/1920x1080-2x-5934bd8a.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1920x1080-2x-5934bd8a.png.avif%3Fitok%3DJmPFzqCw",
+          "alt": "A community water point",
+          "width": 3840,
+          "height": 2160
+        },
+        "height": "tall"
+      },
+      "slots": {
+        "actions": [
+          "8fa18fe9-be31-5ff9-8039-9ff01736f4b1",
+          "3b142192-ab75-5685-926f-1381a5f6d8fc"
+        ]
+      },
+      "_provenance": {
+        "backgroundImage": {
+          "target_id": 136,
+          "source_url": "https://placehold.co/1920x1080@2x.png"
+        }
+      }
+    },
+    "8fa18fe9-be31-5ff9-8039-9ff01736f4b1": {
+      "type": "js.button",
+      "props": {
+        "label": "Donate",
+        "url": "/donate",
+        "variant": "primary",
+        "size": "large"
+      }
+    },
+    "3b142192-ab75-5685-926f-1381a5f6d8fc": {
+      "type": "js.button",
+      "props": {
+        "label": "How we work",
+        "url": "/our-approach",
+        "variant": "outline",
+        "size": "large"
+      }
+    },
+    "eec0d5c4-208e-55f3-879b-4e3ebc0497a0": {
+      "type": "js.card-grid",
+      "props": {
+        "title": "Since 2011",
+        "columnCount": 4,
+        "align": "center",
+        "background": "none"
+      },
+      "slots": {
+        "items": [
+          "73280a5d-4b0f-5fd7-86f2-eb5a839c5702",
+          "ec440cb2-accb-5637-b171-7dd8cd649d3b",
+          "5366e2c0-2f1c-57aa-80a2-9944dbbb5d20",
+          "61a6d14c-af09-5b66-b4e7-b1f91204605e"
+        ]
+      }
+    },
+    "73280a5d-4b0f-5fd7-86f2-eb5a839c5702": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "1,847",
+        "label": "Water systems built",
+        "description": "Across 9 countries.",
+        "align": "center"
+      }
+    },
+    "ec440cb2-accb-5637-b171-7dd8cd649d3b": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "2.4",
+        "suffix": "M",
+        "label": "People reached",
+        "align": "center"
+      }
+    },
+    "5366e2c0-2f1c-57aa-80a2-9944dbbb5d20": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "94",
+        "suffix": "%",
+        "label": "Still functioning after 10 years",
+        "description": "Independently verified.",
+        "align": "center"
+      }
+    },
+    "61a6d14c-af09-5b66-b4e7-b1f91204605e": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "87",
+        "suffix": "p",
+        "label": "In every pound goes to programmes",
+        "align": "center"
+      }
+    },
+    "402124bd-8baa-521a-8f31-b7c8b5753629": {
+      "type": "js.feature-split",
+      "props": {
+        "eyebrow": "Our approach",
+        "title": "We do not leave when the pump is installed",
+        "body": "<p>Most water projects fail within five years because nobody funded the maintenance. We fund it for fifteen, and we train the local committee that runs it.</p><ul><li>Community-elected water committees</li><li>Local mechanics on retainer, not volunteers</li><li>Sensors on every pump, reporting daily</li></ul>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_3.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_3.png.avif%3Fitok%3DyEwiH6l-",
+          "alt": "A trained local mechanic servicing a pump",
+          "width": 2400,
+          "height": 1800
+        },
+        "mediaPosition": "end",
+        "background": "white"
+      },
+      "slots": {
+        "actions": ["b48ac187-f44e-57b5-a372-6a8dad11d5a2"]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 106,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "b48ac187-f44e-57b5-a372-6a8dad11d5a2": {
+      "type": "js.button",
+      "props": {
+        "label": "Read our model",
+        "url": "/our-approach",
+        "variant": "primary"
+      }
+    },
+    "3f86856d-8525-5d83-8890-66b64da6d6ff": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Programmes",
+        "title": "Three things we fund",
+        "intro": "<p>Water is the entry point. It is rarely the whole problem.</p>",
+        "columnCount": 3,
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "items": [
+          "444c383a-eebd-570f-8552-7f90ebc058c2",
+          "44ce53c2-0fb6-5f5d-9d82-4304d62bac21",
+          "d4d53cac-8002-546a-8036-0ec416f258a2"
+        ]
+      }
+    },
+    "444c383a-eebd-570f-8552-7f90ebc058c2": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_5.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_5.png.avif%3Fitok%3DlqUxgAIR",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Water",
+        "title": "Systems that outlast the grant",
+        "body": "<p>Boreholes, gravity-fed networks and the fifteen-year maintenance fund that keeps them running.</p>",
+        "url": "/programmes/water",
+        "linkLabel": "About the water programme",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 131,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "44ce53c2-0fb6-5f5d-9d82-4304d62bac21": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_5.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_5.png.avif%3Fitok%3DlqUxgAIR",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Sanitation",
+        "title": "Latrines communities actually use",
+        "body": "<p>Designed with the households that build them, not specified from a capital city.</p>",
+        "url": "/programmes/sanitation",
+        "linkLabel": "About the sanitation programme",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 131,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "d4d53cac-8002-546a-8036-0ec416f258a2": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_5.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_5.png.avif%3Fitok%3DlqUxgAIR",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Schools",
+        "title": "Water where children already are",
+        "body": "<p>Attendance among girls rises 21% in the year a school gets a working water point.</p>",
+        "url": "/programmes/schools",
+        "linkLabel": "About the schools programme",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 131,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "f1c857b8-fc5e-5fc8-82b7-3c9f235ede36": {
+      "type": "js.carousel",
+      "props": {
+        "title": "Voices from the communities we work with",
+        "slidesPerView": 1,
+        "background": "none",
+        "showArrows": true
+      },
+      "slots": {
+        "slides": [
+          "392fb61e-5777-5cc2-bd2e-9a4e8308242a",
+          "3099d204-c00c-50ff-a2d1-b0abb9b90931"
+        ]
+      }
+    },
+    "392fb61e-5777-5cc2-bd2e-9a4e8308242a": {
+      "type": "js.testimonial-card",
+      "props": {
+        "quote": "<p>Before, I walked from four in the morning. Now my daughters go to school and I run a small shop. The water did that.</p>",
+        "authorName": "Amina Njoroge",
+        "authorTitle": "Water committee chair, Kitui County, Kenya",
+        "authorImage": {
+          "src": "/sites/default/files/2026-09/200x200-2x-a28f3faa_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/200x200-2x-a28f3faa_0.png.avif%3Fitok%3D0nJXPk8_",
+          "alt": "",
+          "width": 400,
+          "height": 400
+        },
+        "variant": "plain",
+        "size": "large"
+      },
+      "_provenance": {
+        "authorImage": {
+          "target_id": 126,
+          "source_url": "https://placehold.co/200x200@2x.png"
+        }
+      }
+    },
+    "3099d204-c00c-50ff-a2d1-b0abb9b90931": {
+      "type": "js.testimonial-card",
+      "props": {
+        "quote": "<p>Three organisations built pumps here before. Only this one came back to fix them.</p>",
+        "authorName": "Joseph Banda",
+        "authorTitle": "Village elder, Kasungu District, Malawi",
+        "authorImage": {
+          "src": "/sites/default/files/2026-09/200x200-2x-a28f3faa_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/200x200-2x-a28f3faa_0.png.avif%3Fitok%3D0nJXPk8_",
+          "alt": "",
+          "width": 400,
+          "height": 400
+        },
+        "variant": "plain",
+        "size": "large"
+      },
+      "_provenance": {
+        "authorImage": {
+          "target_id": 126,
+          "source_url": "https://placehold.co/200x200@2x.png"
+        }
+      }
+    },
+    "b20563ea-bf1a-5412-9ea1-519318fe0be2": {
+      "type": "js.step-list",
+      "props": {
+        "title": "Where your money goes",
+        "intro": "<p>A £45 gift funds one household's share of a system for fifteen years.</p>",
+        "layout": "horizontal",
+        "numbered": true,
+        "background": "light"
+      },
+      "slots": {
+        "steps": [
+          "45a2368b-5ec7-5bc1-a9ac-0243b4d968d6",
+          "b374df29-4024-5ef1-b97e-4f9cbd6ec3ac",
+          "eb6db453-1e9c-572b-bd6c-bcb62845ad1f"
+        ]
+      }
+    },
+    "45a2368b-5ec7-5bc1-a9ac-0243b4d968d6": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Survey and consent",
+        "body": "<p>Hydrogeological survey, and a community vote before anything is dug.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x500-2x-84a1e104.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x500-2x-84a1e104.png.avif%3Fitok%3DYh1IDTsC",
+          "alt": "",
+          "width": 1800,
+          "height": 1000
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 121,
+          "source_url": "https://placehold.co/900x500@2x.png"
+        }
+      }
+    },
+    "b374df29-4024-5ef1-b97e-4f9cbd6ec3ac": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Build and train",
+        "body": "<p>Local contractors build it; the elected committee is trained to run it.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x500-2x-84a1e104.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x500-2x-84a1e104.png.avif%3Fitok%3DYh1IDTsC",
+          "alt": "",
+          "width": 1800,
+          "height": 1000
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 121,
+          "source_url": "https://placehold.co/900x500@2x.png"
+        }
+      }
+    },
+    "eb6db453-1e9c-572b-bd6c-bcb62845ad1f": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Monitor for fifteen years",
+        "body": "<p>Sensor data daily, a mechanic on retainer, and an audit every third year.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x500-2x-84a1e104.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x500-2x-84a1e104.png.avif%3Fitok%3DYh1IDTsC",
+          "alt": "",
+          "width": 1800,
+          "height": 1000
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 121,
+          "source_url": "https://placehold.co/900x500@2x.png"
+        }
+      }
+    },
+    "17c73e07-5783-528b-9de6-e04ddcefa374": {
+      "type": "js.data-table",
+      "props": {
+        "title": "Where the money went last year",
+        "intro": "<p>Full accounts are filed with the Charity Commission and published here.</p>",
+        "headers": "Category | 2025 | 2024 | Share of spend",
+        "rows": "Water programmes | £14.2M | £12.8M | 61%\nSanitation programmes | £4.1M | £3.6M | 18%\nSchools programmes | £1.9M | £1.5M | 8%\nMonitoring and maintenance fund | £1.4M | £1.2M | 6%\nFundraising | £1.2M | £1.1M | 5%\nGovernance and administration | £0.5M | £0.5M | 2%",
+        "caption": "Registered charity 1123456. Audited accounts for the year ending 31 December 2025.",
+        "striped": true
+      }
+    },
+    "c85c2322-7008-5df9-8993-ad32213a3e24": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Impact stories",
+        "title": "What changed, and how we know",
+        "columnCount": 3,
+        "align": "center",
+        "background": "white"
+      },
+      "slots": {
+        "items": [
+          "13b8142a-201c-5921-8528-e1d222ae2063",
+          "3e8a07eb-3438-5e9d-bf4c-58800b0b844c",
+          "cf9b79b4-2a6b-53f7-ac15-81508034e073"
+        ]
+      }
+    },
+    "13b8142a-201c-5921-8528-e1d222ae2063": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Kitui County, Kenya",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_5.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_5.png.avif%3Fitok%3DlqUxgAIR",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Four hours a day returned to 900 households",
+        "summary": "<p>A gravity-fed network replaced a seasonal riverbed source.</p>",
+        "statValue": "4 hrs",
+        "statLabel": "saved per household per day",
+        "url": "/stories/kitui",
+        "linkLabel": "Read the evaluation",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 131,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "3e8a07eb-3438-5e9d-bf4c-58800b0b844c": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Kasungu District, Malawi",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_5.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_5.png.avif%3Fitok%3DlqUxgAIR",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Girls' school attendance up 21 points",
+        "summary": "<p>Measured against three matched control villages.</p>",
+        "statValue": "+21",
+        "statLabel": "points, girls' attendance",
+        "url": "/stories/kasungu",
+        "linkLabel": "Read the evaluation",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 131,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "cf9b79b4-2a6b-53f7-ac15-81508034e073": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Sylhet Division, Bangladesh",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_5.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_5.png.avif%3Fitok%3DlqUxgAIR",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Arsenic-safe water for 12,000 people",
+        "summary": "<p>Deep tubewells with quarterly independent testing.</p>",
+        "statValue": "12,000",
+        "statLabel": "people on tested-safe water",
+        "url": "/stories/sylhet",
+        "linkLabel": "Read the evaluation",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 131,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "1c9400ce-2668-59ac-8d51-a3844ef324ef": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Get involved",
+        "title": "More than one way to help",
+        "columnCount": 4,
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "items": [
+          "e72c053f-9ea4-5c9e-8b82-ed34be7b2c2c",
+          "895dc23a-7bb6-5d93-bd17-9a5b5426fb00",
+          "6ac0102b-ba92-5be7-8302-22cbaa0fb9aa",
+          "9da7e32a-2cb3-5441-9749-046f2c62e0e0"
+        ]
+      }
+    },
+    "e72c053f-9ea4-5c9e-8b82-ed34be7b2c2c": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Give monthly",
+        "body": "<p>Regular gifts are what let us commit to fifteen years.</p>",
+        "url": "/donate/monthly",
+        "linkLabel": "Set up a gift",
+        "tone": "primary"
+      }
+    },
+    "895dc23a-7bb6-5d93-bd17-9a5b5426fb00": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Fundraise",
+        "body": "<p>Run, bake, shave, swim. We will send you a pack.</p>",
+        "url": "/fundraise",
+        "linkLabel": "Get a pack",
+        "tone": "light"
+      }
+    },
+    "6ac0102b-ba92-5be7-8302-22cbaa0fb9aa": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Leave a gift in your will",
+        "body": "<p>Legacies funded a fifth of our work last year.</p>",
+        "url": "/legacy",
+        "linkLabel": "How it works",
+        "tone": "light"
+      }
+    },
+    "9da7e32a-2cb3-5441-9749-046f2c62e0e0": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Corporate partnership",
+        "body": "<p>Matched giving, payroll giving and skilled volunteering.</p>",
+        "url": "/partners",
+        "linkLabel": "Talk to us",
+        "tone": "outline"
+      }
+    },
+    "54cf70ae-1699-5e6b-b76f-2afc2618c6fb": {
+      "type": "js.logo-wall",
+      "props": {
+        "title": "Funded and supported by",
+        "columnCount": 6,
+        "background": "white",
+        "grayscale": true
+      },
+      "slots": {
+        "logos": [
+          "4e8f354d-2d8d-5c64-9327-b2b861c352d5",
+          "e482a22b-f76d-5e95-b781-c1e945e3ee16",
+          "8c0a042f-c1a7-5a28-b0fd-2f588cd9af69",
+          "909fa5ef-62e7-5629-bbe5-a65a19de48a8",
+          "76356bd7-8001-5a31-9883-0b2bda8d2d07",
+          "d193e732-8c07-57e8-a818-8345eac5e91c"
+        ]
+      }
+    },
+    "4e8f354d-2d8d-5c64-9327-b2b861c352d5": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_3.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_3.png.avif%3Fitok%3DUZkNW5Gy",
+          "alt": "Funder 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 116,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "e482a22b-f76d-5e95-b781-c1e945e3ee16": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_3.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_3.png.avif%3Fitok%3DUZkNW5Gy",
+          "alt": "Funder 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 116,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "8c0a042f-c1a7-5a28-b0fd-2f588cd9af69": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_3.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_3.png.avif%3Fitok%3DUZkNW5Gy",
+          "alt": "Funder 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 116,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "909fa5ef-62e7-5629-bbe5-a65a19de48a8": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_3.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_3.png.avif%3Fitok%3DUZkNW5Gy",
+          "alt": "Funder 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 116,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "76356bd7-8001-5a31-9883-0b2bda8d2d07": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_3.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_3.png.avif%3Fitok%3DUZkNW5Gy",
+          "alt": "Funder 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 116,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "d193e732-8c07-57e8-a818-8345eac5e91c": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_3.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_3.png.avif%3Fitok%3DUZkNW5Gy",
+          "alt": "Funder 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 116,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "74c3c645-f0e1-527f-bd35-f53d9b862dd8": {
+      "type": "js.accordion",
+      "props": {
+        "title": "Questions donors ask",
+        "background": "none",
+        "width": "narrow"
+      },
+      "slots": {
+        "items": [
+          "142e6465-6d14-52ce-a389-a51cc4780650",
+          "e856c8e2-7c76-5281-af13-8e0d14f55387",
+          "88993f14-b225-5e17-839f-acdc6b6546f3",
+          "ffce8c80-0aa3-5885-9ca3-0567374423ab"
+        ]
+      }
+    },
+    "142e6465-6d14-52ce-a389-a51cc4780650": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "How much of my donation reaches the programmes?",
+        "answer": "<p>87 pence in every pound. The remaining 13 covers fundraising and governance - the costs that make the 87 possible.</p>",
+        "defaultOpen": true
+      }
+    },
+    "e856c8e2-7c76-5281-af13-8e0d14f55387": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Can I choose which country my gift supports?",
+        "answer": "<p>Restricted gifts of £10,000 or more can be directed to a country programme. Below that we pool funds, because it lets us respond where need is greatest rather than where fundraising happened to land.</p>"
+      }
+    },
+    "88993f14-b225-5e17-839f-acdc6b6546f3": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "How do you know the systems still work?",
+        "answer": "<p>Every pump carries a sensor reporting daily flow. That data is published, including the failures.</p>"
+      }
+    },
+    "ffce8c80-0aa3-5885-9ca3-0567374423ab": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Are you a registered charity?",
+        "answer": "<p>Yes - registered charity number 1123456 in England and Wales, with audited accounts filed annually.</p>"
+      }
+    },
+    "f5b2c156-0633-5cb4-bb92-320950e1efcf": {
+      "type": "js.cta-banner",
+      "props": {
+        "eyebrow": "Matched until 30 June",
+        "title": "£45 funds one household for fifteen years",
+        "body": "<p>Until the end of June, the Ridgeway Foundation doubles it.</p>",
+        "backgroundImage": {
+          "src": "/sites/default/files/2026-09/1600x600-2x-bf36ab3d.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1600x600-2x-bf36ab3d.png.avif%3Fitok%3Dw2WRtMls",
+          "alt": "",
+          "width": 3200,
+          "height": 1200
+        },
+        "layout": "centered"
+      },
+      "slots": {
+        "actions": [
+          "7c63345d-e954-597e-ac4f-a6dd2827955e",
+          "99a178c0-c69e-56c2-82a9-a38f7d7aab45"
+        ]
+      },
+      "_provenance": {
+        "backgroundImage": {
+          "target_id": 111,
+          "source_url": "https://placehold.co/1600x600@2x.png"
+        }
+      }
+    },
+    "7c63345d-e954-597e-ac4f-a6dd2827955e": {
+      "type": "js.button",
+      "props": {
+        "label": "Donate now",
+        "url": "/donate",
+        "variant": "primary",
+        "size": "large"
+      }
+    },
+    "99a178c0-c69e-56c2-82a9-a38f7d7aab45": {
+      "type": "js.button",
+      "props": {
+        "label": "Give monthly instead",
+        "url": "/donate/monthly",
+        "variant": "outline",
+        "size": "large"
+      }
+    },
+    "c43891cd-ef5d-5ed9-9491-7235d73fb551": {
+      "type": "js.newsletter-signup",
+      "props": {
+        "title": "Six updates a year, no more",
+        "body": "<p>Field reports, evaluation results and the occasional honest write-up of something that did not work.</p>",
+        "action": "/newsletter/subscribe",
+        "buttonLabel": "Sign up",
+        "consentText": "We never sell or share your details. Unsubscribe in one click.",
+        "background": "light",
+        "layout": "inline"
+      }
+    },
+    "9c248a4c-bc1d-5fd2-955e-95c5fe79b216": {
+      "type": "js.section",
+      "props": {
+        "background": "muted",
+        "padding": "small",
+        "width": "content"
+      },
+      "slots": {
+        "content": ["5e2470b2-3747-5996-849d-447a8b7e50c1"]
+      }
+    },
+    "5e2470b2-3747-5996-849d-447a8b7e50c1": {
+      "type": "js.text",
+      "props": {
+        "content": "<p>Wellspring Trust is a registered charity in England and Wales (1123456) and a company limited by guarantee (07654321). Registered office: 1 Example Street, London EC1A 1AA. Photographs are of the communities named and are published with consent.</p>",
+        "size": "small",
+        "align": "left"
+      }
+    }
+  },
+  "uuid": "7f529a95-89c8-48bf-96a7-8885816ebe9e"
+}

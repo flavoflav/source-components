@@ -1,0 +1,23 @@
+{
+  "mocks": [
+    {
+      "name": "Footer column",
+      "props": { "heading": "Products", "layout": "stacked" },
+      "slots": { "items": ["a", "b", "c"] },
+      "elements": {
+        "a": {
+          "type": "link-item",
+          "props": { "label": "Platform", "url": "/platform" }
+        },
+        "b": {
+          "type": "link-item",
+          "props": { "label": "Integrations", "url": "/integrations" }
+        },
+        "c": {
+          "type": "link-item",
+          "props": { "label": "Pricing", "url": "/pricing" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "mocks": [
+    {
+      "name": "Percentage",
+      "props": {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer retention",
+        "description": "Measured across all enterprise accounts in 2025.",
+        "size": "large",
+        "align": "center"
+      }
+    },
+    {
+      "name": "Currency, bordered",
+      "props": {
+        "value": "4.2",
+        "prefix": "$",
+        "suffix": "M",
+        "label": "Average annual saving",
+        "size": "medium",
+        "align": "left",
+        "bordered": true
+      }
+    }
+  ]
+}

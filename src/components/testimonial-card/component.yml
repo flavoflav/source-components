@@ -1,0 +1,75 @@
+name: Testimonial Card
+machineName: testimonial-card
+description: >-
+  A customer quote with attribution, optional headshot and company logo. Use one
+  on its own as a pull quote, several inside a Card Grid, or inside Testimonial
+  Carousel for a rotating set.
+status: true
+required:
+  - quote
+props:
+  properties:
+    quote:
+      title: Quote
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - >-
+          <p>We shipped our first campaign page in a day instead of a
+          sprint.</p>
+    authorName:
+      title: Author Name
+      type: string
+      examples:
+        - Priya Raman
+    authorTitle:
+      title: Author Title
+      type: string
+      examples:
+        - Director of Digital, Northwind
+    authorImage:
+      title: Author Image
+      type: object
+      examples:
+        - src: https://placehold.co/200x200@2x.png
+          alt: ''
+          width: 200
+          height: 200
+      $ref: json-schema-definitions://canvas.module/image
+    companyLogo:
+      title: Company Logo
+      type: object
+      examples:
+        - src: https://placehold.co/240x80@2x.png
+          alt: ''
+          width: 240
+          height: 80
+      $ref: json-schema-definitions://canvas.module/image
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - filled
+        - dark
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        filled: Filled
+        dark: Dark
+      examples:
+        - bordered
+    size:
+      title: Size
+      type: string
+      enum:
+        - medium
+        - large
+      meta:enum:
+        medium: Medium
+        large: Large (pull quote)
+      examples:
+        - medium
+slots: []

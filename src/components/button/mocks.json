@@ -1,0 +1,26 @@
+{
+  "mocks": [
+    {
+      "name": "Primary",
+      "props": {
+        "label": "Get started",
+        "url": "/contact",
+        "variant": "primary",
+        "size": "medium"
+      }
+    },
+    {
+      "name": "Outline",
+      "props": {
+        "label": "Learn more",
+        "url": "/products",
+        "variant": "outline",
+        "size": "medium"
+      }
+    },
+    {
+      "name": "Text link",
+      "props": { "label": "Read the docs", "url": "/docs", "variant": "link" }
+    }
+  ]
+}

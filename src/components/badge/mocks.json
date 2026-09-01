@@ -1,0 +1,9 @@
+{
+  "mocks": [
+    { "name": "Primary", "props": { "label": "New", "tone": "primary" } },
+    {
+      "name": "Category",
+      "props": { "label": "Case study", "tone": "neutral" }
+    }
+  ]
+}

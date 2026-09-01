@@ -1,0 +1,59 @@
+name: Two Column
+machineName: two-column
+description: >-
+  Two side-by-side regions that stack on mobile, each accepting arbitrary child
+  components. Use this instead of building a two-column layout inside a content
+  component, so authors can swap what sits on either side.
+status: true
+required: []
+props:
+  properties:
+    ratio:
+      title: Ratio
+      type: string
+      enum:
+        - even
+        - wide_start
+        - wide_end
+      meta:enum:
+        even: Even 50/50
+        wide_start: Wide first column
+        wide_end: Wide second column
+      examples:
+        - even
+    verticalAlign:
+      title: Vertical Align
+      type: string
+      enum:
+        - start
+        - center
+        - stretch
+      meta:enum:
+        start: Top
+        center: Middle
+        stretch: Stretch
+      examples:
+        - start
+    gap:
+      title: Gap
+      type: string
+      enum:
+        - small
+        - medium
+        - large
+      meta:enum:
+        small: Small
+        medium: Medium
+        large: Large
+      examples:
+        - medium
+    reverseOnMobile:
+      title: Reverse On Mobile
+      type: boolean
+      examples:
+        - false
+slots:
+  start:
+    title: First column
+  end:
+    title: Second column

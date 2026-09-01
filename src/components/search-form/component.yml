@@ -1,0 +1,50 @@
+name: Search Form
+machineName: search-form
+description: >-
+  Accessible search input that submits to a results page by GET. Use in Site
+  Header actions, on a search landing page, or above a listing. It does not
+  filter content on the client - pair it with Filter Bar for in-page filtering.
+status: true
+required: []
+props:
+  properties:
+    action:
+      title: Action
+      type: string
+      format: uri-reference
+      examples:
+        - /search
+    fieldName:
+      title: Field Name
+      type: string
+      examples:
+        - q
+    placeholder:
+      title: Placeholder
+      type: string
+      examples:
+        - Search the site
+    label:
+      title: Label
+      type: string
+      examples:
+        - Search
+    buttonLabel:
+      title: Button Label
+      type: string
+      examples:
+        - Search
+    size:
+      title: Size
+      type: string
+      enum:
+        - small
+        - medium
+        - large
+      meta:enum:
+        small: Small
+        medium: Medium
+        large: Large
+      examples:
+        - medium
+slots: []

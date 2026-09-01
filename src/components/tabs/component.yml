@@ -1,0 +1,52 @@
+name: Tabs
+machineName: tabs
+description: >-
+  Tabbed band that shows one panel at a time. Fill the panels slot with Tab
+  Panel components - each panel's Label prop becomes its tab button. Use for
+  by-industry, by-role or by-product content that would otherwise make a page
+  very long.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Built for every team
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Pick the view that matches how you work.</p>
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - dark
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        dark: Dark
+      examples:
+        - none
+    align:
+      title: Align
+      type: string
+      enum:
+        - left
+        - center
+      meta:enum:
+        left: Left
+        center: Center
+      examples:
+        - center
+slots:
+  panels:
+    title: Panels

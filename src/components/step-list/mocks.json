@@ -1,0 +1,38 @@
+{
+  "mocks": [
+    {
+      "name": "Three steps",
+      "props": {
+        "title": "How it works",
+        "intro": "<p>Three steps from first login to a published page.</p>",
+        "layout": "horizontal",
+        "numbered": true,
+        "background": "light"
+      },
+      "slots": { "steps": ["s1", "s2", "s3"] },
+      "elements": {
+        "s1": {
+          "type": "step-item",
+          "props": {
+            "title": "Connect your content",
+            "body": "<p>Point the workspace at your existing Drupal site.</p>"
+          }
+        },
+        "s2": {
+          "type": "step-item",
+          "props": {
+            "title": "Compose a page",
+            "body": "<p>Drag components onto the canvas and set their props.</p>"
+          }
+        },
+        "s3": {
+          "type": "step-item",
+          "props": {
+            "title": "Publish",
+            "body": "<p>Review the diff and publish when you are happy.</p>"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "mocks": [
+    {
+      "name": "Light band",
+      "props": { "background": "light", "padding": "medium", "width": "wide" },
+      "slots": { "content": ["copy"] },
+      "elements": {
+        "copy": {
+          "type": "heading",
+          "props": {
+            "text": "Anything can live inside a Section",
+            "level": "h2",
+            "size": "large",
+            "align": "center"
+          }
+        }
+      }
+    },
+    {
+      "name": "Dark band",
+      "props": { "background": "dark", "padding": "large", "width": "content" },
+      "slots": { "content": ["copy"] },
+      "elements": {
+        "copy": {
+          "type": "heading",
+          "props": {
+            "text": "Dark section band",
+            "level": "h2",
+            "size": "large",
+            "align": "center"
+          }
+        }
+      }
+    }
+  ]
+}

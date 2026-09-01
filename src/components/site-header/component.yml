@@ -1,0 +1,54 @@
+name: Site Header
+machineName: site-header
+description: >-
+  Site chrome at the top of every page - logo, a navigation slot, an actions
+  slot for search and CTA buttons, and a built-in mobile menu toggle. Place this
+  in the header region rather than on individual pages. Put Main Navigation in
+  the navigation slot and Button or Search Form components in actions.
+status: true
+required: []
+props:
+  properties:
+    logo:
+      title: Logo
+      type: object
+      examples:
+        - src: https://placehold.co/200x48@2x.png
+          alt: Company logo
+          width: 200
+          height: 48
+      $ref: json-schema-definitions://canvas.module/image
+    logoUrl:
+      title: Logo Url
+      type: string
+      format: uri-reference
+      examples:
+        - /
+    siteName:
+      title: Site Name
+      type: string
+      examples:
+        - Acme
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - light
+        - dark
+        - transparent
+      meta:enum:
+        light: Light
+        dark: Dark
+        transparent: Transparent overlay
+      examples:
+        - light
+    sticky:
+      title: Sticky
+      type: boolean
+      examples:
+        - true
+slots:
+  navigation:
+    title: Navigation
+  actions:
+    title: Actions

@@ -1,0 +1,40 @@
+{
+  "mocks": [
+    {
+      "name": "Three panels",
+      "props": {
+        "title": "Built for every team",
+        "intro": "<p>Pick the view that matches how you work.</p>",
+        "align": "center",
+        "background": "light"
+      },
+      "slots": { "panels": ["t1", "t2", "t3"] },
+      "elements": {
+        "t1": {
+          "type": "tab-panel",
+          "props": {
+            "label": "Marketing",
+            "title": "Launch campaigns without a release",
+            "body": "<p>Build and publish landing pages the same day.</p>"
+          }
+        },
+        "t2": {
+          "type": "tab-panel",
+          "props": {
+            "label": "Engineering",
+            "title": "Own the components, not the pages",
+            "body": "<p>Ship a component once and let marketing compose with it.</p>"
+          }
+        },
+        "t3": {
+          "type": "tab-panel",
+          "props": {
+            "label": "Compliance",
+            "title": "Every change is reviewable",
+            "body": "<p>Full audit history and one-click revert.</p>"
+          }
+        }
+      }
+    }
+  ]
+}

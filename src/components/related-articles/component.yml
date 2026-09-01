@@ -1,0 +1,46 @@
+name: Related Articles
+machineName: related-articles
+description: >-
+  "More like this" band for the bottom of an article page. Pulls recent content
+  of the same bundle over JSON:API and excludes the node currently being viewed,
+  so it is only meaningful inside a content template or on a node page. Renders
+  nothing when there is nothing else to show. For a listing that is not tied to
+  the current node, use News Feed.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - More like this
+    entityType:
+      title: Entity Type
+      type: string
+      examples:
+        - node--article
+    imageField:
+      title: Image Field
+      type: string
+      examples:
+        - field_image
+    itemCount:
+      title: Item Count
+      type: integer
+      examples:
+        - 3
+    columnCount:
+      title: Column Count
+      type: integer
+      enum:
+        - 2
+        - 3
+        - 4
+      meta:enum:
+        2: Two
+        3: Three
+        4: Four
+      examples:
+        - 3
+slots: []

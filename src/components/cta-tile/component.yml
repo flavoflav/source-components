@@ -1,0 +1,69 @@
+name: CTA Tile
+machineName: cta-tile
+description: >-
+  Fully clickable promotional tile with an arrow affordance, optionally over a
+  photograph. Put two to four inside a Card Grid to build a "where to next" band
+  at the end of a page.
+status: true
+required:
+  - title
+  - url
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Talk to an expert
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Get a walkthrough tailored to your stack.</p>
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /contact
+    linkLabel:
+      title: Link Label
+      type: string
+      examples:
+        - Book a call
+    icon:
+      title: Icon
+      type: object
+      examples:
+        - src: https://placehold.co/80x80@2x.png
+          alt: ''
+          width: 80
+          height: 80
+      $ref: json-schema-definitions://canvas.module/image
+    backgroundImage:
+      title: Background Image
+      type: object
+      examples:
+        - src: https://placehold.co/900x600@2x.png
+          alt: ''
+          width: 900
+          height: 600
+      $ref: json-schema-definitions://canvas.module/image
+    tone:
+      title: Tone
+      type: string
+      enum:
+        - light
+        - dark
+        - primary
+        - outline
+      meta:enum:
+        light: Light gray
+        dark: Dark
+        primary: Primary
+        outline: Outlined white
+      examples:
+        - light
+slots: []

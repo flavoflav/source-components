@@ -1,0 +1,200 @@
+{
+  "status": true,
+  "elements": {
+    "c2e0381c-8d51-5598-9314-5cc7a2771757": {
+      "type": "js.site-footer",
+      "props": {
+        "siteName": "Northwind",
+        "logoUrl": "/",
+        "tagline": "The governed platform for teams that publish at scale.",
+        "copyright": "\u00a9 2026 Northwind, Inc. All rights reserved.",
+        "columnCount": 4,
+        "variant": "dark"
+      },
+      "slots": {
+        "linkColumns": [
+          "8fe581cc-4761-54c9-8e2f-f7d36e8bae69",
+          "d7be216d-b06f-5683-ac99-e789c502d482",
+          "e882dd76-0d36-5d7e-ad66-764d190cf87d",
+          "98ef573b-0731-5adb-9052-a8cd22ff785c"
+        ],
+        "social": ["ede2f874-cfa2-5711-99c7-dfa92142dcab"],
+        "legal": [
+          "1185846a-9497-5d1d-a0bf-2d7df2f7bb20",
+          "9f5c90b5-cf20-5edb-8e27-d46588f82f57",
+          "63074385-d21a-5102-ac71-dd845dffa2f2"
+        ]
+      }
+    },
+    "8fe581cc-4761-54c9-8e2f-f7d36e8bae69": {
+      "type": "js.link-list",
+      "props": {
+        "heading": "Platform",
+        "layout": "stacked"
+      },
+      "slots": {
+        "items": [
+          "a7e7791d-fd1a-5262-9cf2-2f83542a2e38",
+          "47ac97ef-5d82-5757-8173-8b8f15f10b87",
+          "32f66f55-6283-5154-8f54-42b86a739c1b"
+        ]
+      }
+    },
+    "a7e7791d-fd1a-5262-9cf2-2f83542a2e38": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Overview",
+        "url": "/platform"
+      }
+    },
+    "47ac97ef-5d82-5757-8173-8b8f15f10b87": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Component Index",
+        "url": "/component-explorer"
+      }
+    },
+    "32f66f55-6283-5154-8f54-42b86a739c1b": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Pricing",
+        "url": "/pricing"
+      }
+    },
+    "d7be216d-b06f-5683-ac99-e789c502d482": {
+      "type": "js.link-list",
+      "props": {
+        "heading": "Solutions",
+        "layout": "stacked"
+      },
+      "slots": {
+        "items": [
+          "1d9f2d5f-74f4-518d-8b0c-2a33a8a9278d",
+          "68bda2b5-94f7-5768-8d67-9f7fe1f19005",
+          "b1f097e9-cd4e-59e3-97d8-24dd74f14d1f"
+        ]
+      }
+    },
+    "1d9f2d5f-74f4-518d-8b0c-2a33a8a9278d": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Healthcare",
+        "url": "/solutions/healthcare"
+      }
+    },
+    "68bda2b5-94f7-5768-8d67-9f7fe1f19005": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Financial services",
+        "url": "/pay"
+      }
+    },
+    "b1f097e9-cd4e-59e3-97d8-24dd74f14d1f": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Non-profit",
+        "url": "/nonprofit"
+      }
+    },
+    "e882dd76-0d36-5d7e-ad66-764d190cf87d": {
+      "type": "js.link-list",
+      "props": {
+        "heading": "Resources",
+        "layout": "stacked"
+      },
+      "slots": {
+        "items": [
+          "0cf3f762-f773-5ca5-ba2c-a0561945dc0f",
+          "af59756e-0071-51ae-b7c6-eb17182fdd41",
+          "3d2581d6-791f-5be9-88a7-8a5d2acbe514"
+        ]
+      }
+    },
+    "0cf3f762-f773-5ca5-ba2c-a0561945dc0f": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Blog",
+        "url": "/blog"
+      }
+    },
+    "af59756e-0071-51ae-b7c6-eb17182fdd41": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Events",
+        "url": "/events"
+      }
+    },
+    "3d2581d6-791f-5be9-88a7-8a5d2acbe514": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Resource centre",
+        "url": "/resources"
+      }
+    },
+    "98ef573b-0731-5adb-9052-a8cd22ff785c": {
+      "type": "js.link-list",
+      "props": {
+        "heading": "Company",
+        "layout": "stacked"
+      },
+      "slots": {
+        "items": [
+          "11bf8f35-8d20-5a63-8906-3ef741a0bf14",
+          "b256d5c8-7207-56bf-a6e1-91bba7521af3",
+          "1d75907e-5b53-510c-849f-4248acfb7925"
+        ]
+      }
+    },
+    "11bf8f35-8d20-5a63-8906-3ef741a0bf14": {
+      "type": "js.link-item",
+      "props": {
+        "label": "About",
+        "url": "/about"
+      }
+    },
+    "b256d5c8-7207-56bf-a6e1-91bba7521af3": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    },
+    "1d75907e-5b53-510c-849f-4248acfb7925": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Shop",
+        "url": "/shop"
+      }
+    },
+    "ede2f874-cfa2-5711-99c7-dfa92142dcab": {
+      "type": "js.social-links",
+      "props": {
+        "linkedinUrl": "https://linkedin.com/company/example",
+        "xUrl": "https://x.com/example",
+        "youtubeUrl": "https://youtube.com/@example",
+        "size": "small"
+      }
+    },
+    "1185846a-9497-5d1d-a0bf-2d7df2f7bb20": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Privacy",
+        "url": "/privacy"
+      }
+    },
+    "9f5c90b5-cf20-5edb-8e27-d46588f82f57": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Terms",
+        "url": "/terms"
+      }
+    },
+    "63074385-d21a-5102-ac71-dd845dffa2f2": {
+      "type": "js.link-item",
+      "props": {
+        "label": "Accessibility",
+        "url": "/accessibility"
+      }
+    }
+  }
+}

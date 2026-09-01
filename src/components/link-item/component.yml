@@ -1,0 +1,43 @@
+name: Link Item
+machineName: link-item
+description: >-
+  One entry inside a Link List, Main Navigation or Mega Menu column. Supports an
+  optional icon and one-line description, which is what turns a plain menu into
+  a rich navigation panel.
+status: true
+required:
+  - label
+  - url
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Platform
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /platform
+    description:
+      title: Description
+      type: string
+      examples:
+        - Everything the team needs in one place.
+    icon:
+      title: Icon
+      type: object
+      examples:
+        - src: https://placehold.co/48x48@2x.png
+          alt: ''
+          width: 48
+          height: 48
+      $ref: json-schema-definitions://canvas.module/image
+    openInNewTab:
+      title: Open In New Tab
+      type: boolean
+      examples:
+        - false
+slots: []

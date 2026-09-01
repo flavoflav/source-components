@@ -1,0 +1,20 @@
+{
+  "mocks": [
+    {
+      "name": "Intro paragraph",
+      "props": {
+        "content": "<p>A short paragraph that introduces the section and sets expectations for what follows.</p>",
+        "size": "large",
+        "align": "center"
+      }
+    },
+    {
+      "name": "Body with list",
+      "props": {
+        "content": "<p>Body copy with a list:</p><ul><li>First point</li><li>Second point</li><li>Third point</li></ul>",
+        "size": "medium",
+        "align": "left"
+      }
+    }
+  ]
+}

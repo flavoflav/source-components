@@ -1,0 +1,23 @@
+{
+  "mocks": [
+    {
+      "name": "Three columns",
+      "props": { "columnCount": 3, "gap": "medium" },
+      "slots": { "items": ["a", "b", "c"] },
+      "elements": {
+        "a": {
+          "type": "card",
+          "props": { "title": "First", "body": "<p>Card body copy.</p>" }
+        },
+        "b": {
+          "type": "card",
+          "props": { "title": "Second", "body": "<p>Card body copy.</p>" }
+        },
+        "c": {
+          "type": "card",
+          "props": { "title": "Third", "body": "<p>Card body copy.</p>" }
+        }
+      }
+    }
+  ]
+}

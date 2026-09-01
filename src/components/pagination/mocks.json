@@ -1,0 +1,12 @@
+{
+  "mocks": [
+    {
+      "name": "Middle of a long list",
+      "props": { "currentPage": 5, "totalPages": 12, "baseUrl": "/blog" }
+    },
+    {
+      "name": "First page",
+      "props": { "currentPage": 1, "totalPages": 4, "baseUrl": "/resources" }
+    }
+  ]
+}

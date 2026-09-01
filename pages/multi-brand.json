@@ -1,0 +1,1381 @@
+{
+  "title": "Ridgeway Group",
+  "path": "/group",
+  "description": "House-of-brands corporate page - group stats, a full brand logo wall, a four-category portfolio built from tabs containing nested grids of brand cards, segment performance table, responsibility standards, leadership and investor routes.",
+  "elements": {
+    "304c2986-d217-57c0-9151-eb4bb4028531": {
+      "type": "js.announcement-bar",
+      "props": {
+        "message": "Full year results for 2025 published 26 February.",
+        "linkLabel": "Read the announcement",
+        "linkUrl": "/investors/fy2025",
+        "tone": "light",
+        "dismissible": true
+      }
+    },
+    "74d313f9-16b9-555d-a976-d11503ba3c7c": {
+      "type": "js.hero",
+      "props": {
+        "layout": "centered",
+        "eyebrow": "Ridgeway Group",
+        "title": "Thirty-one brands. One set of standards.",
+        "body": "<p>We own and grow consumer brands across household, personal care, food and pet. Each one runs its own business. None of them compromises on how it is made.</p>",
+        "background": "dark",
+        "height": "medium"
+      },
+      "slots": {
+        "actions": [
+          "a22ac6e2-0542-5fb3-8b23-619afe13be5b",
+          "c89a21b4-397f-531c-9712-b84098282365"
+        ]
+      }
+    },
+    "a22ac6e2-0542-5fb3-8b23-619afe13be5b": {
+      "type": "js.button",
+      "props": {
+        "label": "Explore our brands",
+        "url": "/brands",
+        "variant": "primary",
+        "size": "large"
+      }
+    },
+    "c89a21b4-397f-531c-9712-b84098282365": {
+      "type": "js.button",
+      "props": {
+        "label": "Investor centre",
+        "url": "/investors",
+        "variant": "outline",
+        "size": "large"
+      }
+    },
+    "f025e7a8-c4b9-5c04-8286-2c62b9547484": {
+      "type": "js.card-grid",
+      "props": {
+        "title": "The group at a glance",
+        "columnCount": 4,
+        "align": "center",
+        "background": "none"
+      },
+      "slots": {
+        "items": [
+          "a38cbeef-5152-5d61-93f3-78ee4eb6acfa",
+          "84f88593-4d1a-528f-9133-27e810a876f8",
+          "7ac6a329-b4e6-51b2-bc5c-8595fb65b7e3",
+          "d7adc8d6-df93-5892-9677-d07934b0d402"
+        ]
+      }
+    },
+    "a38cbeef-5152-5d61-93f3-78ee4eb6acfa": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "31",
+        "label": "Brands",
+        "description": "Nine of them over $1B in annual revenue.",
+        "align": "center"
+      }
+    },
+    "84f88593-4d1a-528f-9133-27e810a876f8": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "18.4",
+        "prefix": "$",
+        "suffix": "B",
+        "label": "Group revenue",
+        "description": "FY2025, up 4.1% organic.",
+        "align": "center"
+      }
+    },
+    "7ac6a329-b4e6-51b2-bc5c-8595fb65b7e3": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "94",
+        "label": "Markets",
+        "description": "With manufacturing in 23.",
+        "align": "center"
+      }
+    },
+    "d7adc8d6-df93-5892-9677-d07934b0d402": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "61,000",
+        "label": "Colleagues",
+        "align": "center"
+      }
+    },
+    "5cf2fc4c-23ad-5430-87b0-79cf68bdded1": {
+      "type": "js.logo-wall",
+      "props": {
+        "title": "A household in almost every market",
+        "columnCount": 6,
+        "background": "light",
+        "grayscale": false
+      },
+      "slots": {
+        "logos": [
+          "85dd16fa-cf1a-5e4d-8e5d-eeb1a26a66ae",
+          "0b07c6a5-355f-5bfc-ba5a-e84fdfea4134",
+          "d63a09be-720a-534d-9474-ea07b3cd6d98",
+          "fa798ad6-48b6-5a22-ae2a-5004b973bbc7",
+          "c3c38203-93b3-5fd4-897f-2033965549c4",
+          "a3e2b9f2-c26c-5a7d-9a6e-78d6b63d2e4e",
+          "58b8805f-ccda-56a3-a6dd-348531676165",
+          "f30b8094-4ba8-52c3-946a-73d64ac8d51f",
+          "88f52c22-c402-55ec-8f30-9339cc6af993",
+          "75aea2e0-30f7-5cb3-8f34-793920ce8677",
+          "4621162c-b813-5592-b058-8c2c3f22c752",
+          "633e2ac8-1912-509a-a61d-8f987710ce4f"
+        ]
+      }
+    },
+    "85dd16fa-cf1a-5e4d-8e5d-eeb1a26a66ae": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "0b07c6a5-355f-5bfc-ba5a-e84fdfea4134": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "d63a09be-720a-534d-9474-ea07b3cd6d98": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "fa798ad6-48b6-5a22-ae2a-5004b973bbc7": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "c3c38203-93b3-5fd4-897f-2033965549c4": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "a3e2b9f2-c26c-5a7d-9a6e-78d6b63d2e4e": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "58b8805f-ccda-56a3-a6dd-348531676165": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "f30b8094-4ba8-52c3-946a-73d64ac8d51f": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "88f52c22-c402-55ec-8f30-9339cc6af993": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "75aea2e0-30f7-5cb3-8f34-793920ce8677": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "4621162c-b813-5592-b058-8c2c3f22c752": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "633e2ac8-1912-509a-a61d-8f987710ce4f": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "url": "/brands",
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "8941b111-6404-5712-8f50-10e0301d1fb2": {
+      "type": "js.tabs",
+      "props": {
+        "title": "Our brands",
+        "intro": "<p>Four categories, thirty-one brands, each with its own P&L and its own personality.</p>",
+        "align": "center",
+        "background": "white"
+      },
+      "slots": {
+        "panels": [
+          "62cd5c7f-aff0-5849-b6e3-1378323ee16f",
+          "83ed0a5b-5a8b-5dce-b91f-92b5dc458ede",
+          "88f24b04-ebfe-52a2-b4bb-42cdc8d6acfe",
+          "605038a1-f392-538f-800f-f0990185782b"
+        ]
+      }
+    },
+    "62cd5c7f-aff0-5849-b6e3-1378323ee16f": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Household",
+        "title": "Household care",
+        "body": "<p>$6.9B revenue. Our oldest category and still the group's engine.</p>"
+      },
+      "slots": {
+        "content": ["6ffd5652-3daa-569c-a3e4-35d5fd769f91"]
+      }
+    },
+    "6ffd5652-3daa-569c-a3e4-35d5fd769f91": {
+      "type": "js.grid-container",
+      "props": {
+        "columnCount": 3,
+        "gap": "medium"
+      },
+      "slots": {
+        "items": [
+          "e0adde78-d489-5b09-a726-f3de0dd30ad9",
+          "ed064a88-0e9f-558c-b1f1-196baa14cf50",
+          "b37893c8-253d-50f2-b99e-16acb58b49eb",
+          "99ea4685-a4e3-5fda-bb2c-f94855ec67fd",
+          "999d2695-4408-5928-93f7-dec8a06419a1",
+          "8d1a14c5-d30c-52a1-a9ee-96f3df0770a9"
+        ]
+      }
+    },
+    "e0adde78-d489-5b09-a726-f3de0dd30ad9": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Laundry",
+        "title": "Brightwell",
+        "body": "<p>The number one laundry brand in eleven markets, reformulated to cold-wash in 2024.</p>",
+        "url": "/brands/brightwell",
+        "linkLabel": "Visit Brightwell",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "ed064a88-0e9f-558c-b1f1-196baa14cf50": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Surface care",
+        "title": "Clearline",
+        "body": "<p>Plant-derived surfactants across the full range since 2023.</p>",
+        "url": "/brands/clearline",
+        "linkLabel": "Visit Clearline",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "b37893c8-253d-50f2-b99e-16acb58b49eb": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Home fragrance",
+        "title": "Hearthstone",
+        "body": "<p>Premium candles and diffusers, sold in 40 markets.</p>",
+        "url": "/brands/hearthstone",
+        "linkLabel": "Visit Hearthstone",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "99ea4685-a4e3-5fda-bb2c-f94855ec67fd": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Dishwashing",
+        "title": "Kestrel",
+        "body": "<p>Concentrated formats that cut packaging by 62%.</p>",
+        "url": "/brands/kestrel",
+        "linkLabel": "Visit Kestrel",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "999d2695-4408-5928-93f7-dec8a06419a1": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Paper goods",
+        "title": "Northfield",
+        "body": "<p>FSC-certified tissue and towel across Europe.</p>",
+        "url": "/brands/northfield",
+        "linkLabel": "Visit Northfield",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "8d1a14c5-d30c-52a1-a9ee-96f3df0770a9": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Professional",
+        "title": "Vantage",
+        "body": "<p>Cleaning systems for hospitality and healthcare.</p>",
+        "url": "/brands/vantage",
+        "linkLabel": "Visit Vantage",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "83ed0a5b-5a8b-5dce-b91f-92b5dc458ede": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Personal care",
+        "title": "Personal care",
+        "body": "<p>$5.2B revenue. Our fastest-growing category, led by premium skin.</p>"
+      },
+      "slots": {
+        "content": ["22ced0e2-5b8c-58ea-b086-a78ddf1ae92b"]
+      }
+    },
+    "22ced0e2-5b8c-58ea-b086-a78ddf1ae92b": {
+      "type": "js.grid-container",
+      "props": {
+        "columnCount": 3,
+        "gap": "medium"
+      },
+      "slots": {
+        "items": [
+          "6ed9e3e5-5261-5fbd-844e-1ebee532c6e5",
+          "9fa692a2-f316-52e7-b81f-b7ee6f4dba27",
+          "03b7fc5b-fd32-50ed-92e3-1861756c6a30",
+          "5861af0d-c1d3-5a89-960e-31c1b0b6e62e",
+          "ed15516e-1593-5e83-ae22-176f58715e11",
+          "3696c4db-ea70-55b8-adb7-90419647de78"
+        ]
+      }
+    },
+    "6ed9e3e5-5261-5fbd-844e-1ebee532c6e5": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Skincare",
+        "title": "Marisol",
+        "body": "<p>Dermatologist-developed, sold through pharmacy and prestige.</p>",
+        "url": "/brands/marisol",
+        "linkLabel": "Visit Marisol",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "9fa692a2-f316-52e7-b81f-b7ee6f4dba27": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Grooming",
+        "title": "Beckett & Co",
+        "body": "<p>Heritage shaving and beard care, founded 1897.</p>",
+        "url": "/brands/beckett",
+        "linkLabel": "Visit Beckett & Co",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "03b7fc5b-fd32-50ed-92e3-1861756c6a30": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Haircare",
+        "title": "Lumen",
+        "body": "<p>Sulphate-free colour care, our first carbon-neutral brand.</p>",
+        "url": "/brands/lumen",
+        "linkLabel": "Visit Lumen",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "5861af0d-c1d3-5a89-960e-31c1b0b6e62e": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Bath and body",
+        "title": "Saltmarsh",
+        "body": "<p>Coastal-inspired, refillable across the whole range.</p>",
+        "url": "/brands/saltmarsh",
+        "linkLabel": "Visit Saltmarsh",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "ed15516e-1593-5e83-ae22-176f58715e11": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Oral care",
+        "title": "Orla",
+        "body": "<p>Enamel-focused toothpaste with a recyclable tube.</p>",
+        "url": "/brands/orla",
+        "linkLabel": "Visit Orla",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "3696c4db-ea70-55b8-adb7-90419647de78": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Sun care",
+        "title": "Verity",
+        "body": "<p>Reef-safe filters, dermatologically tested for children.</p>",
+        "url": "/brands/verity",
+        "linkLabel": "Visit Verity",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "88f24b04-ebfe-52a2-b4bb-42cdc8d6acfe": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Food and drink",
+        "title": "Food and drink",
+        "body": "<p>$4.4B revenue. Ambient, chilled and hot beverages.</p>"
+      },
+      "slots": {
+        "content": ["eda878aa-961e-530f-b4c2-ae54ea89e537"]
+      }
+    },
+    "eda878aa-961e-530f-b4c2-ae54ea89e537": {
+      "type": "js.grid-container",
+      "props": {
+        "columnCount": 3,
+        "gap": "medium"
+      },
+      "slots": {
+        "items": [
+          "9d7fdc04-c2da-5e7b-a3c6-19e04c35f8a3",
+          "bb759f43-3ce8-5884-a722-9cb838462b17",
+          "800fd3e0-08d0-538a-8bb3-b6934f58b080",
+          "35056db3-80d7-5379-9694-aef585003ef5",
+          "29cee313-1c5a-5fd0-a370-68eb4abd1496",
+          "84678c38-c87c-5f6b-bb36-72ab3f41807a"
+        ]
+      }
+    },
+    "9d7fdc04-c2da-5e7b-a3c6-19e04c35f8a3": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Tea and coffee",
+        "title": "Copperfield",
+        "body": "<p>Rainforest Alliance certified across the full range.</p>",
+        "url": "/brands/copperfield",
+        "linkLabel": "Visit Copperfield",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "bb759f43-3ce8-5884-a722-9cb838462b17": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Preserves",
+        "title": "Wren & Barrow",
+        "body": "<p>Small-batch jams and chutneys, made in Somerset.</p>",
+        "url": "/brands/wren-barrow",
+        "linkLabel": "Visit Wren & Barrow",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "800fd3e0-08d0-538a-8bb3-b6934f58b080": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Bakery",
+        "title": "Stonemill",
+        "body": "<p>Stoneground flour and ambient baked goods.</p>",
+        "url": "/brands/stonemill",
+        "linkLabel": "Visit Stonemill",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "35056db3-80d7-5379-9694-aef585003ef5": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Confectionery",
+        "title": "Fenwick",
+        "body": "<p>Cocoa sourced through our own farmer programme.</p>",
+        "url": "/brands/fenwick",
+        "linkLabel": "Visit Fenwick",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "29cee313-1c5a-5fd0-a370-68eb4abd1496": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Chilled",
+        "title": "Harrow Lane",
+        "body": "<p>Fresh soups and ready meals for the UK and Ireland.</p>",
+        "url": "/brands/harrow-lane",
+        "linkLabel": "Visit Harrow Lane",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "84678c38-c87c-5f6b-bb36-72ab3f41807a": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Beverages",
+        "title": "Solvara",
+        "body": "<p>Sparkling botanicals with no added sugar.</p>",
+        "url": "/brands/solvara",
+        "linkLabel": "Visit Solvara",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "605038a1-f392-538f-800f-f0990185782b": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Pet",
+        "title": "Pet care",
+        "body": "<p>$1.9B revenue. Acquired in 2021 and doubled since.</p>"
+      },
+      "slots": {
+        "content": ["1a4e74ea-5ff9-5660-acaf-d3bde2ee509c"]
+      }
+    },
+    "1a4e74ea-5ff9-5660-acaf-d3bde2ee509c": {
+      "type": "js.grid-container",
+      "props": {
+        "columnCount": 3,
+        "gap": "medium"
+      },
+      "slots": {
+        "items": [
+          "83fcd246-fb30-5336-ad96-ff37cca31e3f",
+          "c9791364-9203-53df-8965-bd40faa710f5",
+          "978cd83f-4fdb-5bf0-aa32-4074ba1ac262"
+        ]
+      }
+    },
+    "83fcd246-fb30-5336-ad96-ff37cca31e3f": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Dog nutrition",
+        "title": "Rufus",
+        "body": "<p>Vet-formulated dry and wet food, sold direct and in grocery.</p>",
+        "url": "/brands/rufus",
+        "linkLabel": "Visit Rufus",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "c9791364-9203-53df-8965-bd40faa710f5": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Cat nutrition",
+        "title": "Tabbyhouse",
+        "body": "<p>Grain-free wet food in fully recyclable trays.</p>",
+        "url": "/brands/tabbyhouse",
+        "linkLabel": "Visit Tabbyhouse",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "978cd83f-4fdb-5bf0-aa32-4074ba1ac262": {
+      "type": "js.card",
+      "props": {
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "eyebrow": "Equine",
+        "title": "Paddock",
+        "body": "<p>Feed and supplements for the performance market.</p>",
+        "url": "/brands/paddock",
+        "linkLabel": "Visit Paddock",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "10473649-9e71-59bf-b573-270794220ae5": {
+      "type": "js.feature-split",
+      "props": {
+        "eyebrow": "How the group works",
+        "title": "Centralised where it helps, independent everywhere else",
+        "body": "<p>Brands own their strategy, their marketing and their P&L. The group owns procurement, manufacturing, data and the standards every brand must meet.</p><ul><li>Shared manufacturing across 23 sites</li><li>One responsible-sourcing standard, audited group-wide</li><li>Brand teams that stay small and close to their category</li></ul>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_2.png.avif%3Fitok%3DZai0RdcE",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        },
+        "mediaPosition": "end",
+        "background": "light"
+      },
+      "slots": {
+        "actions": ["9a63f849-0ef9-5b26-acda-00f20263dd40"]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 101,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "9a63f849-0ef9-5b26-acda-00f20263dd40": {
+      "type": "js.button",
+      "props": {
+        "label": "Our operating model",
+        "url": "/about/operating-model",
+        "variant": "primary"
+      }
+    },
+    "6dfcaee8-4f43-550d-986c-2fbddf6f68b3": {
+      "type": "js.data-table",
+      "props": {
+        "title": "Performance by category",
+        "intro": "<p>FY2025, reported in USD.</p>",
+        "headers": "Category | Brands | Revenue | Organic growth | Operating margin",
+        "rows": "Household care | 12 | $6.9B | +2.8% | 18.1%\nPersonal care | 11 | $5.2B | +7.4% | 21.6%\nFood and drink | 5 | $4.4B | +3.1% | 14.2%\nPet care | 3 | $1.9B | +9.2% | 19.8%\nGroup | 31 | $18.4B | +4.1% | 18.4%",
+        "caption": "Organic growth excludes acquisitions, disposals and currency. Reviewed but not separately audited.",
+        "striped": true
+      }
+    },
+    "5feea4df-140c-5f8f-a358-4ba609e402d3": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Brand stories",
+        "title": "What good looks like across the portfolio",
+        "columnCount": 3,
+        "align": "center",
+        "background": "none"
+      },
+      "slots": {
+        "items": [
+          "75565f43-f01a-5bfe-bac0-a532cc173934",
+          "c7ef15bd-d188-5471-8384-b5b8020630aa",
+          "893387e6-ef75-5e62-872b-c82fe2df822d"
+        ]
+      }
+    },
+    "75565f43-f01a-5bfe-bac0-a532cc173934": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Brightwell",
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Reformulated to cold-wash without losing a point of share",
+        "summary": "<p>Two years of R&D, launched across eleven markets in one quarter.</p>",
+        "statValue": "31%",
+        "statLabel": "lower lifetime carbon per wash",
+        "url": "/brands/brightwell/cold-wash",
+        "linkLabel": "Read the story",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        },
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "c7ef15bd-d188-5471-8384-b5b8020630aa": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Lumen",
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "From acquisition to carbon neutral in three years",
+        "summary": "<p>Our template for what we do with the brands we buy.</p>",
+        "statValue": "3 yrs",
+        "statLabel": "to certified carbon neutral",
+        "url": "/brands/lumen/carbon",
+        "linkLabel": "Read the story",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        },
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "893387e6-ef75-5e62-872b-c82fe2df822d": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Rufus",
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_2.png.avif%3Fitok%3DYPwYwa9m",
+          "alt": "Brand 1",
+          "width": 480,
+          "height": 160
+        },
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_4.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_4.png.avif%3Fitok%3DGn4uOn1k",
+          "alt": "Brightwell products",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Doubled revenue without leaving its category",
+        "summary": "<p>Direct-to-consumer first, grocery second - the reverse of the usual playbook.</p>",
+        "statValue": "2.1x",
+        "statLabel": "revenue since acquisition",
+        "url": "/brands/rufus/growth",
+        "linkLabel": "Read the story",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 91,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        },
+        "image": {
+          "target_id": 86,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "460e54e4-a656-5404-a22c-39ba1c4abf35": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Responsibility",
+        "title": "The standards every brand meets",
+        "intro": "<p>Not aspirations. Conditions of being in the portfolio.</p>",
+        "columnCount": 4,
+        "align": "center",
+        "background": "dark"
+      },
+      "slots": {
+        "items": [
+          "41e1c5a3-b82d-58a7-970d-79dcf4290070",
+          "8b456d78-7293-57fb-8f37-60180260b24d",
+          "2d84729e-98d2-546b-b62f-861950b77047",
+          "da919ef4-94e7-5eee-81f2-8550a150f604"
+        ]
+      }
+    },
+    "41e1c5a3-b82d-58a7-970d-79dcf4290070": {
+      "type": "js.feature-card",
+      "props": {
+        "title": "Responsible sourcing",
+        "body": "<p>Every tier-one supplier audited annually against one group standard.</p>",
+        "align": "left"
+      }
+    },
+    "8b456d78-7293-57fb-8f37-60180260b24d": {
+      "type": "js.feature-card",
+      "props": {
+        "title": "Packaging",
+        "body": "<p>100% recyclable, reusable or compostable by 2028. Currently 81%.</p>",
+        "align": "left"
+      }
+    },
+    "2d84729e-98d2-546b-b62f-861950b77047": {
+      "type": "js.feature-card",
+      "props": {
+        "title": "Emissions",
+        "body": "<p>Scope 1 and 2 down 46% against a 2019 baseline. Scope 3 target validated by SBTi.</p>",
+        "align": "left"
+      }
+    },
+    "da919ef4-94e7-5eee-81f2-8550a150f604": {
+      "type": "js.feature-card",
+      "props": {
+        "title": "Living wage",
+        "body": "<p>Paid across all direct operations since 2023, extending to tier-one suppliers by 2027.</p>",
+        "align": "left"
+      }
+    },
+    "10256811-9901-514a-a623-1dc47761551e": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Group leadership",
+        "title": "Who runs Ridgeway",
+        "columnCount": 4,
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "items": [
+          "0a8894f8-d4c7-5ee9-8624-20a6de7c2ee1",
+          "d48a28df-02ae-56aa-a6ca-fe62b97eeda8",
+          "436eafa8-3560-509e-9daa-269cbd87ad93",
+          "f5885080-c99a-5d14-8310-1b538219a410"
+        ]
+      }
+    },
+    "0a8894f8-d4c7-5ee9-8624-20a6de7c2ee1": {
+      "type": "js.person-card",
+      "props": {
+        "name": "Elena Marchetti",
+        "role": "Group Chief Executive",
+        "photo": {
+          "src": "/sites/default/files/2026-09/600x750-2x-628d8384_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/600x750-2x-628d8384_0.png.avif%3Fitok%3DW9UcRVeF",
+          "alt": "",
+          "width": 1200,
+          "height": 1500
+        },
+        "bio": "<p>Joined from the personal care division; CEO since 2022.</p>",
+        "linkedinUrl": "https://linkedin.com/in/example",
+        "align": "left"
+      },
+      "_provenance": {
+        "photo": {
+          "target_id": 96,
+          "source_url": "https://placehold.co/600x750@2x.png"
+        }
+      }
+    },
+    "d48a28df-02ae-56aa-a6ca-fe62b97eeda8": {
+      "type": "js.person-card",
+      "props": {
+        "name": "Tomás Ferreira",
+        "role": "Group Chief Financial Officer",
+        "photo": {
+          "src": "/sites/default/files/2026-09/600x750-2x-628d8384_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/600x750-2x-628d8384_0.png.avif%3Fitok%3DW9UcRVeF",
+          "alt": "",
+          "width": 1200,
+          "height": 1500
+        },
+        "bio": "<p>Twenty years in consumer goods finance across three continents.</p>",
+        "linkedinUrl": "https://linkedin.com/in/example",
+        "align": "left"
+      },
+      "_provenance": {
+        "photo": {
+          "target_id": 96,
+          "source_url": "https://placehold.co/600x750@2x.png"
+        }
+      }
+    },
+    "436eafa8-3560-509e-9daa-269cbd87ad93": {
+      "type": "js.person-card",
+      "props": {
+        "name": "Ada Nwosu",
+        "role": "Chief Supply Chain Officer",
+        "photo": {
+          "src": "/sites/default/files/2026-09/600x750-2x-628d8384_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/600x750-2x-628d8384_0.png.avif%3Fitok%3DW9UcRVeF",
+          "alt": "",
+          "width": 1200,
+          "height": 1500
+        },
+        "bio": "<p>Runs the 23-site manufacturing network and group procurement.</p>",
+        "linkedinUrl": "https://linkedin.com/in/example",
+        "align": "left"
+      },
+      "_provenance": {
+        "photo": {
+          "target_id": 96,
+          "source_url": "https://placehold.co/600x750@2x.png"
+        }
+      }
+    },
+    "f5885080-c99a-5d14-8310-1b538219a410": {
+      "type": "js.person-card",
+      "props": {
+        "name": "Henrik Dahl",
+        "role": "Chief Brands Officer",
+        "photo": {
+          "src": "/sites/default/files/2026-09/600x750-2x-628d8384_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/600x750-2x-628d8384_0.png.avif%3Fitok%3DW9UcRVeF",
+          "alt": "",
+          "width": 1200,
+          "height": 1500
+        },
+        "bio": "<p>Accountable for portfolio strategy and brand acquisition.</p>",
+        "linkedinUrl": "https://linkedin.com/in/example",
+        "align": "left"
+      },
+      "_provenance": {
+        "photo": {
+          "target_id": 96,
+          "source_url": "https://placehold.co/600x750@2x.png"
+        }
+      }
+    },
+    "440cadb0-2f94-58aa-9605-71ffebf6caec": {
+      "type": "js.card-grid",
+      "props": {
+        "title": "Where to next",
+        "columnCount": 4,
+        "align": "center",
+        "background": "white"
+      },
+      "slots": {
+        "items": [
+          "78abc98e-81c3-552c-8868-013cbae77ed8",
+          "433aeb6f-8680-5777-8454-545d7ebc0f83",
+          "d24aa379-ce93-5d9a-a03a-68dfe934c1d3",
+          "25c0e435-0fcb-5081-a110-a93796ec538e"
+        ]
+      }
+    },
+    "78abc98e-81c3-552c-8868-013cbae77ed8": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Investors",
+        "body": "<p>Results, reports and the AGM.</p>",
+        "url": "/investors",
+        "linkLabel": "Investor centre",
+        "tone": "primary"
+      }
+    },
+    "433aeb6f-8680-5777-8454-545d7ebc0f83": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Careers",
+        "body": "<p>Roles across 31 brands and 94 markets.</p>",
+        "url": "/careers",
+        "linkLabel": "Search roles",
+        "tone": "light"
+      }
+    },
+    "d24aa379-ce93-5d9a-a03a-68dfe934c1d3": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Newsroom",
+        "body": "<p>Announcements, media contacts and brand assets.</p>",
+        "url": "/newsroom",
+        "linkLabel": "Latest news",
+        "tone": "light"
+      }
+    },
+    "25c0e435-0fcb-5081-a110-a93796ec538e": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Suppliers",
+        "body": "<p>Our standards and how to work with us.</p>",
+        "url": "/suppliers",
+        "linkLabel": "Supplier hub",
+        "tone": "outline"
+      }
+    },
+    "82db420f-dc61-500b-9651-d8e328fd83ea": {
+      "type": "js.news-feed",
+      "props": {
+        "title": "Latest from the group",
+        "entityType": "node--article",
+        "itemCount": 3,
+        "columnCount": 3,
+        "cardVariant": "plain",
+        "background": "light",
+        "viewAllLabel": "Visit the newsroom",
+        "viewAllUrl": "/newsroom"
+      }
+    },
+    "a633e4eb-2286-5554-b92e-a83a48e0a49c": {
+      "type": "js.section",
+      "props": {
+        "background": "muted",
+        "padding": "small",
+        "width": "content"
+      },
+      "slots": {
+        "content": ["e62897e6-3b3b-5980-a12e-2847f14a5313"]
+      }
+    },
+    "e62897e6-3b3b-5980-a12e-2847f14a5313": {
+      "type": "js.text",
+      "props": {
+        "content": "<p><strong>Forward-looking statements.</strong> This page contains statements about Ridgeway Group's financial condition, results of operations and business that are forward-looking in nature. These are based on current expectations and are subject to risks and uncertainties that could cause actual results to differ materially. Ridgeway Group undertakes no obligation to update them. Brand names shown are trade marks of Ridgeway Group or its subsidiaries.</p>",
+        "size": "small",
+        "align": "left"
+      }
+    }
+  },
+  "uuid": "0f0ec7a1-a45b-42e4-b4c1-310929d7e853"
+}

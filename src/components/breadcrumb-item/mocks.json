@@ -1,0 +1,13 @@
+{
+  "mocks": [
+    { "name": "Link", "props": { "label": "Resources", "url": "/resources" } },
+    {
+      "name": "Current page",
+      "props": {
+        "label": "Guides",
+        "url": "/resources/guides",
+        "current": true
+      }
+    }
+  ]
+}

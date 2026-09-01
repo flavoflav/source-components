@@ -1,0 +1,44 @@
+name: Pagination
+machineName: pagination
+description: >-
+  Page links for a long listing, with first/last always visible and an ellipsis
+  in between. Links are plain URLs with a query parameter, so it works with
+  server-rendered listings and with News Feed.
+status: true
+required:
+  - currentPage
+  - totalPages
+props:
+  properties:
+    currentPage:
+      title: Current Page
+      type: integer
+      examples:
+        - 3
+    totalPages:
+      title: Total Pages
+      type: integer
+      examples:
+        - 12
+    baseUrl:
+      title: Base Url
+      type: string
+      format: uri-reference
+      examples:
+        - /blog
+    pageParam:
+      title: Page Param
+      type: string
+      examples:
+        - page
+    previousLabel:
+      title: Previous Label
+      type: string
+      examples:
+        - Previous
+    nextLabel:
+      title: Next Label
+      type: string
+      examples:
+        - Next
+slots: []

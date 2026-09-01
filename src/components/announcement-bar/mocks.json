@@ -1,0 +1,22 @@
+{
+  "mocks": [
+    {
+      "name": "Event promo",
+      "props": {
+        "message": "Join us at the annual summit, 12-14 May.",
+        "linkLabel": "Register now",
+        "linkUrl": "/events/summit",
+        "tone": "primary",
+        "dismissible": true
+      }
+    },
+    {
+      "name": "Dark, no dismiss",
+      "props": {
+        "message": "Scheduled maintenance this Sunday from 02:00 UTC.",
+        "tone": "dark",
+        "dismissible": false
+      }
+    }
+  ]
+}

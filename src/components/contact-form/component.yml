@@ -1,0 +1,74 @@
+name: Contact Form
+machineName: contact-form
+description: >-
+  Standard enquiry form - name, work email, optional company and phone, plus a
+  message box - with an aside slot for office details, a map or trust logos.
+  Wire the Action prop to a Canvas form endpoint or your marketing automation
+  handler. For email-only capture use Newsletter Signup.
+status: true
+required:
+  - title
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Talk to our team
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Tell us what you are working on and we will get back within one
+          business day.</p>
+    action:
+      title: Action
+      type: string
+      format: uri-reference
+      examples:
+        - /contact/submit
+    submitLabel:
+      title: Submit Label
+      type: string
+      examples:
+        - Send message
+    messageLabel:
+      title: Message Label
+      type: string
+      examples:
+        - How can we help?
+    showCompany:
+      title: Show Company
+      type: boolean
+      examples:
+        - true
+    showPhone:
+      title: Show Phone
+      type: boolean
+      examples:
+        - false
+    consentText:
+      title: Consent Text
+      type: string
+      examples:
+        - We use your details only to respond to this enquiry.
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - dark
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        dark: Dark
+      examples:
+        - none
+slots:
+  aside:
+    title: Aside

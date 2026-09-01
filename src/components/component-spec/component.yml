@@ -1,0 +1,71 @@
+name: Component Spec
+machineName: component-spec
+description: >-
+  One entry in a Component Explorer - a collapsible card documenting a single
+  component's name, machine name, description, props, slots, mocks and source.
+  Props are entered as pipe-separated rows exactly like Data Table, and Code
+  Block children in the sources slot become the source tabs. The explorer reads
+  this component's props to filter and search, so keep Family and Capabilities
+  filled in.
+status: true
+required:
+  - componentName
+  - componentId
+props:
+  properties:
+    componentName:
+      title: Component Name
+      type: string
+      examples:
+        - Card Grid
+    componentId:
+      title: Component Id
+      type: string
+      examples:
+        - card-grid
+    family:
+      title: Family
+      type: string
+      examples:
+        - Sections
+    description:
+      title: Description
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>What the component is for and when to reach for it.</p>
+    propsTable:
+      title: Props Table
+      type: string
+      examples:
+        - "Name | Type | Required | Example\ntitle | string | yes | Built for
+          the way your team works\ncolumnCount | enum | | 3"
+    slotNames:
+      title: Slot Names
+      type: string
+      examples:
+        - "items\nactions"
+    mockNames:
+      title: Mock Names
+      type: string
+      examples:
+        - 'Three feature cards'
+    usedOn:
+      title: Used On
+      type: string
+      examples:
+        - "Home\nHealthcare"
+    capabilities:
+      title: Capabilities
+      type: string
+      examples:
+        - "slots\nrich text"
+    defaultOpen:
+      title: Default Open
+      type: boolean
+      examples:
+        - false
+slots:
+  sources:
+    title: Sources

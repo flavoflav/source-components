@@ -1,0 +1,42 @@
+name: Sub Nav
+machineName: sub-nav
+description: >-
+  Sticky secondary navigation bar for a product or section of the site - product
+  name on the left, in-section links in the middle, a CTA on the right. Sits
+  directly under Site Header on product and solution pages.
+status: true
+required: []
+props:
+  properties:
+    productLabel:
+      title: Product Label
+      type: string
+      examples:
+        - Platform
+    productUrl:
+      title: Product Url
+      type: string
+      format: uri-reference
+      examples:
+        - /platform
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - light
+        - dark
+      meta:enum:
+        light: Light
+        dark: Dark
+      examples:
+        - light
+    sticky:
+      title: Sticky
+      type: boolean
+      examples:
+        - true
+slots:
+  items:
+    title: Items
+  actions:
+    title: Actions

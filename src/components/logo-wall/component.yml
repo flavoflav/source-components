@@ -1,0 +1,53 @@
+name: Logo Wall
+machineName: logo-wall
+description: >-
+  Social-proof band of customer or partner logos, optionally desaturated so they
+  read as one set. Fill the logos slot with Logo Tile components. Covers the
+  customer-logos, trust-logos and partner-strip patterns.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Trusted by teams at
+    columnCount:
+      title: Column Count
+      type: integer
+      enum:
+        - 3
+        - 4
+        - 5
+        - 6
+      meta:enum:
+        3: Three
+        4: Four
+        5: Five
+        6: Six
+      examples:
+        - 5
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - dark
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        dark: Dark
+      examples:
+        - light
+    grayscale:
+      title: Grayscale
+      type: boolean
+      examples:
+        - true
+slots:
+  logos:
+    title: Logos

@@ -1,0 +1,40 @@
+{
+  "mocks": [
+    {
+      "name": "Vertical",
+      "props": {
+        "title": "What changed in the 2026 platform release",
+        "url": "/blog/2026-platform-release",
+        "summary": "A short teaser of two or three lines that makes the reader want to open it.",
+        "image": {
+          "src": "https://placehold.co/900x600@2x.png",
+          "alt": "",
+          "width": 900,
+          "height": 600
+        },
+        "category": "Product",
+        "date": "12 March 2026",
+        "author": "Jamie Lee",
+        "readingTime": "5 min read"
+      }
+    },
+    {
+      "name": "Horizontal bordered",
+      "props": {
+        "title": "How Northwind cut publishing time in half",
+        "url": "/customers/northwind",
+        "summary": "A short teaser of two or three lines.",
+        "image": {
+          "src": "https://placehold.co/900x600@2x.png",
+          "alt": "",
+          "width": 900,
+          "height": 600
+        },
+        "category": "Case study",
+        "date": "4 February 2026",
+        "variant": "bordered",
+        "layout": "horizontal"
+      }
+    }
+  ]
+}

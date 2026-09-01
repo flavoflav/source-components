@@ -1,0 +1,30 @@
+name: Main Navigation
+machineName: main-navigation
+description: >-
+  Navigation list that holds Nav Item components. Sits inside Site Header for
+  the primary menu, or stands alone for a sidebar or in-page menu. Nav Items
+  carry their own dropdown children, so this component only owns direction and
+  the accessible label.
+status: true
+required: []
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Main
+    layout:
+      title: Layout
+      type: string
+      enum:
+        - horizontal
+        - vertical
+      meta:enum:
+        horizontal: Horizontal
+        vertical: Vertical
+      examples:
+        - horizontal
+slots:
+  items:
+    title: Items

@@ -1,0 +1,52 @@
+name: Data Table
+machineName: data-table
+description: >-
+  Scrollable comparison or reference table. Authors type headers separated by
+  pipes and one row per line, also pipe separated - no HTML table markup and no
+  array-of-object props. Use for pricing comparisons, feature matrices,
+  conformance tables, directories and specification listings.
+status: true
+required:
+  - headers
+  - rows
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Compare plans
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>What is included at each tier.</p>
+    headers:
+      title: Headers
+      type: string
+      examples:
+        - Feature | Starter | Growth | Enterprise
+    rows:
+      title: Rows
+      type: string
+      examples:
+        - "Users | 5 | 50 | Unlimited\nSSO | No | Yes | Yes\nSupport | Email |
+          Business hours | 24/7"
+    caption:
+      title: Caption
+      type: string
+      examples:
+        - Pricing correct as of March 2026.
+    striped:
+      title: Striped
+      type: boolean
+      examples:
+        - true
+    compact:
+      title: Compact
+      type: boolean
+      examples:
+        - false
+slots: []

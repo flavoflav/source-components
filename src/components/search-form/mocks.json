@@ -1,0 +1,17 @@
+{
+  "mocks": [
+    {
+      "name": "With button",
+      "props": {
+        "action": "/search",
+        "placeholder": "Search the site",
+        "buttonLabel": "Search",
+        "size": "medium"
+      }
+    },
+    {
+      "name": "Compact",
+      "props": { "action": "/search", "placeholder": "Search", "size": "small" }
+    }
+  ]
+}

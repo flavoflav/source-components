@@ -1,0 +1,28 @@
+name: Mega Menu
+machineName: mega-menu
+description: >-
+  Wide multi-column dropdown panel for large navigation. Drop it into the panel
+  slot of a Nav Item, fill sections with Link List components and optionally use
+  the feature slot for a promoted card or CTA.
+status: true
+required: []
+props:
+  properties:
+    columnCount:
+      title: Column Count
+      type: integer
+      enum:
+        - 2
+        - 3
+        - 4
+      meta:enum:
+        2: Two
+        3: Three
+        4: Four
+      examples:
+        - 3
+slots:
+  sections:
+    title: Sections
+  feature:
+    title: Featured

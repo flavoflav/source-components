@@ -1,0 +1,74 @@
+name: Card
+machineName: card
+description: >-
+  General purpose content card - optional image, eyebrow, title, body and either
+  a link label or composed action buttons. This is the default card for grids;
+  use Article Card, Story Card, Resource Card, Person Card or Stat Card only
+  when their extra metadata is genuinely needed.
+status: true
+required:
+  - title
+props:
+  properties:
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/900x600@2x.png
+          alt: ''
+          width: 900
+          height: 600
+      $ref: json-schema-definitions://canvas.module/image
+    eyebrow:
+      title: Eyebrow
+      type: string
+      examples:
+        - Capability
+    title:
+      title: Title
+      type: string
+      examples:
+        - A clear card title
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Two lines of supporting copy that explain the card.</p>
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /learn-more
+    linkLabel:
+      title: Link Label
+      type: string
+      examples:
+        - Learn more
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - elevated
+        - filled
+        - dark
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        elevated: Elevated
+        filled: Filled
+        dark: Dark
+      examples:
+        - bordered
+    horizontal:
+      title: Horizontal
+      type: boolean
+      examples:
+        - false
+slots:
+  actions:
+    title: Actions

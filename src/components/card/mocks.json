@@ -1,0 +1,44 @@
+{
+  "mocks": [
+    {
+      "name": "With image",
+      "props": {
+        "image": {
+          "src": "https://placehold.co/900x600@2x.png",
+          "alt": "",
+          "width": 900,
+          "height": 600
+        },
+        "eyebrow": "Capability",
+        "title": "A clear card title",
+        "body": "<p>Two lines of supporting copy that explain the card.</p>",
+        "url": "/learn-more",
+        "linkLabel": "Learn more",
+        "variant": "bordered"
+      }
+    },
+    {
+      "name": "Horizontal elevated",
+      "props": {
+        "image": {
+          "src": "https://placehold.co/900x600@2x.png",
+          "alt": "",
+          "width": 900,
+          "height": 600
+        },
+        "title": "Horizontal card",
+        "body": "<p>Media on the left, copy on the right.</p>",
+        "variant": "elevated",
+        "horizontal": true
+      }
+    },
+    {
+      "name": "Dark, no image",
+      "props": {
+        "title": "Dark card",
+        "body": "<p>Useful on dark section bands.</p>",
+        "variant": "dark"
+      }
+    }
+  ]
+}

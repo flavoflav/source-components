@@ -1,0 +1,83 @@
+name: Article Card
+machineName: article-card
+description: >-
+  Teaser for one article, blog post or news item - image, category, title,
+  summary and byline metadata. Put several in a Card Grid for a manually curated
+  list, or use News Feed when the list should come from Drupal automatically.
+status: true
+required:
+  - title
+  - url
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - What changed in the 2026 platform release
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /blog/2026-platform-release
+    summary:
+      title: Summary
+      type: string
+      examples:
+        - A short teaser of two or three lines that makes the reader want to
+          open it.
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/900x600@2x.png
+          alt: ''
+          width: 900
+          height: 600
+      $ref: json-schema-definitions://canvas.module/image
+    category:
+      title: Category
+      type: string
+      examples:
+        - Product
+    date:
+      title: Date
+      type: string
+      examples:
+        - 12 March 2026
+    author:
+      title: Author
+      type: string
+      examples:
+        - Jamie Lee
+    readingTime:
+      title: Reading Time
+      type: string
+      examples:
+        - 5 min read
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - elevated
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        elevated: Elevated
+      examples:
+        - plain
+    layout:
+      title: Layout
+      type: string
+      enum:
+        - vertical
+        - horizontal
+      meta:enum:
+        vertical: Vertical
+        horizontal: Horizontal
+      examples:
+        - vertical
+slots: []

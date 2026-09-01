@@ -1,0 +1,934 @@
+{
+  "title": "Northwind Pay",
+  "path": "/pay",
+  "description": "Fintech product page - regulatory notice bar, dark sub-nav and hero, volume stats, rails and compliance features, pricing and licence tables, security specs, regulatory FAQ and a legal disclosure footer.",
+  "elements": {
+    "e0f29992-be31-5356-8804-490992663ccf": {
+      "type": "js.announcement-bar",
+      "props": {
+        "message": "Northwind Pay is authorised as an Electronic Money Institution by the FCA (FRN 900123).",
+        "linkLabel": "Regulatory information",
+        "linkUrl": "/legal/regulatory",
+        "tone": "dark",
+        "dismissible": false
+      }
+    },
+    "12aa1fa6-7036-58d5-966d-5d8d37469ccf": {
+      "type": "js.sub-nav",
+      "props": {
+        "productLabel": "Northwind Pay",
+        "productUrl": "/pay",
+        "variant": "dark",
+        "sticky": true
+      },
+      "slots": {
+        "items": [
+          "0b3dd963-5447-579e-bc4d-3cb3ca8f7d53",
+          "505066df-ed47-5971-aaea-7264b360aaa4",
+          "0016c188-45d5-53c8-9930-60f28dcc781c",
+          "b3cf9dbd-0276-5c8f-bb81-5b0ce5ff78c7",
+          "287189e6-bf45-5a60-8a2c-16583639ae34",
+          "3a54b9f4-6e87-57b2-9e6d-d71eea2b541d"
+        ],
+        "actions": [
+          "ca286d39-49ba-58c6-bfa4-97672392d1ec",
+          "fdbc25e1-3cde-54fb-b51d-435f34e41f4c"
+        ]
+      }
+    },
+    "0b3dd963-5447-579e-bc4d-3cb3ca8f7d53": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Overview",
+        "url": "/pay",
+        "active": true
+      }
+    },
+    "505066df-ed47-5971-aaea-7264b360aaa4": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Payments",
+        "url": "/pay/payments"
+      }
+    },
+    "0016c188-45d5-53c8-9930-60f28dcc781c": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Treasury",
+        "url": "/pay/treasury"
+      }
+    },
+    "b3cf9dbd-0276-5c8f-bb81-5b0ce5ff78c7": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Compliance",
+        "url": "/pay/compliance"
+      }
+    },
+    "287189e6-bf45-5a60-8a2c-16583639ae34": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Pricing",
+        "url": "/pay/pricing"
+      }
+    },
+    "3a54b9f4-6e87-57b2-9e6d-d71eea2b541d": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Docs",
+        "url": "/docs/pay"
+      }
+    },
+    "ca286d39-49ba-58c6-bfa4-97672392d1ec": {
+      "type": "js.button",
+      "props": {
+        "label": "Sign in",
+        "url": "/signin",
+        "variant": "ghost",
+        "size": "small"
+      }
+    },
+    "fdbc25e1-3cde-54fb-b51d-435f34e41f4c": {
+      "type": "js.button",
+      "props": {
+        "label": "Start integrating",
+        "url": "/signup",
+        "variant": "primary",
+        "size": "small"
+      }
+    },
+    "9d4e2682-20d4-5aec-913a-eaa1de897879": {
+      "type": "js.hero",
+      "props": {
+        "layout": "split",
+        "eyebrow": "Payments infrastructure",
+        "title": "Move money in 40 currencies with one API",
+        "body": "<p>Accounts, payouts, FX and reconciliation on regulated rails. Ninety-nine percent of transfers settle in under sixty seconds.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_0.png.avif%3Fitok%3DnwJR93N0",
+          "alt": "The Northwind Pay dashboard",
+          "width": 2400,
+          "height": 1800
+        },
+        "background": "dark",
+        "height": "medium"
+      },
+      "slots": {
+        "actions": [
+          "e1c99043-8c7b-5996-81ca-5adc8ca191d9",
+          "4b098061-8645-50bb-8df8-ccdefe410113"
+        ]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 51,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "e1c99043-8c7b-5996-81ca-5adc8ca191d9": {
+      "type": "js.button",
+      "props": {
+        "label": "Read the API docs",
+        "url": "/docs/pay",
+        "variant": "primary",
+        "size": "large"
+      }
+    },
+    "4b098061-8645-50bb-8df8-ccdefe410113": {
+      "type": "js.button",
+      "props": {
+        "label": "Talk to an engineer",
+        "url": "/contact/sales",
+        "variant": "outline",
+        "size": "large"
+      }
+    },
+    "bc372a29-18bd-51d9-ab3b-d2de5285f6ca": {
+      "type": "js.logo-wall",
+      "props": {
+        "title": "Banking and infrastructure partners",
+        "columnCount": 6,
+        "background": "dark",
+        "grayscale": true
+      },
+      "slots": {
+        "logos": [
+          "c2f9a653-6a6f-52b8-b181-ff7db7bda9da",
+          "b8ea33e8-a151-5ec7-8d6c-aee6c67d7b7b",
+          "11a9d344-860c-59c2-a776-5a9dafdd6b17",
+          "eb52210e-50bd-541a-9055-216fee0c6f22",
+          "7b841f5f-841a-590f-8b56-3dfcbed56f9c",
+          "25b8b73b-8c38-511c-a735-b6827e0e6e13"
+        ]
+      }
+    },
+    "c2f9a653-6a6f-52b8-b181-ff7db7bda9da": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "b8ea33e8-a151-5ec7-8d6c-aee6c67d7b7b": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "11a9d344-860c-59c2-a776-5a9dafdd6b17": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "eb52210e-50bd-541a-9055-216fee0c6f22": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "7b841f5f-841a-590f-8b56-3dfcbed56f9c": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "25b8b73b-8c38-511c-a735-b6827e0e6e13": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "small"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "842530d1-f02f-5e7b-b745-46978d00281d": {
+      "type": "js.card-grid",
+      "props": {
+        "title": "Trailing twelve months",
+        "columnCount": 4,
+        "align": "center",
+        "background": "none"
+      },
+      "slots": {
+        "items": [
+          "5058c17b-1132-5895-88df-2911da5be513",
+          "b34939e2-ce98-5fda-a061-d111f1ef8e4b",
+          "31629c98-34f8-5b39-96e1-c292306108ca",
+          "b0056de1-d293-5352-bcd7-9750ade50a57"
+        ]
+      }
+    },
+    "5058c17b-1132-5895-88df-2911da5be513": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "48",
+        "prefix": "$",
+        "suffix": "B",
+        "label": "Processed",
+        "description": "Across 190 countries.",
+        "align": "center"
+      }
+    },
+    "b34939e2-ce98-5fda-a061-d111f1ef8e4b": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "99.995",
+        "suffix": "%",
+        "label": "API uptime",
+        "description": "Rolling 12 month average.",
+        "align": "center"
+      }
+    },
+    "31629c98-34f8-5b39-96e1-c292306108ca": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "58",
+        "suffix": "ms",
+        "label": "Median API latency",
+        "description": "p50, EU region.",
+        "align": "center"
+      }
+    },
+    "b0056de1-d293-5352-bcd7-9750ade50a57": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "40",
+        "label": "Settlement currencies",
+        "description": "23 with local rails.",
+        "align": "center"
+      }
+    },
+    "221c1968-9aca-5f64-b481-7828341a9f80": {
+      "type": "js.feature-split",
+      "props": {
+        "eyebrow": "Accounts and payouts",
+        "title": "Local rails, not correspondent banking",
+        "body": "<p>Issue named accounts in your customer's own currency and settle over domestic schemes rather than SWIFT.</p><ul><li>SEPA Instant, Faster Payments, ACH and FedNow</li><li>Named virtual IBANs for reconciliation</li><li>Webhooks on every state transition</li></ul>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_0.png.avif%3Fitok%3DnwJR93N0",
+          "alt": "The Northwind Pay dashboard",
+          "width": 2400,
+          "height": 1800
+        },
+        "mediaPosition": "end",
+        "background": "white"
+      },
+      "slots": {
+        "actions": ["042d971b-e614-5f2a-b337-509c10460bcb"]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 51,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "042d971b-e614-5f2a-b337-509c10460bcb": {
+      "type": "js.button",
+      "props": {
+        "label": "Payments reference",
+        "url": "/docs/pay/payments",
+        "variant": "primary"
+      }
+    },
+    "37438c82-a643-5c31-b5c8-032882171366": {
+      "type": "js.feature-split",
+      "props": {
+        "eyebrow": "Treasury",
+        "title": "Hold, convert and sweep without a treasury team",
+        "body": "<p>Multi-currency balances with mid-market FX and programmable sweeps into your operating accounts.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_0.png.avif%3Fitok%3DnwJR93N0",
+          "alt": "The Northwind Pay dashboard",
+          "width": 2400,
+          "height": 1800
+        },
+        "mediaPosition": "start",
+        "background": "light"
+      },
+      "slots": {
+        "actions": ["79903ab3-044c-5680-976b-3227f2ffaeb9"]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 51,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "79903ab3-044c-5680-976b-3227f2ffaeb9": {
+      "type": "js.button",
+      "props": {
+        "label": "Treasury reference",
+        "url": "/docs/pay/treasury",
+        "variant": "outline"
+      }
+    },
+    "1b4aad8d-bf15-523d-804e-45a85ac2df75": {
+      "type": "js.feature-split",
+      "props": {
+        "eyebrow": "Risk and compliance",
+        "title": "KYC, sanctions and monitoring built in",
+        "body": "<p>Onboarding checks, ongoing screening and transaction monitoring run on our licence, with the case management your MLRO needs.</p><ul><li>Perpetual KYB and UBO resolution</li><li>Real-time sanctions and PEP screening</li><li>Exportable audit trail per decision</li></ul>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_0.png.avif%3Fitok%3DnwJR93N0",
+          "alt": "The Northwind Pay dashboard",
+          "width": 2400,
+          "height": 1800
+        },
+        "mediaPosition": "end",
+        "background": "white"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 51,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "2f895f33-1c8a-56c0-a2c4-2e568a10ccdb": {
+      "type": "js.tabs",
+      "props": {
+        "title": "Built for four shapes of business",
+        "intro": "<p>The same primitives, wired differently.</p>",
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "panels": [
+          "a07c77a5-15fe-5281-b3ca-6722d16376d4",
+          "6a5cf346-8127-51ee-89c5-fc81416fd29b",
+          "1a435d02-96cb-5f8e-be7a-8374b87d96a4",
+          "1de3c1f9-5763-5ee2-b42e-aa5081e9a31d"
+        ]
+      }
+    },
+    "a07c77a5-15fe-5281-b3ca-6722d16376d4": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Marketplaces",
+        "title": "Split payments and delayed settlement",
+        "body": "<p>Collect once, hold in escrow and pay out to hundreds of sellers on your own schedule.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_0.png.avif%3Fitok%3DnwJR93N0",
+          "alt": "The Northwind Pay dashboard",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "slots": {
+        "actions": ["c7ea2438-c1c4-5a2d-a71f-acbc1d582499"]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 51,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "c7ea2438-c1c4-5a2d-a71f-acbc1d582499": {
+      "type": "js.button",
+      "props": {
+        "label": "Marketplace guide",
+        "url": "/docs/pay/marketplaces",
+        "variant": "primary"
+      }
+    },
+    "6a5cf346-8127-51ee-89c5-fc81416fd29b": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Payroll",
+        "title": "Pay contractors in their own currency",
+        "body": "<p>Bulk payouts with per-recipient FX locked at instruction time.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_0.png.avif%3Fitok%3DnwJR93N0",
+          "alt": "The Northwind Pay dashboard",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 51,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "1a435d02-96cb-5f8e-be7a-8374b87d96a4": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Lending",
+        "title": "Disburse and collect on the same rails",
+        "body": "<p>Direct debit mandates, retry logic and arrears handling out of the box.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_0.png.avif%3Fitok%3DnwJR93N0",
+          "alt": "The Northwind Pay dashboard",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 51,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "1de3c1f9-5763-5ee2-b42e-aa5081e9a31d": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Embedded finance",
+        "title": "Offer accounts under your own brand",
+        "body": "<p>White-labelled accounts and cards issued on our licence, with the compliance obligations staying with us.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0_0.png.avif%3Fitok%3DnwJR93N0",
+          "alt": "The Northwind Pay dashboard",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 51,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "610c337f-57c8-568c-8330-5619a1bf3f7e": {
+      "type": "js.data-table",
+      "props": {
+        "title": "Pricing",
+        "intro": "<p>No monthly minimum below Enterprise. Volume tiers apply automatically.</p>",
+        "headers": "Service | Starter | Scale | Enterprise",
+        "rows": "Domestic transfer | $0.20 | $0.12 | Custom\nCross-border transfer | 0.55% | 0.35% | Custom\nFX margin | 0.50% | 0.28% | From 0.10%\nVirtual IBAN | $2.00 / month | $0.80 / month | Included\nKYC check | $1.40 | $0.95 | Included\nMonthly platform fee | None | $499 | Custom",
+        "caption": "Indicative pricing in USD, effective 1 April 2026. FX margin quoted against the interbank mid-rate.",
+        "striped": true
+      }
+    },
+    "fa1f0ad0-53f4-551b-bfc7-0a5862785059": {
+      "type": "js.data-table",
+      "props": {
+        "title": "Licences and registrations",
+        "intro": "<p>Where we are authorised to operate directly.</p>",
+        "headers": "Jurisdiction | Regulator | Permission | Reference",
+        "rows": "United Kingdom | FCA | Electronic Money Institution | FRN 900123\nIreland | Central Bank of Ireland | Payment Institution | C123456\nUnited States | FinCEN | Money Services Business | 31000012345678\nSingapore | MAS | Major Payment Institution | PS20240012\nAustralia | AUSTRAC | Remittance Provider | IND1234567",
+        "striped": true,
+        "compact": true
+      }
+    },
+    "dfd23ea3-81f3-5ca1-9c8f-9b2f0c236cc9": {
+      "type": "js.spec-list",
+      "props": {
+        "title": "Security and resilience",
+        "columnCount": 2,
+        "variant": "bordered"
+      },
+      "slots": {
+        "items": [
+          "493e0e79-89d2-5d5c-9e76-1120460ca301",
+          "5b43d53a-e151-5ee0-a8cb-c9dcf51d80b0",
+          "6bac549a-9314-5935-a7fa-2576ffaeaea8",
+          "7a371065-34b2-5e8e-a8d9-66e6d2be16cf",
+          "40262403-6d41-5d4b-b3d0-ac5e58d56f28",
+          "69693317-9dca-5adb-bb42-0428177e2202"
+        ]
+      }
+    },
+    "493e0e79-89d2-5d5c-9e76-1120460ca301": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Funds",
+        "value": "Safeguarded in segregated accounts at tier-1 banks"
+      }
+    },
+    "5b43d53a-e151-5ee0-a8cb-c9dcf51d80b0": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Certifications",
+        "value": "SOC 2 Type II, ISO 27001, PCI DSS Level 1"
+      }
+    },
+    "6bac549a-9314-5935-a7fa-2576ffaeaea8": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Encryption",
+        "value": "TLS 1.3 in transit, AES-256 at rest"
+      }
+    },
+    "7a371065-34b2-5e8e-a8d9-66e6d2be16cf": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Authentication",
+        "value": "mTLS, scoped API keys, SCA where required"
+      }
+    },
+    "40262403-6d41-5d4b-b3d0-ac5e58d56f28": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Recovery",
+        "value": "RPO 0, RTO 15 minutes, multi-region active-active"
+      }
+    },
+    "69693317-9dca-5adb-bb42-0428177e2202": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Penetration testing",
+        "value": "Twice yearly by an independent CREST-accredited firm"
+      }
+    },
+    "1340b1c0-3ff8-5521-8ad3-1672844b8272": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Customer stories",
+        "title": "Teams already live on Northwind Pay",
+        "columnCount": 3,
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "items": [
+          "4b79d94a-38aa-5dd2-9eac-c639457c1001",
+          "1de55355-ea9f-5c34-9963-c7bdea900aa2",
+          "685f30b9-0560-5704-8f9d-250f5b9b56a1"
+        ]
+      }
+    },
+    "4b79d94a-38aa-5dd2-9eac-c639457c1001": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Meridian Marketplace",
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_2.png.avif%3Fitok%3DRdXYgHo3",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Seller payouts from five days to same day",
+        "summary": "<p>Replaced three regional PSPs with one API.</p>",
+        "statValue": "94%",
+        "statLabel": "same-day payouts",
+        "url": "/customers/meridian-marketplace",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        },
+        "image": {
+          "target_id": 61,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "1de55355-ea9f-5c34-9963-c7bdea900aa2": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Halcyon Payroll",
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_2.png.avif%3Fitok%3DRdXYgHo3",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Contractor payments in 31 currencies",
+        "summary": "<p>FX margin down from 1.8% to 0.28%.</p>",
+        "statValue": "$2.1M",
+        "statLabel": "saved on FX annually",
+        "url": "/customers/halcyon-payroll",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        },
+        "image": {
+          "target_id": 61,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "685f30b9-0560-5704-8f9d-250f5b9b56a1": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Ridgeway Credit",
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_2.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_2.png.avif%3Fitok%3DRdXYgHo3",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Disbursement and collection on one ledger",
+        "summary": "<p>Reconciliation went from a team of four to a nightly job.</p>",
+        "statValue": "40 hrs",
+        "statLabel": "of manual recs removed weekly",
+        "url": "/customers/ridgeway-credit",
+        "variant": "elevated"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        },
+        "image": {
+          "target_id": 61,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "89149fec-b67b-58d7-84a9-2f6ba4b340d0": {
+      "type": "js.carousel",
+      "props": {
+        "title": "What engineering teams say",
+        "slidesPerView": 1,
+        "background": "none",
+        "showArrows": true
+      },
+      "slots": {
+        "slides": [
+          "f8f79bd8-c7e1-5e7c-9d56-d34ebafc0907",
+          "591c3589-807e-5ff3-980c-fbc4fc7ecf82"
+        ]
+      }
+    },
+    "f8f79bd8-c7e1-5e7c-9d56-d34ebafc0907": {
+      "type": "js.testimonial-card",
+      "props": {
+        "quote": "<p>The webhook contract has not broken once in two years. For payments infrastructure that is the whole review.</p>",
+        "authorName": "Dev Chaudhary",
+        "authorTitle": "Staff Engineer, Meridian Marketplace",
+        "companyLogo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "variant": "plain",
+        "size": "large"
+      },
+      "_provenance": {
+        "companyLogo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "591c3589-807e-5ff3-980c-fbc4fc7ecf82": {
+      "type": "js.testimonial-card",
+      "props": {
+        "quote": "<p>We passed our first FCA audit using their exported trail, unmodified.</p>",
+        "authorName": "Aoife Byrne",
+        "authorTitle": "MLRO, Halcyon Payroll",
+        "companyLogo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f_0.png.avif%3Fitok%3DiWYJgiXh",
+          "alt": "Partner 1",
+          "width": 480,
+          "height": 160
+        },
+        "variant": "plain",
+        "size": "large"
+      },
+      "_provenance": {
+        "companyLogo": {
+          "target_id": 56,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "250153ce-2f4f-5d49-9420-b56f87bed1b9": {
+      "type": "js.step-list",
+      "props": {
+        "title": "From API key to first payment",
+        "intro": "<p>Sandbox access is immediate. Production depends on onboarding checks.</p>",
+        "layout": "horizontal",
+        "numbered": true,
+        "background": "light"
+      },
+      "slots": {
+        "steps": [
+          "459ecbad-f9c5-5c79-bb82-71315a9cdc4c",
+          "df7e78ea-e7cd-5555-93e8-5715d5059b7f",
+          "eee88a46-ff3d-566b-a372-25d4b45af48c"
+        ]
+      }
+    },
+    "459ecbad-f9c5-5c79-bb82-71315a9cdc4c": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Get sandbox keys",
+        "body": "<p>Self-serve, no call required. Full API surface with simulated rails.</p>"
+      }
+    },
+    "df7e78ea-e7cd-5555-93e8-5715d5059b7f": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Complete onboarding",
+        "body": "<p>KYB, UBO and source-of-funds review. Median five business days.</p>"
+      }
+    },
+    "eee88a46-ff3d-566b-a372-25d4b45af48c": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Go live",
+        "body": "<p>Production keys, agreed limits and a named implementation engineer for 30 days.</p>"
+      }
+    },
+    "a81b1220-076a-5830-b4c4-42c73321a2df": {
+      "type": "js.accordion",
+      "props": {
+        "title": "Regulatory and operational questions",
+        "intro": "<p>The ones risk and legal teams ask first.</p>",
+        "background": "none",
+        "width": "narrow"
+      },
+      "slots": {
+        "items": [
+          "b9e24120-5046-5115-9363-9771f9a01f81",
+          "186068ec-ed17-5464-a994-137d04b858dd",
+          "41ce4394-f18c-5975-bf24-4603cb522e72",
+          "1ad75306-e469-5d48-9951-78985e02cda7",
+          "3002d95d-bb30-5db0-a80c-fb8de1a373dd"
+        ]
+      }
+    },
+    "b9e24120-5046-5115-9363-9771f9a01f81": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Is my money protected if Northwind fails?",
+        "answer": "<p>Customer funds are safeguarded in segregated accounts at tier-1 banks and are not part of our balance sheet. Safeguarded funds are not covered by FSCS deposit protection - safeguarding is a different, and in insolvency generally faster, mechanism.</p>",
+        "defaultOpen": true
+      }
+    },
+    "186068ec-ed17-5464-a994-137d04b858dd": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Who holds the regulatory obligation for KYC?",
+        "answer": "<p>On our licence, we do. Where you operate as an agent or distributor, obligations are set out in the schedule to your agreement.</p>"
+      }
+    },
+    "41ce4394-f18c-5975-bf24-4603cb522e72": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Can we operate in a jurisdiction where you are not licensed?",
+        "answer": "<p>Sometimes, through a partner institution. It changes settlement times and pricing, so raise it during onboarding rather than after.</p>"
+      }
+    },
+    "1ad75306-e469-5d48-9951-78985e02cda7": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "What are the transaction limits?",
+        "answer": "<p>Limits are set per account at onboarding based on expected volume and risk profile, and reviewed quarterly.</p>"
+      }
+    },
+    "3002d95d-bb30-5db0-a80c-fb8de1a373dd": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "How do you handle chargebacks and recalls?",
+        "answer": "<p>Recalls are surfaced as webhook events with a response window. Card chargebacks follow scheme timelines with evidence submitted through the API or dashboard.</p>"
+      }
+    },
+    "2af56a28-f138-54c2-bef1-bc6c43162a9b": {
+      "type": "js.cta-banner",
+      "props": {
+        "eyebrow": "Get started",
+        "title": "Sandbox keys in about two minutes",
+        "body": "<p>Build against the full API before you talk to anyone.</p>",
+        "background": "primary",
+        "layout": "inline"
+      },
+      "slots": {
+        "actions": [
+          "2c4d91b0-584e-5886-8bfd-e3f0617ea200",
+          "1a65fff2-8900-5113-9b45-7d5c911d38b9"
+        ]
+      }
+    },
+    "2c4d91b0-584e-5886-8bfd-e3f0617ea200": {
+      "type": "js.button",
+      "props": {
+        "label": "Create a sandbox account",
+        "url": "/signup",
+        "variant": "secondary",
+        "size": "large"
+      }
+    },
+    "1a65fff2-8900-5113-9b45-7d5c911d38b9": {
+      "type": "js.button",
+      "props": {
+        "label": "Book a technical call",
+        "url": "/contact/sales",
+        "variant": "outline",
+        "size": "large"
+      }
+    },
+    "4015faba-accd-5007-ba99-a1c1d6ffe578": {
+      "type": "js.section",
+      "props": {
+        "background": "muted",
+        "padding": "small",
+        "width": "content"
+      },
+      "slots": {
+        "content": ["7b7f1b43-dfdc-55de-aa97-1d75566b69a7"]
+      }
+    },
+    "7b7f1b43-dfdc-55de-aa97-1d75566b69a7": {
+      "type": "js.text",
+      "props": {
+        "content": "<p><strong>Important information.</strong> Northwind Pay Ltd is authorised by the Financial Conduct Authority as an Electronic Money Institution (FRN 900123) for the issuing of electronic money and provision of payment services. Northwind Pay is not a bank and your balance is not a deposit. Safeguarded funds are not protected by the Financial Services Compensation Scheme. Foreign exchange rates fluctuate and the value of a converted balance may fall as well as rise. Pricing shown is indicative and subject to your executed agreement. This page is provided for information only and does not constitute financial, legal or tax advice.</p>",
+        "size": "small",
+        "align": "left"
+      }
+    }
+  },
+  "uuid": "5b1dc449-f679-4b7b-a95a-3f586de70de0"
+}

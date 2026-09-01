@@ -1,0 +1,105 @@
+name: News Feed
+machineName: news-feed
+description: >-
+  Live listing of Drupal content pulled over JSON:API and rendered as Article
+  Cards - the automatic counterpart to hand-placing cards in a Card Grid. Point
+  Entity Type at any node bundle (node--article, node--news, node--case_study)
+  and adjust the image and summary field names to match that bundle. Requires
+  JSON:API to be enabled on the site; it shows a skeleton while loading and an
+  explicit empty state when nothing is returned.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Latest news
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Product updates, research and practical guides.</p>
+    entityType:
+      title: Entity Type
+      type: string
+      examples:
+        - node--article
+    imageField:
+      title: Image Field
+      type: string
+      examples:
+        - field_image
+    summaryField:
+      title: Summary Field
+      type: string
+      examples:
+        - field_summary
+    sortField:
+      title: Sort Field
+      type: string
+      examples:
+        - created
+    itemCount:
+      title: Item Count
+      type: integer
+      examples:
+        - 6
+    columnCount:
+      title: Column Count
+      type: integer
+      enum:
+        - 1
+        - 2
+        - 3
+        - 4
+      meta:enum:
+        1: One
+        2: Two
+        3: Three
+        4: Four
+      examples:
+        - 3
+    cardVariant:
+      title: Card Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - elevated
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        elevated: Elevated
+      examples:
+        - plain
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - dark
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        dark: Dark
+      examples:
+        - none
+    viewAllLabel:
+      title: View All Label
+      type: string
+      examples:
+        - See all news
+    viewAllUrl:
+      title: View All Url
+      type: string
+      format: uri-reference
+      examples:
+        - /news
+slots: []

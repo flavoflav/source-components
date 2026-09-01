@@ -1,0 +1,30 @@
+name: Accordion Item
+machineName: accordion-item
+description: >-
+  One question-and-answer row inside an Accordion. The answer is rich text, so
+  it can hold paragraphs, lists and links. Set Default Open on at most one item
+  per accordion.
+status: true
+required:
+  - question
+  - answer
+props:
+  properties:
+    question:
+      title: Question
+      type: string
+      examples:
+        - How long does onboarding take?
+    answer:
+      title: Answer
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Most teams are live within two weeks.</p>
+    defaultOpen:
+      title: Default Open
+      type: boolean
+      examples:
+        - false
+slots: []

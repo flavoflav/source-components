@@ -1,0 +1,78 @@
+{
+  "mocks": [
+    {
+      "name": "Centered",
+      "props": {
+        "layout": "centered",
+        "eyebrow": "Introducing",
+        "title": "A headline that says exactly what this is",
+        "body": "<p>One or two supporting sentences that explain the offer and who it is for.</p>",
+        "background": "light",
+        "height": "medium"
+      },
+      "slots": { "actions": ["primary", "secondary"] },
+      "elements": {
+        "primary": {
+          "type": "button",
+          "props": {
+            "label": "Get started",
+            "url": "/signup",
+            "variant": "primary",
+            "size": "large"
+          }
+        },
+        "secondary": {
+          "type": "button",
+          "props": {
+            "label": "Talk to sales",
+            "url": "/contact",
+            "variant": "outline",
+            "size": "large"
+          }
+        }
+      }
+    },
+    {
+      "name": "Split with image",
+      "props": {
+        "layout": "split",
+        "title": "Copy on the left, product shot on the right",
+        "body": "<p>The split layout is the default for product pages.</p>",
+        "image": {
+          "src": "https://placehold.co/1200x900@2x.png",
+          "alt": "",
+          "width": 1200,
+          "height": 900
+        },
+        "background": "white"
+      },
+      "slots": { "actions": ["primary"] },
+      "elements": {
+        "primary": {
+          "type": "button",
+          "props": {
+            "label": "See the product",
+            "url": "/product",
+            "variant": "primary"
+          }
+        }
+      }
+    },
+    {
+      "name": "Backdrop image",
+      "props": {
+        "layout": "backdrop",
+        "eyebrow": "Customer story",
+        "title": "Copy over a darkened photograph",
+        "body": "<p>Use for editorial and campaign pages.</p>",
+        "backgroundImage": {
+          "src": "https://placehold.co/1920x1080@2x.png",
+          "alt": "",
+          "width": 1920,
+          "height": 1080
+        },
+        "height": "tall"
+      }
+    }
+  ]
+}

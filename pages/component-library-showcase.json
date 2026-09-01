@@ -1,0 +1,620 @@
+{
+  "title": "Component Library Showcase",
+  "path": "/component-library-showcase",
+  "description": "Every family in the shared library composed into one page, as a reference for how the components fit together.",
+  "elements": {
+    "a123ccd6-c86e-5bac-ba23-a655112fdfa2": {
+      "type": "js.announcement-bar",
+      "props": {
+        "message": "This page is assembled entirely from the shared component library.",
+        "linkLabel": "See the catalog",
+        "linkUrl": "/component-library",
+        "tone": "primary",
+        "dismissible": true
+      }
+    },
+    "ee35c69c-20a6-5bd0-83b6-25222734df28": {
+      "type": "js.hero",
+      "props": {
+        "layout": "centered",
+        "eyebrow": "Component library",
+        "title": "One AI-ready starter kit for every Source build",
+        "body": "<p>Sixty-one Canvas components, neutral by default, composed with slots so editors can build pages without new code.</p>",
+        "background": "light",
+        "height": "medium"
+      },
+      "slots": {
+        "actions": [
+          "7cfc6bbd-8bd0-5af6-8c24-90f4d5d58d6f",
+          "ca68883e-5fe0-5ee5-94b2-cec295e65521"
+        ]
+      }
+    },
+    "7cfc6bbd-8bd0-5af6-8c24-90f4d5d58d6f": {
+      "type": "js.button",
+      "props": {
+        "label": "Browse components",
+        "url": "/component-library",
+        "variant": "primary",
+        "size": "large"
+      }
+    },
+    "ca68883e-5fe0-5ee5-94b2-cec295e65521": {
+      "type": "js.button",
+      "props": {
+        "label": "Read the guide",
+        "url": "/docs",
+        "variant": "outline",
+        "size": "large"
+      }
+    },
+    "8e41084b-675c-53f3-8482-5e963259ee4c": {
+      "type": "js.logo-wall",
+      "props": {
+        "title": "Already used across these builds",
+        "columnCount": 5,
+        "background": "white",
+        "grayscale": true
+      },
+      "slots": {
+        "logos": [
+          "afa10230-4298-5a0f-9678-713fce68d5a0",
+          "12f174a3-a20c-5f23-84ac-e4bf94d5f9f6",
+          "091f8d7d-baa7-5fe8-9b81-e2d16d116b34",
+          "0adb5dea-9703-5f0e-b769-0373fe3fd355",
+          "d2ac8a9d-b36b-5908-9811-9348dd600fd6"
+        ]
+      }
+    },
+    "afa10230-4298-5a0f-9678-713fce68d5a0": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f.png.avif%3Fitok%3DT6RyOr4n",
+          "alt": "Customer 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 26,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "12f174a3-a20c-5f23-84ac-e4bf94d5f9f6": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f.png.avif%3Fitok%3DT6RyOr4n",
+          "alt": "Customer 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 26,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "091f8d7d-baa7-5fe8-9b81-e2d16d116b34": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f.png.avif%3Fitok%3DT6RyOr4n",
+          "alt": "Customer 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 26,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "0adb5dea-9703-5f0e-b769-0373fe3fd355": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f.png.avif%3Fitok%3DT6RyOr4n",
+          "alt": "Customer 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 26,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "d2ac8a9d-b36b-5908-9811-9348dd600fd6": {
+      "type": "js.logo-tile",
+      "props": {
+        "logo": {
+          "src": "/sites/default/files/2026-09/240x80-2x-607be53f.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/240x80-2x-607be53f.png.avif%3Fitok%3DT6RyOr4n",
+          "alt": "Customer 1",
+          "width": 480,
+          "height": 160
+        },
+        "height": "medium"
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 26,
+          "source_url": "https://placehold.co/240x80@2x.png"
+        }
+      }
+    },
+    "75dd3e20-3dab-5b73-bd3f-a5b89fcdb06d": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Why this library",
+        "title": "Built to be reused, not forked",
+        "intro": "<p>Every component follows the same Canvas contract.</p>",
+        "columnCount": 3,
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "items": [
+          "fad72f01-b71b-533d-9296-6d4fb21139c3",
+          "aec401af-65f7-5e85-af90-461a1f1214aa",
+          "29a8c2c8-6c7c-5ae1-bedf-25fc7ba037cf"
+        ],
+        "actions": ["1d3a802c-67e3-54ad-b468-0eb37b418ff3"]
+      }
+    },
+    "fad72f01-b71b-533d-9296-6d4fb21139c3": {
+      "type": "js.feature-card",
+      "props": {
+        "title": "Slots, not numbered props",
+        "body": "<p>Repeatable content is composed from child components, so authors add as many items as they need.</p>",
+        "linkLabel": "How it works",
+        "url": "/docs/slots"
+      }
+    },
+    "aec401af-65f7-5e85-af90-461a1f1214aa": {
+      "type": "js.feature-card",
+      "props": {
+        "title": "Neutral by default",
+        "body": "<p>Stock Tailwind and the theme tokens in global.css only. No brand styling to unpick.</p>"
+      }
+    },
+    "29a8c2c8-6c7c-5ae1-bedf-25fc7ba037cf": {
+      "type": "js.feature-card",
+      "props": {
+        "title": "Described for agents",
+        "body": "<p>Every component.yml carries a description explaining when to reach for it.</p>"
+      }
+    },
+    "1d3a802c-67e3-54ad-b468-0eb37b418ff3": {
+      "type": "js.button",
+      "props": {
+        "label": "See all 61 components",
+        "url": "/component-library",
+        "variant": "primary"
+      }
+    },
+    "d4411433-f5ce-53c7-87ff-6e640a13bbae": {
+      "type": "js.feature-split",
+      "props": {
+        "eyebrow": "Authoring",
+        "title": "Compose pages from slots",
+        "body": "<p>Drop cards, buttons and link lists into slots rather than filling in numbered prop groups.</p><ul><li>No card1Title / card2Title</li><li>Editors control how many items appear</li><li>Children stay independently reusable</li></ul>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0.png.avif%3Fitok%3DItAnpWpk",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        },
+        "mediaPosition": "end",
+        "background": "white"
+      },
+      "slots": {
+        "actions": ["41896041-702b-565f-aa4b-121a756e57f7"]
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 31,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "41896041-702b-565f-aa4b-121a756e57f7": {
+      "type": "js.button",
+      "props": {
+        "label": "Open Workbench",
+        "url": "/workbench",
+        "variant": "primary"
+      }
+    },
+    "b7ae5ace-b369-5924-bb85-58131c1705cb": {
+      "type": "js.feature-split",
+      "props": {
+        "eyebrow": "Governance",
+        "title": "Every change is reviewable",
+        "body": "<p>Components are versioned in the repository and pushed deliberately, so what ships is what was reviewed.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0.png.avif%3Fitok%3DItAnpWpk",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        },
+        "mediaPosition": "start",
+        "background": "none"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 31,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "3373e721-6936-5375-9c07-03bb95d2d57c": {
+      "type": "js.card-grid",
+      "props": {
+        "title": "What the consolidation produced",
+        "columnCount": 3,
+        "align": "center",
+        "background": "dark"
+      },
+      "slots": {
+        "items": [
+          "e5f7fedf-efb7-5f7e-83a4-8a76bab0ea18",
+          "dd2a1296-5188-54f4-ad0d-6d296b64a166",
+          "fafb3c63-1900-521a-b90c-0326ec3fb598"
+        ]
+      }
+    },
+    "e5f7fedf-efb7-5f7e-83a4-8a76bab0ea18": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "61",
+        "label": "Components",
+        "description": "Deduplicated from 524 across 14 projects.",
+        "size": "large",
+        "align": "center"
+      }
+    },
+    "dd2a1296-5188-54f4-ad0d-6d296b64a166": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "100",
+        "suffix": "%",
+        "label": "Slot-based repeatables",
+        "description": "No numbered prop groups anywhere.",
+        "size": "large",
+        "align": "center"
+      }
+    },
+    "fafb3c63-1900-521a-b90c-0326ec3fb598": {
+      "type": "js.stat-card",
+      "props": {
+        "value": "0",
+        "label": "Brand tokens",
+        "description": "Stock Tailwind plus the shared theme only.",
+        "size": "large",
+        "align": "center"
+      }
+    },
+    "a909034e-f0d1-5a8c-b06f-e7c4dc508f9f": {
+      "type": "js.tabs",
+      "props": {
+        "title": "Recipes by page type",
+        "intro": "<p>Most pages are four or five components deep.</p>",
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "panels": [
+          "06aaf64b-f943-5aa3-83e1-9bcf7a939f6b",
+          "bc9bbc40-0827-5a88-8619-bcd2d3448359",
+          "bc90772d-f597-5ba8-9c60-97c36054c0a8"
+        ]
+      }
+    },
+    "06aaf64b-f943-5aa3-83e1-9bcf7a939f6b": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Marketing",
+        "title": "Landing pages without a release",
+        "body": "<p>Hero, Card Grid, Feature Split and CTA Banner cover most campaign pages.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0.png.avif%3Fitok%3DItAnpWpk",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 31,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "bc9bbc40-0827-5a88-8619-bcd2d3448359": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Editorial",
+        "title": "Articles and listings",
+        "body": "<p>Article Body for the page, Article Card and News Feed for the index.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0.png.avif%3Fitok%3DItAnpWpk",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 31,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "bc90772d-f597-5ba8-9c60-97c36054c0a8": {
+      "type": "js.tab-panel",
+      "props": {
+        "label": "Product",
+        "title": "Product and pricing",
+        "body": "<p>Sub Nav, Feature Split, Data Table and Accordion.</p>",
+        "image": {
+          "src": "/sites/default/files/2026-09/1200x900-2x-846e66d0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1200x900-2x-846e66d0.png.avif%3Fitok%3DItAnpWpk",
+          "alt": "",
+          "width": 2400,
+          "height": 1800
+        }
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 31,
+          "source_url": "https://placehold.co/1200x900@2x.png"
+        }
+      }
+    },
+    "9b09ce5f-af90-515b-a790-d90ea7c806fb": {
+      "type": "js.carousel",
+      "props": {
+        "title": "What teams say",
+        "slidesPerView": 1,
+        "background": "none",
+        "showArrows": true
+      },
+      "slots": {
+        "slides": [
+          "aeee8e13-5055-543d-bc8e-36f2bc8a51e4",
+          "2067ce57-9520-5c26-a365-c9828e49fa0a"
+        ]
+      }
+    },
+    "aeee8e13-5055-543d-bc8e-36f2bc8a51e4": {
+      "type": "js.testimonial-card",
+      "props": {
+        "quote": "<p>We stopped rebuilding the same hero on every project.</p>",
+        "authorName": "Priya Raman",
+        "authorTitle": "Director of Digital, Northwind",
+        "variant": "plain",
+        "size": "large"
+      }
+    },
+    "2067ce57-9520-5c26-a365-c9828e49fa0a": {
+      "type": "js.testimonial-card",
+      "props": {
+        "quote": "<p>The descriptions mean the agent picks the right component first time.</p>",
+        "authorName": "Sam Okafor",
+        "authorTitle": "Platform Lead, Meridian",
+        "variant": "plain",
+        "size": "large"
+      }
+    },
+    "a9fac555-6610-5441-968f-3f3cc337af83": {
+      "type": "js.card-grid",
+      "props": {
+        "eyebrow": "Customer stories",
+        "title": "Results from teams already building this way",
+        "columnCount": 3,
+        "align": "center",
+        "background": "white"
+      },
+      "slots": {
+        "items": [
+          "5b2497ec-daab-5e6c-90ba-bdd5bdb8c044",
+          "ed0f12c0-6e20-55c9-a102-d347b46a7566",
+          "6789a2d9-563a-5c26-8e48-f3ae1f80b4eb"
+        ]
+      }
+    },
+    "5b2497ec-daab-5e6c-90ba-bdd5bdb8c044": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Northwind",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_0.png.avif%3Fitok%3DmQ1RppNb",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Cut publishing time from three days to one hour",
+        "summary": "<p>Moved a 200-person marketing team onto a component-based workflow.</p>",
+        "statValue": "72%",
+        "statLabel": "faster time to publish",
+        "url": "/customers/northwind",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 36,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "ed0f12c0-6e20-55c9-a102-d347b46a7566": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Meridian",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_0.png.avif%3Fitok%3DmQ1RppNb",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Consolidated 14 sites onto one platform",
+        "summary": "<p>One shared library replaced fourteen separate front ends.</p>",
+        "statValue": "$4.2M",
+        "statLabel": "saved annually",
+        "url": "/customers/meridian",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 36,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "6789a2d9-563a-5c26-8e48-f3ae1f80b4eb": {
+      "type": "js.story-card",
+      "props": {
+        "customerName": "Halcyon",
+        "image": {
+          "src": "/sites/default/files/2026-09/900x600-2x-5e5f111f_0.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/900x600-2x-5e5f111f_0.png.avif%3Fitok%3DmQ1RppNb",
+          "alt": "",
+          "width": 1800,
+          "height": 1200
+        },
+        "headline": "Launched in six markets in one quarter",
+        "summary": "<p>Localised pages built by regional teams without engineering support.</p>",
+        "statValue": "6",
+        "statLabel": "markets in one quarter",
+        "url": "/customers/halcyon",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "image": {
+          "target_id": 36,
+          "source_url": "https://placehold.co/900x600@2x.png"
+        }
+      }
+    },
+    "19ec59d3-dbc3-5bbc-9477-11b5eb636fd0": {
+      "type": "js.step-list",
+      "props": {
+        "title": "Getting started",
+        "intro": "<p>Three steps from clone to first published page.</p>",
+        "layout": "horizontal",
+        "numbered": true,
+        "background": "light"
+      },
+      "slots": {
+        "steps": [
+          "71454a3f-5221-54ae-913e-a66e1a91a735",
+          "b9ab42a0-fc72-50d1-a0a9-fa1bf02aab3d",
+          "b3227160-9342-58a6-9b57-293a92ba6560"
+        ]
+      }
+    },
+    "71454a3f-5221-54ae-913e-a66e1a91a735": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Copy the library",
+        "body": "<p>Drop src/components into a new Nebula or Source workspace.</p>"
+      }
+    },
+    "b9ab42a0-fc72-50d1-a0a9-fa1bf02aab3d": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Set your tokens",
+        "body": "<p>Point the primary and gray scales in global.css at the brand palette.</p>"
+      }
+    },
+    "b3227160-9342-58a6-9b57-293a92ba6560": {
+      "type": "js.step-item",
+      "props": {
+        "title": "Compose the page",
+        "body": "<p>Build in Workbench, then push the components you actually used.</p>"
+      }
+    },
+    "2f78fcac-e6d8-5540-92e0-be1c943a808b": {
+      "type": "js.data-table",
+      "props": {
+        "title": "Component families",
+        "intro": "<p>What lives in the library and what it replaces.</p>",
+        "headers": "Family | Components | Replaces",
+        "rows": "Primitives | 11 | Ad-hoc wrappers and one-off layout divs\nChrome | 12 | Per-project headers, footers and menus\nSections | 18 | Hero, feature, CTA and stats bands\nContent | 20 | Cards, listings, tables and feeds",
+        "striped": true
+      }
+    },
+    "8aae032e-56c5-5731-8dd7-be3b3554cf32": {
+      "type": "js.accordion",
+      "props": {
+        "title": "Frequently asked questions",
+        "background": "none",
+        "width": "narrow"
+      },
+      "slots": {
+        "items": [
+          "e5de0421-cc0b-5609-a397-492521d4266b",
+          "10965ea5-3f10-59f5-8566-eaeda9f2d51f",
+          "d43886a6-6a69-5610-a9a7-70beca498729"
+        ]
+      }
+    },
+    "e5de0421-cc0b-5609-a397-492521d4266b": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Can I still add project-specific components?",
+        "answer": "<p>Yes. Add them alongside these and keep the same contract - slots for repeatables, one object prop per image.</p>",
+        "defaultOpen": true
+      }
+    },
+    "10965ea5-3f10-59f5-8566-eaeda9f2d51f": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "How do I rebrand it?",
+        "answer": "<p>Change the primary and gray scales in src/global.css. No component needs editing.</p>"
+      }
+    },
+    "d43886a6-6a69-5610-a9a7-70beca498729": {
+      "type": "js.accordion-item",
+      "props": {
+        "question": "Do the data-driven components work offline?",
+        "answer": "<p>News Feed and Related Articles need JSON:API. They show a skeleton while loading and an explicit empty state when nothing returns.</p>"
+      }
+    },
+    "c22e5c30-aeec-5075-8c9e-ba8d49e8502d": {
+      "type": "js.cta-banner",
+      "props": {
+        "eyebrow": "Start here",
+        "title": "Fork it, rebrand it, ship it",
+        "body": "<p>The fastest way to a Source build is not starting from an empty components folder.</p>",
+        "background": "primary",
+        "layout": "centered"
+      },
+      "slots": {
+        "actions": ["5030f494-e3dc-5a4a-a96e-755dafc3423d"]
+      }
+    },
+    "5030f494-e3dc-5a4a-a96e-755dafc3423d": {
+      "type": "js.button",
+      "props": {
+        "label": "Open the catalog",
+        "url": "/component-library",
+        "variant": "secondary",
+        "size": "large"
+      }
+    }
+  },
+  "uuid": "c72ac3fe-213b-41d1-bebc-8fd98e6fe3b2"
+}

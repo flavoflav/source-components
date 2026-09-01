@@ -1,0 +1,43 @@
+name: Tab Panel
+machineName: tab-panel
+description: >-
+  One panel inside a Tabs component. The Label prop is the text on the tab
+  button; title, body and image are what shows when it is selected. Use the
+  content slot when a panel needs to hold other components rather than plain
+  copy.
+status: true
+required:
+  - label
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Marketing
+    title:
+      title: Title
+      type: string
+      examples:
+        - Launch campaigns without a release
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Build and publish landing pages the same day.</p>
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/1200x900@2x.png
+          alt: ''
+          width: 1200
+          height: 900
+      $ref: json-schema-definitions://canvas.module/image
+slots:
+  content:
+    title: Content
+  actions:
+    title: Actions

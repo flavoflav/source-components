@@ -1,0 +1,68 @@
+name: Section Heading
+machineName: section-heading
+description: >-
+  Eyebrow, title and intro paragraph used to open a page band. Pair it with Grid
+  Container or any content component instead of repeating headline/intro props
+  on every section component in the library.
+status: true
+required:
+  - title
+props:
+  properties:
+    eyebrow:
+      title: Eyebrow
+      type: string
+      examples:
+        - Why teams choose us
+    title:
+      title: Title
+      type: string
+      examples:
+        - Everything you need to ship faster
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - >-
+          <p>One or two sentences that frame the section and tell the reader
+          what they are about to see.</p>
+    align:
+      title: Align
+      type: string
+      enum:
+        - left
+        - center
+      meta:enum:
+        left: Left
+        center: Center
+      examples:
+        - center
+    size:
+      title: Size
+      type: string
+      enum:
+        - medium
+        - large
+        - extra_large
+      meta:enum:
+        medium: Medium
+        large: Large
+        extra_large: Extra large
+      examples:
+        - large
+    headingLevel:
+      title: Heading Level
+      type: string
+      enum:
+        - h1
+        - h2
+        - h3
+      meta:enum:
+        h1: H1
+        h2: H2
+        h3: H3
+      examples:
+        - h2
+slots: []

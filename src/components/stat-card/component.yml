@@ -1,0 +1,64 @@
+name: Stat Card
+machineName: stat-card
+description: >-
+  One big number with a label and optional supporting line. Put three or four
+  inside a Card Grid to build a results, impact or proof-point band - that
+  combination replaces the separate stats-row and results components.
+status: true
+required:
+  - value
+props:
+  properties:
+    value:
+      title: Value
+      type: string
+      examples:
+        - '98'
+    prefix:
+      title: Prefix
+      type: string
+      examples:
+        - $
+    suffix:
+      title: Suffix
+      type: string
+      examples:
+        - '%'
+    label:
+      title: Label
+      type: string
+      examples:
+        - Customer retention
+    description:
+      title: Description
+      type: string
+      examples:
+        - Measured across all enterprise accounts in 2025.
+    size:
+      title: Size
+      type: string
+      enum:
+        - medium
+        - large
+      meta:enum:
+        medium: Medium
+        large: Large
+      examples:
+        - large
+    align:
+      title: Align
+      type: string
+      enum:
+        - left
+        - center
+      meta:enum:
+        left: Left
+        center: Center
+      examples:
+        - center
+    bordered:
+      title: Bordered
+      type: boolean
+      examples:
+        - false
+slots: []

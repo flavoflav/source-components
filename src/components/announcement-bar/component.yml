@@ -1,0 +1,46 @@
+name: Announcement Bar
+machineName: announcement-bar
+description: >-
+  Thin dismissible strip above the site header for launches, events and
+  time-limited promotions. Keep the message to one line; anything longer belongs
+  in a CTA Banner.
+status: true
+required:
+  - message
+props:
+  properties:
+    message:
+      title: Message
+      type: string
+      examples:
+        - Join us at the annual summit, 12-14 May.
+    linkLabel:
+      title: Link Label
+      type: string
+      examples:
+        - Register now
+    linkUrl:
+      title: Link Url
+      type: string
+      format: uri-reference
+      examples:
+        - /events/summit
+    tone:
+      title: Tone
+      type: string
+      enum:
+        - primary
+        - dark
+        - light
+      meta:enum:
+        primary: Primary
+        dark: Dark
+        light: Light
+      examples:
+        - primary
+    dismissible:
+      title: Dismissible
+      type: boolean
+      examples:
+        - true
+slots: []

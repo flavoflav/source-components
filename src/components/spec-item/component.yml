@@ -1,0 +1,22 @@
+name: Spec Item
+machineName: spec-item
+description: >-
+  One label-and-value row inside a Spec List. Keep the label short - it renders
+  in a fixed-width column so a set of these lines up cleanly.
+status: true
+required:
+  - label
+  - value
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Deployment
+    value:
+      title: Value
+      type: string
+      examples:
+        - Cloud or self-hosted
+slots: []

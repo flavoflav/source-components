@@ -1,0 +1,43 @@
+name: Component Explorer
+machineName: component-explorer
+description: >-
+  Filterable index of Component Spec children - live search plus family and
+  capability chips, with results grouped by family. The filter options are read
+  from the specs themselves rather than configured here, so the index never
+  drifts from what it lists. Use it to publish a living style guide of a
+  component library.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Component index
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Every component in the library, with its props, slots and
+          source.</p>
+    searchPlaceholder:
+      title: Search Placeholder
+      type: string
+      examples:
+        - Search name, prop, slot or description
+    emptyMessage:
+      title: Empty Message
+      type: string
+      examples:
+        - Nothing matches those filters.
+    groupByFamily:
+      title: Group By Family
+      type: boolean
+      examples:
+        - true
+slots:
+  components:
+    title: Components

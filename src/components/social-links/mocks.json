@@ -1,0 +1,23 @@
+{
+  "mocks": [
+    {
+      "name": "All networks",
+      "props": {
+        "linkedinUrl": "https://linkedin.com/company/example",
+        "xUrl": "https://x.com/example",
+        "youtubeUrl": "https://youtube.com/@example",
+        "facebookUrl": "https://facebook.com/example",
+        "instagramUrl": "https://instagram.com/example",
+        "size": "medium"
+      }
+    },
+    {
+      "name": "Two networks, small",
+      "props": {
+        "linkedinUrl": "https://linkedin.com/company/example",
+        "youtubeUrl": "https://youtube.com/@example",
+        "size": "small"
+      }
+    }
+  ]
+}

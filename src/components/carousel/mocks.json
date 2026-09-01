@@ -1,0 +1,95 @@
+{
+  "mocks": [
+    {
+      "name": "Testimonials",
+      "props": {
+        "title": "What our customers say",
+        "slidesPerView": 1,
+        "background": "light",
+        "showArrows": true
+      },
+      "slots": { "slides": ["a", "b"] },
+      "elements": {
+        "a": {
+          "type": "testimonial-card",
+          "props": {
+            "quote": "<p>We shipped our first campaign page in a day instead of a sprint.</p>",
+            "authorName": "Priya Raman",
+            "authorTitle": "Director of Digital, Northwind",
+            "variant": "plain",
+            "size": "large"
+          }
+        },
+        "b": {
+          "type": "testimonial-card",
+          "props": {
+            "quote": "<p>The governance model is what convinced our security team.</p>",
+            "authorName": "Sam Okafor",
+            "authorTitle": "CISO, Meridian",
+            "variant": "plain",
+            "size": "large"
+          }
+        }
+      }
+    },
+    {
+      "name": "Three products",
+      "props": { "title": "Featured products", "slidesPerView": 3 },
+      "slots": { "slides": ["p1", "p2", "p3", "p4"] },
+      "elements": {
+        "p1": {
+          "type": "product-card",
+          "props": {
+            "name": "Starter kit",
+            "price": "$49",
+            "image": {
+              "src": "https://placehold.co/600x600@2x.png",
+              "alt": "",
+              "width": 600,
+              "height": 600
+            }
+          }
+        },
+        "p2": {
+          "type": "product-card",
+          "props": {
+            "name": "Pro bundle",
+            "price": "$99",
+            "image": {
+              "src": "https://placehold.co/600x600@2x.png",
+              "alt": "",
+              "width": 600,
+              "height": 600
+            }
+          }
+        },
+        "p3": {
+          "type": "product-card",
+          "props": {
+            "name": "Team pack",
+            "price": "$199",
+            "image": {
+              "src": "https://placehold.co/600x600@2x.png",
+              "alt": "",
+              "width": 600,
+              "height": 600
+            }
+          }
+        },
+        "p4": {
+          "type": "product-card",
+          "props": {
+            "name": "Enterprise",
+            "price": "$499",
+            "image": {
+              "src": "https://placehold.co/600x600@2x.png",
+              "alt": "",
+              "width": 600,
+              "height": 600
+            }
+          }
+        }
+      }
+    }
+  ]
+}

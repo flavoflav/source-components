@@ -1,0 +1,49 @@
+name: Text
+machineName: text
+description: >-
+  Rich text block for body copy authored in the WYSIWYG. Renders sanitised HTML
+  with sensible paragraph, list and link styling. Reach for this any time a
+  design needs a free-form paragraph rather than a fixed string prop.
+status: true
+required:
+  - content
+props:
+  properties:
+    content:
+      title: Content
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - >-
+          <p>This is a space for body copy. Authors can add
+          <strong>bold</strong> text, <a href="/about">links</a> and lists.</p>
+    size:
+      title: Size
+      type: string
+      enum:
+        - small
+        - medium
+        - large
+        - extra_large
+      meta:enum:
+        small: Small
+        medium: Medium
+        large: Large
+        extra_large: Extra large
+      examples:
+        - medium
+    align:
+      title: Align
+      type: string
+      enum:
+        - left
+        - center
+        - right
+      meta:enum:
+        left: Left
+        center: Center
+        right: Right
+      examples:
+        - left
+slots: []

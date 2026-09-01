@@ -1,0 +1,27 @@
+{
+  "mocks": [
+    {
+      "name": "Plain",
+      "props": {
+        "eyebrow": "Resources",
+        "title": "Guides and documentation",
+        "intro": "<p>A single sentence describing this section of the site.</p>",
+        "background": "light",
+        "align": "left"
+      }
+    },
+    {
+      "name": "With photo",
+      "props": {
+        "title": "About us",
+        "backgroundImage": {
+          "src": "https://placehold.co/1920x600@2x.png",
+          "alt": "",
+          "width": 1920,
+          "height": 600
+        },
+        "align": "center"
+      }
+    }
+  ]
+}

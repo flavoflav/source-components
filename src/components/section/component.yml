@@ -1,0 +1,63 @@
+name: Section
+machineName: section
+description: >-
+  Generic full-width page band. Wraps any child components in a background
+  colour, vertical padding and a centred max-width container. Use this as the
+  outermost wrapper for custom page bands instead of baking padding and
+  background handling into content components.
+status: true
+required: []
+props:
+  properties:
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - muted
+        - dark
+        - primary
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        muted: Muted gray
+        dark: Dark
+        primary: Primary
+      examples:
+        - light
+    padding:
+      title: Padding
+      type: string
+      enum:
+        - none
+        - small
+        - medium
+        - large
+      meta:enum:
+        none: None
+        small: Small
+        medium: Medium
+        large: Large
+      examples:
+        - medium
+    width:
+      title: Width
+      type: string
+      enum:
+        - narrow
+        - content
+        - wide
+        - full
+      meta:enum:
+        narrow: Narrow
+        content: Content
+        wide: Wide
+        full: Full bleed
+      examples:
+        - wide
+slots:
+  content:
+    title: Content

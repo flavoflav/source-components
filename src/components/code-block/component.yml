@@ -1,0 +1,59 @@
+name: Code Block
+machineName: code-block
+description: >-
+  Syntax-highlighted source listing with a filename caption, line numbers and a
+  copy button. Highlighting is done in the component with no external library,
+  so it works offline and inside Canvas. Use for documentation, developer guides
+  and the Component Spec source tabs.
+status: true
+required:
+  - code
+props:
+  properties:
+    code:
+      title: Code
+      type: string
+      examples:
+        - "const Hello = ({ name }) => <p>Hello {name}</p>;\n\nexport default
+          Hello;"
+    language:
+      title: Language
+      type: string
+      enum:
+        - jsx
+        - yaml
+        - json
+        - css
+        - bash
+      meta:enum:
+        jsx: JavaScript / JSX
+        yaml: YAML
+        json: JSON
+        css: CSS
+        bash: Shell
+      examples:
+        - jsx
+    filename:
+      title: Filename
+      type: string
+      examples:
+        - index.jsx
+    showLineNumbers:
+      title: Show Line Numbers
+      type: boolean
+      examples:
+        - true
+    maxHeight:
+      title: Max Height
+      type: string
+      enum:
+        - none
+        - medium
+        - tall
+      meta:enum:
+        none: Unlimited
+        medium: Medium (scrolls)
+        tall: Tall (scrolls)
+      examples:
+        - tall
+slots: []

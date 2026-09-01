@@ -1,0 +1,126 @@
+/*
+ * Ensure your theme imports the font you're using in this file.
+ * Alternatively, you can load fonts purely in Code Components by importing a
+ * CSS file with the font declarations from a URL, i.e. a CDN. For example, you
+ * can uncomment the following line to use the Inter font.
+ * For local development, Workbench loads the global CSS file configured in
+ * canvas.config.json.
+ */
+/* @import url("https://rsms.me/inter/inter.css"); */
+
+@import 'tailwindcss';
+
+/*
+ * DARK PALETTE
+ *
+ * Every colour in the component library routes through four ramps - white,
+ * black, gray-* and primary-* - so the whole site themes from this block alone;
+ * no component file needs editing. The ramps are defined here in terms of their
+ * ROLE, which is why the names read inverted against a dark ground:
+ *
+ *   white .......... page and card surface   (the lowest surface, not literal white)
+ *   black .......... maximum-contrast ink
+ *   gray-50..300 ... surfaces and hairlines, lightest-to-darkest ground
+ *   gray-400..600 .. muted and secondary text
+ *   gray-700..900 .. primary text and high-contrast bands
+ *   primary-* ...... brightened so `bg-primary-600` carries dark text legibly
+ *
+ * Because `bg-gray-900 text-white` and `bg-primary-700 text-white` are how the
+ * components express a contrast band, those bands invert into LIGHT bands that
+ * punctuate the dark page. That is intentional.
+ *
+ * To go back to light, restore the previous @theme block: swap the two ramps
+ * end-for-end and set --color-white to #ffffff.
+ */
+@theme {
+  --font-sans:
+    Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial,
+    sans-serif;
+
+  /* Brightened so blue reads as an accent against a dark ground. */
+  --color-primary-100: #16283f;
+  --color-primary-200: #1c3a5c;
+  --color-primary-300: #1e4d8f;
+  --color-primary-400: #2563eb;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #60a5fa;
+  --color-primary-700: #93c5fd;
+  --color-primary-800: #bfdbfe;
+  --color-primary-900: #dbeafe;
+
+  /* use for light and dark blue text */
+  --color-primary-dark: var(--color-primary-700);
+  --color-primary-light: var(--color-primary-300);
+
+  /* Inverted ramp: 50 sits nearest the page ground, 900 is brightest. */
+  --color-gray-50: #161d23;
+  --color-gray-100: #1b242b;
+  --color-gray-200: #26313a;
+  --color-gray-300: #35434e;
+  --color-gray-400: #64748b;
+  --color-gray-500: #94a3b8;
+  --color-gray-600: #b2bfcc;
+  --color-gray-700: #cbd5e1;
+  --color-gray-800: #e2e8f0;
+  --color-gray-900: #f1f5f9;
+
+  /* use for light and dark gray text */
+  --color-gray-dark: var(--color-gray-700);
+  --color-gray-light: var(--color-gray-300);
+
+  /* Surface and ink. Named for their role, not their literal colour. */
+  --color-white: #0e1418;
+  --color-black: #f8fafc;
+}
+
+/*
+ * The base layer paints body white, so the surface token has to be applied to
+ * body as well as html - styling html alone leaves the page ground light.
+ */
+/*
+ * LIGHT OVERRIDE
+ *
+ * The @theme block above is the DEFAULT (dark). This block restores the
+ * original light ramps and wins on specificity (0,1,1 beats :root's 0,0,1),
+ * so setting data-theme="light" on <html> flips the entire site. The Theme
+ * Switch component sets that attribute; nothing else needs to change.
+ *
+ * Because the ramps are named by role, `bg-gray-900 text-white` stays a
+ * contrast band in BOTH themes - dark-on-light here, light-on-dark above.
+ */
+:root[data-theme='light'] {
+  --color-primary-100: var(--color-blue-100);
+  --color-primary-200: var(--color-blue-200);
+  --color-primary-300: var(--color-blue-300);
+  --color-primary-400: var(--color-blue-400);
+  --color-primary-500: var(--color-blue-500);
+  --color-primary-600: var(--color-blue-600);
+  --color-primary-700: var(--color-blue-700);
+  --color-primary-800: var(--color-blue-800);
+  --color-primary-900: var(--color-blue-900);
+
+  --color-primary-dark: var(--color-primary-700);
+  --color-primary-light: var(--color-slate-400);
+
+  --color-gray-50: var(--color-slate-50);
+  --color-gray-100: var(--color-slate-100);
+  --color-gray-200: var(--color-slate-200);
+  --color-gray-300: var(--color-slate-300);
+  --color-gray-400: var(--color-slate-400);
+  --color-gray-500: var(--color-slate-500);
+  --color-gray-600: var(--color-slate-600);
+  --color-gray-700: var(--color-slate-700);
+  --color-gray-800: var(--color-slate-800);
+  --color-gray-900: var(--color-slate-900);
+
+  --color-gray-dark: var(--color-gray-700);
+  --color-gray-light: var(--color-gray-300);
+
+  --color-white: #ffffff;
+  --color-black: var(--color-slate-950);
+}
+
+html,
+body {
+  @apply bg-white text-gray-900;
+}

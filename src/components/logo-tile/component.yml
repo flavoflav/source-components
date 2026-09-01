@@ -1,0 +1,40 @@
+name: Logo Tile
+machineName: logo-tile
+description: >-
+  A single logo, size-capped so it sits evenly beside others regardless of the
+  source file's dimensions. Optionally links to the customer or partner. Belongs
+  in the logos slot of Logo Wall.
+status: true
+required:
+  - logo
+props:
+  properties:
+    logo:
+      title: Logo
+      type: object
+      examples:
+        - src: https://placehold.co/240x80@2x.png
+          alt: Customer name
+          width: 240
+          height: 80
+      $ref: json-schema-definitions://canvas.module/image
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /customers/example
+    height:
+      title: Height
+      type: string
+      enum:
+        - small
+        - medium
+        - large
+      meta:enum:
+        small: Small
+        medium: Medium
+        large: Large
+      examples:
+        - medium
+slots: []

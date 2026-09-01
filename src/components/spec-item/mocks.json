@@ -1,0 +1,15 @@
+{
+  "mocks": [
+    {
+      "name": "Row",
+      "props": { "label": "Deployment", "value": "Cloud or self-hosted" }
+    },
+    {
+      "name": "Long value",
+      "props": {
+        "label": "Compliance",
+        "value": "SOC 2 Type II, ISO 27001, GDPR, HIPAA on request"
+      }
+    }
+  ]
+}

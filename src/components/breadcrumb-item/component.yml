@@ -1,0 +1,27 @@
+name: Breadcrumb Item
+machineName: breadcrumb-item
+description: >-
+  One step in a Breadcrumb trail. Set Current on the final item so it renders as
+  plain text with aria-current instead of a link.
+status: true
+required:
+  - label
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Resources
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /resources
+    current:
+      title: Current
+      type: boolean
+      examples:
+        - false
+slots: []

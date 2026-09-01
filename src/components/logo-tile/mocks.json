@@ -1,0 +1,29 @@
+{
+  "mocks": [
+    {
+      "name": "Plain",
+      "props": {
+        "logo": {
+          "src": "https://placehold.co/240x80@2x.png",
+          "alt": "Customer name",
+          "width": 240,
+          "height": 80
+        },
+        "height": "medium"
+      }
+    },
+    {
+      "name": "Linked",
+      "props": {
+        "logo": {
+          "src": "https://placehold.co/240x80@2x.png",
+          "alt": "Customer name",
+          "width": 240,
+          "height": 80
+        },
+        "url": "/customers/example",
+        "height": "large"
+      }
+    }
+  ]
+}

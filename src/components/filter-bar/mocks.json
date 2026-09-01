@@ -1,0 +1,33 @@
+{
+  "mocks": [
+    {
+      "name": "Search and two facets",
+      "props": {
+        "action": "/resources",
+        "searchPlaceholder": "Search resources",
+        "showSearch": true,
+        "resultCountLabel": "42 results",
+        "submitLabel": "Apply"
+      },
+      "slots": { "filters": ["f1", "f2"] },
+      "elements": {
+        "f1": {
+          "type": "filter-select",
+          "props": {
+            "label": "Type",
+            "fieldName": "type",
+            "options": "Report\nGuide\nDatasheet\nWebinar"
+          }
+        },
+        "f2": {
+          "type": "filter-select",
+          "props": {
+            "label": "Industry",
+            "fieldName": "industry",
+            "options": "Financial services\nHealthcare\nPublic sector\nRetail"
+          }
+        }
+      }
+    }
+  ]
+}

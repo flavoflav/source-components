@@ -1,0 +1,77 @@
+name: Resource Card
+machineName: resource-card
+description: >-
+  Downloadable asset teaser - report, whitepaper, datasheet or guide - with
+  cover thumbnail, format, file size and a gated flag. Put several in a Card
+  Grid to build a resource centre, or in Data Table for a dense document
+  library.
+status: true
+required:
+  - title
+  - url
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - The 2026 digital experience benchmark
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /resources/benchmark-2026
+    summary:
+      title: Summary
+      type: string
+      examples:
+        - Survey data from 1,200 teams on how they build and govern their sites.
+    resourceType:
+      title: Resource Type
+      type: string
+      examples:
+        - Report
+    coverImage:
+      title: Cover Image
+      type: object
+      examples:
+        - src: https://placehold.co/480x640@2x.png
+          alt: ''
+          width: 480
+          height: 640
+      $ref: json-schema-definitions://canvas.module/image
+    fileFormat:
+      title: File Format
+      type: string
+      examples:
+        - PDF
+    fileSize:
+      title: File Size
+      type: string
+      examples:
+        - 2.4 MB
+    gated:
+      title: Gated
+      type: boolean
+      examples:
+        - false
+    linkLabel:
+      title: Link Label
+      type: string
+      examples:
+        - Download
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - filled
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        filled: Filled
+      examples:
+        - bordered
+slots: []

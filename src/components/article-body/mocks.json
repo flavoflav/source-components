@@ -1,0 +1,34 @@
+{
+  "mocks": [
+    {
+      "name": "Blog post",
+      "props": {
+        "title": "What changed in the 2026 platform release",
+        "standfirst": "The short opening paragraph that sits under the headline.",
+        "body": "<p>The opening paragraph of the article sets up the problem.</p><h2>A section heading</h2><p>More body copy with a <a href=\"/docs\">link</a> and a list:</p><ul><li>First change</li><li>Second change</li></ul><blockquote>A pulled-out line worth emphasising.</blockquote>",
+        "heroImage": {
+          "src": "https://placehold.co/1600x900@2x.png",
+          "alt": "",
+          "width": 1600,
+          "height": 900
+        },
+        "category": "Product",
+        "date": "12 March 2026",
+        "authorName": "Jamie Lee",
+        "authorTitle": "Principal Engineer",
+        "readingTime": "5 min read"
+      },
+      "slots": { "footer": ["cta"] },
+      "elements": {
+        "cta": {
+          "type": "cta-banner",
+          "props": {
+            "title": "Want a walkthrough?",
+            "background": "light",
+            "layout": "inline"
+          }
+        }
+      }
+    }
+  ]
+}

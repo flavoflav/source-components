@@ -1,0 +1,6 @@
+{
+  "mocks": [
+    { "name": "Medium", "props": { "height": "medium" } },
+    { "name": "Large", "props": { "height": "large" } }
+  ]
+}

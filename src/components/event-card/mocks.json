@@ -1,0 +1,36 @@
+{
+  "mocks": [
+    {
+      "name": "Webinar with date chip",
+      "props": {
+        "title": "Building governed component libraries",
+        "url": "/events/component-libraries",
+        "startDate": "12 May",
+        "timeLabel": "14:00 GMT",
+        "format": "Webinar",
+        "summary": "A practical session on structuring components so editors can compose pages.",
+        "ctaLabel": "Register",
+        "variant": "bordered"
+      }
+    },
+    {
+      "name": "Multi-day with image",
+      "props": {
+        "title": "Annual customer summit",
+        "url": "/events/summit",
+        "startDate": "12 May",
+        "endDate": "14 May",
+        "location": "London",
+        "format": "Conference",
+        "image": {
+          "src": "https://placehold.co/640x480@2x.png",
+          "alt": "",
+          "width": 640,
+          "height": 480
+        },
+        "ctaLabel": "See the agenda",
+        "variant": "filled"
+      }
+    }
+  ]
+}

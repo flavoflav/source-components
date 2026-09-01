@@ -1,0 +1,56 @@
+name: Step List
+machineName: step-list
+description: >-
+  Ordered how-it-works or method band. Numbers its Step Item children
+  automatically, so authors never type "1." into a title. Covers process
+  explainers, onboarding flows and recipe-method style instructions.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - How it works
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Three steps from first login to a published page.</p>
+    layout:
+      title: Layout
+      type: string
+      enum:
+        - vertical
+        - horizontal
+      meta:enum:
+        vertical: Vertical
+        horizontal: Horizontal
+      examples:
+        - vertical
+    numbered:
+      title: Numbered
+      type: boolean
+      examples:
+        - true
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - dark
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        dark: Dark
+      examples:
+        - none
+slots:
+  steps:
+    title: Steps

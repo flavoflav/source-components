@@ -1,0 +1,82 @@
+name: Event Card
+machineName: event-card
+description: >-
+  One event, webinar or session - date badge, format, location and summary. With
+  no image it shows a coloured date chip, which is what makes a list of these
+  scannable. Use inside a Card Grid for an events listing.
+status: true
+required:
+  - title
+  - url
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Building governed component libraries
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /events/component-libraries
+    startDate:
+      title: Start Date
+      type: string
+      examples:
+        - 12 May
+    endDate:
+      title: End Date
+      type: string
+      examples:
+        - 14 May
+    timeLabel:
+      title: Time Label
+      type: string
+      examples:
+        - 14:00 GMT
+    location:
+      title: Location
+      type: string
+      examples:
+        - London
+    format:
+      title: Format
+      type: string
+      examples:
+        - Webinar
+    summary:
+      title: Summary
+      type: string
+      examples:
+        - A practical session on structuring components so editors can compose
+          pages.
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/640x480@2x.png
+          alt: ''
+          width: 640
+          height: 480
+      $ref: json-schema-definitions://canvas.module/image
+    ctaLabel:
+      title: Cta Label
+      type: string
+      examples:
+        - Register
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - filled
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        filled: Filled
+      examples:
+        - bordered
+slots: []

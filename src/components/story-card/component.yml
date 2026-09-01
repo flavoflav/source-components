@@ -1,0 +1,85 @@
+name: Story Card
+machineName: story-card
+description: >-
+  Customer story teaser - logo or customer name, headline, summary and one
+  headline result figure. Use for case-study grids and customer-spotlight bands;
+  for a pure quote use Testimonial Card, for editorial content use Article Card.
+status: true
+required:
+  - headline
+  - url
+props:
+  properties:
+    customerName:
+      title: Customer Name
+      type: string
+      examples:
+        - Northwind
+    logo:
+      title: Logo
+      type: object
+      examples:
+        - src: https://placehold.co/240x80@2x.png
+          alt: Northwind
+          width: 240
+          height: 80
+      $ref: json-schema-definitions://canvas.module/image
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/900x600@2x.png
+          alt: ''
+          width: 900
+          height: 600
+      $ref: json-schema-definitions://canvas.module/image
+    headline:
+      title: Headline
+      type: string
+      examples:
+        - Cut publishing time from three days to one hour
+    summary:
+      title: Summary
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>How a 200-person marketing team moved to a component-based
+          workflow.</p>
+    statValue:
+      title: Stat Value
+      type: string
+      examples:
+        - 72%
+    statLabel:
+      title: Stat Label
+      type: string
+      examples:
+        - faster time to publish
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /customers/northwind
+    linkLabel:
+      title: Link Label
+      type: string
+      examples:
+        - Read the story
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - elevated
+        - dark
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        elevated: Elevated
+        dark: Dark
+      examples:
+        - bordered
+slots: []

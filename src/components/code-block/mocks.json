@@ -1,0 +1,33 @@
+{
+  "mocks": [
+    {
+      "name": "JSX",
+      "props": {
+        "code": "import { cn } from 'drupal-canvas';\n\nconst Badge = ({ label, tone = 'neutral', className }) => {\n  if (!label) {\n    return null;\n  }\n\n  return <span className={cn('rounded-full px-3 py-1', className)}>{label}</span>;\n};\n\nexport default Badge;",
+        "language": "jsx",
+        "filename": "index.jsx",
+        "showLineNumbers": true,
+        "maxHeight": "tall"
+      }
+    },
+    {
+      "name": "YAML",
+      "props": {
+        "code": "name: Badge\nmachineName: badge\nstatus: true\nrequired:\n  - label\nprops:\n  properties:\n    label:\n      title: Label\n      type: string\n      examples:\n        - New\nslots: []",
+        "language": "yaml",
+        "filename": "component.yml",
+        "showLineNumbers": true
+      }
+    },
+    {
+      "name": "Shell, no line numbers",
+      "props": {
+        "code": "npm install\nnpm run dev",
+        "language": "bash",
+        "filename": "Terminal",
+        "showLineNumbers": false,
+        "maxHeight": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+name: Product Card
+machineName: product-card
+description: >-
+  Commerce or catalogue item - square image, name, price with optional strike-
+  through comparison price, and a promotional badge. Use inside Card Grid for a
+  product listing or inside Carousel for a featured row.
+status: true
+required:
+  - name
+props:
+  properties:
+    name:
+      title: Name
+      type: string
+      examples:
+        - Starter kit
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/600x600@2x.png
+          alt: ''
+          width: 600
+          height: 600
+      $ref: json-schema-definitions://canvas.module/image
+    price:
+      title: Price
+      type: string
+      examples:
+        - $49
+    compareAtPrice:
+      title: Compare At Price
+      type: string
+      examples:
+        - $69
+    description:
+      title: Description
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>One line describing the product.</p>
+    badgeLabel:
+      title: Badge Label
+      type: string
+      examples:
+        - New
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /products/starter-kit
+    ctaLabel:
+      title: Cta Label
+      type: string
+      examples:
+        - View details
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - elevated
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        elevated: Elevated
+      examples:
+        - plain
+slots: []

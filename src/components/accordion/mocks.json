@@ -1,0 +1,38 @@
+{
+  "mocks": [
+    {
+      "name": "FAQ",
+      "props": {
+        "title": "Frequently asked questions",
+        "intro": "<p>Everything people usually ask before getting started.</p>",
+        "background": "light",
+        "width": "narrow"
+      },
+      "slots": { "items": ["a", "b", "c"] },
+      "elements": {
+        "a": {
+          "type": "accordion-item",
+          "props": {
+            "question": "How long does onboarding take?",
+            "answer": "<p>Most teams are live within two weeks.</p>",
+            "defaultOpen": true
+          }
+        },
+        "b": {
+          "type": "accordion-item",
+          "props": {
+            "question": "Can we migrate existing content?",
+            "answer": "<p>Yes. Content migration is included in every plan.</p>"
+          }
+        },
+        "c": {
+          "type": "accordion-item",
+          "props": {
+            "question": "Is there a free trial?",
+            "answer": "<p>A 30 day trial is available on request.</p>"
+          }
+        }
+      }
+    }
+  ]
+}

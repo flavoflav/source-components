@@ -1,0 +1,58 @@
+name: Image
+machineName: image
+description: >-
+  Standalone responsive image with an optional caption, aspect-ratio crop and
+  corner radius. Use for editorial images placed directly on a page; components
+  that always include their own artwork should take an image prop instead.
+status: true
+required:
+  - image
+props:
+  properties:
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/1600x900@2x.png
+          alt: Descriptive alternative text
+          width: 1600
+          height: 900
+      $ref: json-schema-definitions://canvas.module/image
+    caption:
+      title: Caption
+      type: string
+      examples:
+        - A short caption describing the image.
+    ratio:
+      title: Ratio
+      type: string
+      enum:
+        - auto
+        - square
+        - landscape
+        - wide
+        - portrait
+      meta:enum:
+        auto: Auto (natural)
+        square: Square
+        landscape: Landscape 4:3
+        wide: Wide 16:9
+        portrait: Portrait 3:4
+      examples:
+        - wide
+    radius:
+      title: Radius
+      type: string
+      enum:
+        - none
+        - small
+        - medium
+        - full
+      meta:enum:
+        none: None
+        small: Small
+        medium: Medium
+        full: Circle
+      examples:
+        - medium
+slots: []

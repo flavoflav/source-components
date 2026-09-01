@@ -1,0 +1,30 @@
+{
+  "mocks": [
+    {
+      "name": "Copy and image",
+      "props": { "ratio": "even", "verticalAlign": "center", "gap": "large" },
+      "slots": { "start": ["copy"], "end": ["media"] },
+      "elements": {
+        "copy": {
+          "type": "text",
+          "props": {
+            "content": "<p>Copy on the left, media on the right. Both sides accept any components.</p>",
+            "size": "large"
+          }
+        },
+        "media": {
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "https://placehold.co/1200x800@2x.png",
+              "alt": "Placeholder",
+              "width": 1200,
+              "height": 800
+            },
+            "ratio": "landscape"
+          }
+        }
+      }
+    }
+  ]
+}

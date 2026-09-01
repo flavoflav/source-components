@@ -1,0 +1,19 @@
+{
+  "mocks": [
+    {
+      "name": "Closed",
+      "props": {
+        "question": "Can we migrate existing content?",
+        "answer": "<p>Yes. Content migration is included in every plan.</p>"
+      }
+    },
+    {
+      "name": "Open by default",
+      "props": {
+        "question": "How long does onboarding take?",
+        "answer": "<p>Most teams are live within two weeks.</p><ul><li>Kickoff in week one</li><li>Launch in week two</li></ul>",
+        "defaultOpen": true
+      }
+    }
+  ]
+}

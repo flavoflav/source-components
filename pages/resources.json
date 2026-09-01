@@ -1,0 +1,247 @@
+{
+  "title": "Resources",
+  "path": "/resources",
+  "description": "Resource centre - primary banner, three-facet filter bar, gated downloads, standards table and format tiles.",
+  "elements": {
+    "3b6d3fce-56d3-5936-b141-11a7ff437413": {
+      "type": "js.page-banner",
+      "props": {
+        "eyebrow": "Resource centre",
+        "title": "Guides, reports and reference material",
+        "intro": "<p>Everything we have published, in one filterable place.</p>",
+        "background": "primary",
+        "align": "left"
+      }
+    },
+    "1722d24f-0009-5b5e-b3da-bb8251148c01": {
+      "type": "js.filter-bar",
+      "props": {
+        "action": "/resources",
+        "searchPlaceholder": "Search resources",
+        "showSearch": true,
+        "resultCountLabel": "64 resources",
+        "submitLabel": "Apply",
+        "sticky": true
+      },
+      "slots": {
+        "filters": [
+          "4a9915d2-e50c-52cf-942f-f113d5023ff7",
+          "23c97f10-d44c-53d4-8e03-8838b9d32528",
+          "89f4a8c7-7cdb-5275-8cd3-6ab33cdad669"
+        ]
+      }
+    },
+    "4a9915d2-e50c-52cf-942f-f113d5023ff7": {
+      "type": "js.filter-select",
+      "props": {
+        "label": "Type",
+        "fieldName": "type",
+        "options": "Report\nGuide\nDatasheet\nWebinar\nTemplate",
+        "allLabel": "All types"
+      }
+    },
+    "23c97f10-d44c-53d4-8e03-8838b9d32528": {
+      "type": "js.filter-select",
+      "props": {
+        "label": "Industry",
+        "fieldName": "industry",
+        "options": "Healthcare\nFinancial services\nPublic sector\nRetail",
+        "allLabel": "All industries"
+      }
+    },
+    "89f4a8c7-7cdb-5275-8cd3-6ab33cdad669": {
+      "type": "js.filter-select",
+      "props": {
+        "label": "Access",
+        "fieldName": "access",
+        "options": "Free\nRegistration required",
+        "allLabel": "Any"
+      }
+    },
+    "6415a861-dbd5-5465-be70-a0065552688b": {
+      "type": "js.card-grid",
+      "props": {
+        "title": "Most downloaded",
+        "columnCount": 2,
+        "align": "left",
+        "background": "none"
+      },
+      "slots": {
+        "items": [
+          "d1fb97eb-f4a5-5b26-aa50-5235fb305950",
+          "55bc4425-102a-5c4e-85a7-05f0d0fecad3",
+          "da5a50c8-529a-54bc-bd23-85515f6c9720",
+          "ffa4db03-5c4a-5400-9c0a-319def2a6167"
+        ]
+      }
+    },
+    "d1fb97eb-f4a5-5b26-aa50-5235fb305950": {
+      "type": "js.resource-card",
+      "props": {
+        "title": "The 2026 digital experience benchmark",
+        "url": "/resources/benchmark-2026",
+        "summary": "Survey data from 1,200 teams on how they build, review and govern their sites.",
+        "resourceType": "Report",
+        "coverImage": {
+          "src": "/sites/default/files/2026-09/480x640-2x-6bc5f640.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/480x640-2x-6bc5f640.png.avif%3Fitok%3Degtitiq_",
+          "alt": "",
+          "width": 960,
+          "height": 1280
+        },
+        "fileFormat": "PDF",
+        "fileSize": "2.4 MB",
+        "gated": true,
+        "linkLabel": "Get the report",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "coverImage": {
+          "target_id": 156,
+          "source_url": "https://placehold.co/480x640@2x.png"
+        }
+      }
+    },
+    "55bc4425-102a-5c4e-85a7-05f0d0fecad3": {
+      "type": "js.resource-card",
+      "props": {
+        "title": "Component library starter kit",
+        "url": "/resources/starter-kit",
+        "summary": "Sixty-one production components you can rebrand and ship.",
+        "resourceType": "Template",
+        "coverImage": {
+          "src": "/sites/default/files/2026-09/480x640-2x-6bc5f640.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/480x640-2x-6bc5f640.png.avif%3Fitok%3Degtitiq_",
+          "alt": "",
+          "width": 960,
+          "height": 1280
+        },
+        "fileFormat": "ZIP",
+        "fileSize": "1.1 MB",
+        "linkLabel": "Download",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "coverImage": {
+          "target_id": 156,
+          "source_url": "https://placehold.co/480x640@2x.png"
+        }
+      }
+    },
+    "da5a50c8-529a-54bc-bd23-85515f6c9720": {
+      "type": "js.resource-card",
+      "props": {
+        "title": "Healthcare compliance checklist",
+        "url": "/resources/healthcare-compliance",
+        "summary": "What to ask a vendor before you sign, in eleven questions.",
+        "resourceType": "Guide",
+        "coverImage": {
+          "src": "/sites/default/files/2026-09/480x640-2x-6bc5f640.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/480x640-2x-6bc5f640.png.avif%3Fitok%3Degtitiq_",
+          "alt": "",
+          "width": 960,
+          "height": 1280
+        },
+        "fileFormat": "PDF",
+        "fileSize": "640 KB",
+        "linkLabel": "Read it",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "coverImage": {
+          "target_id": 156,
+          "source_url": "https://placehold.co/480x640@2x.png"
+        }
+      }
+    },
+    "ffa4db03-5c4a-5400-9c0a-319def2a6167": {
+      "type": "js.resource-card",
+      "props": {
+        "title": "Platform security datasheet",
+        "url": "/resources/security-datasheet",
+        "summary": "Certifications, data residency and subprocessors.",
+        "resourceType": "Datasheet",
+        "coverImage": {
+          "src": "/sites/default/files/2026-09/480x640-2x-6bc5f640.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/480x640-2x-6bc5f640.png.avif%3Fitok%3Degtitiq_",
+          "alt": "",
+          "width": 960,
+          "height": 1280
+        },
+        "fileFormat": "PDF",
+        "fileSize": "310 KB",
+        "linkLabel": "Download",
+        "variant": "bordered"
+      },
+      "_provenance": {
+        "coverImage": {
+          "target_id": 156,
+          "source_url": "https://placehold.co/480x640@2x.png"
+        }
+      }
+    },
+    "4affb303-be1a-5997-8cb4-df446be18f5f": {
+      "type": "js.data-table",
+      "props": {
+        "title": "Certifications and standards",
+        "intro": "<p>Current status across the frameworks customers ask about most.</p>",
+        "headers": "Standard | Level | Status | Last audited",
+        "rows": "SOC 2 | Type II | Certified | January 2026\nISO 27001 | - | Certified | November 2025\nWCAG | 2.2 AA | Conformant | February 2026\nGDPR | - | Compliant | Ongoing\nHIPAA | - | Available on Enterprise | January 2026",
+        "striped": true,
+        "compact": true
+      }
+    },
+    "beef5b65-9027-58aa-b4bd-b04f98a12154": {
+      "type": "js.card-grid",
+      "props": {
+        "title": "Browse by format",
+        "columnCount": 3,
+        "align": "center",
+        "background": "light"
+      },
+      "slots": {
+        "items": [
+          "50a69957-e58e-536c-9be4-e01fc6667890",
+          "8db3f235-e713-53a4-8cbf-b334390f1143",
+          "b12ee6e4-157a-540c-afe7-846e979a01e3"
+        ]
+      }
+    },
+    "50a69957-e58e-536c-9be4-e01fc6667890": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Reports",
+        "body": "<p>Original research and benchmark data.</p>",
+        "url": "/resources?type=report",
+        "linkLabel": "18 reports",
+        "tone": "outline"
+      }
+    },
+    "8db3f235-e713-53a4-8cbf-b334390f1143": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Guides",
+        "body": "<p>Practical how-to material for teams.</p>",
+        "url": "/resources?type=guide",
+        "linkLabel": "27 guides",
+        "tone": "outline"
+      }
+    },
+    "b12ee6e4-157a-540c-afe7-846e979a01e3": {
+      "type": "js.cta-tile",
+      "props": {
+        "title": "Templates",
+        "body": "<p>Things you can download and use today.</p>",
+        "url": "/resources?type=template",
+        "linkLabel": "19 templates",
+        "tone": "outline"
+      }
+    },
+    "1432f571-cc35-5bfe-9cd4-c48d6e32a85a": {
+      "type": "js.pagination",
+      "props": {
+        "currentPage": 2,
+        "totalPages": 8,
+        "baseUrl": "/resources",
+        "pageParam": "page"
+      }
+    }
+  },
+  "uuid": "54a13364-1335-4cfe-8374-bbe0f42d9cf3"
+}

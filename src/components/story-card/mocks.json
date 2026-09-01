@@ -1,0 +1,38 @@
+{
+  "mocks": [
+    {
+      "name": "With image and stat",
+      "props": {
+        "customerName": "Northwind",
+        "image": {
+          "src": "https://placehold.co/900x600@2x.png",
+          "alt": "",
+          "width": 900,
+          "height": 600
+        },
+        "headline": "Cut publishing time from three days to one hour",
+        "summary": "<p>How a 200-person marketing team moved to a component-based workflow.</p>",
+        "statValue": "72%",
+        "statLabel": "faster time to publish",
+        "url": "/customers/northwind",
+        "variant": "bordered"
+      }
+    },
+    {
+      "name": "Dark, logo only",
+      "props": {
+        "logo": {
+          "src": "https://placehold.co/240x80@2x.png",
+          "alt": "Meridian",
+          "width": 240,
+          "height": 80
+        },
+        "headline": "Consolidated 14 sites onto one platform",
+        "statValue": "$4.2M",
+        "statLabel": "saved annually",
+        "url": "/customers/meridian",
+        "variant": "dark"
+      }
+    }
+  ]
+}

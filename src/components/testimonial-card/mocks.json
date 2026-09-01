@@ -1,0 +1,29 @@
+{
+  "mocks": [
+    {
+      "name": "With headshot",
+      "props": {
+        "quote": "<p>We shipped our first campaign page in a day instead of a sprint.</p>",
+        "authorName": "Priya Raman",
+        "authorTitle": "Director of Digital, Northwind",
+        "authorImage": {
+          "src": "https://placehold.co/200x200@2x.png",
+          "alt": "",
+          "width": 200,
+          "height": 200
+        },
+        "variant": "bordered"
+      }
+    },
+    {
+      "name": "Large pull quote",
+      "props": {
+        "quote": "<p>The governance model is what convinced our security team.</p>",
+        "authorName": "Sam Okafor",
+        "authorTitle": "CISO, Meridian",
+        "variant": "plain",
+        "size": "large"
+      }
+    }
+  ]
+}

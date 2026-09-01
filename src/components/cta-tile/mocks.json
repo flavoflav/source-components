@@ -1,0 +1,28 @@
+{
+  "mocks": [
+    {
+      "name": "Light tile",
+      "props": {
+        "title": "Talk to an expert",
+        "body": "<p>Get a walkthrough tailored to your stack.</p>",
+        "url": "/contact",
+        "linkLabel": "Book a call",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "Photo tile",
+      "props": {
+        "title": "Read the customer story",
+        "url": "/customers/northwind",
+        "linkLabel": "Read it",
+        "backgroundImage": {
+          "src": "https://placehold.co/900x600@2x.png",
+          "alt": "",
+          "width": 900,
+          "height": 600
+        }
+      }
+    }
+  ]
+}

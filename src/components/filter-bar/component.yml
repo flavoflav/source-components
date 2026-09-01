@@ -1,0 +1,49 @@
+name: Filter Bar
+machineName: filter-bar
+description: >-
+  Search-and-filter row above a listing. Submits as a GET form so the filtered
+  state lives in the URL and is shareable and cacheable. Put Filter Select
+  components in the filters slot - one per facet.
+status: true
+required: []
+props:
+  properties:
+    action:
+      title: Action
+      type: string
+      format: uri-reference
+      examples:
+        - /resources
+    searchFieldName:
+      title: Search Field Name
+      type: string
+      examples:
+        - q
+    searchPlaceholder:
+      title: Search Placeholder
+      type: string
+      examples:
+        - Search resources
+    showSearch:
+      title: Show Search
+      type: boolean
+      examples:
+        - true
+    submitLabel:
+      title: Submit Label
+      type: string
+      examples:
+        - Apply
+    resultCountLabel:
+      title: Result Count Label
+      type: string
+      examples:
+        - 42 results
+    sticky:
+      title: Sticky
+      type: boolean
+      examples:
+        - false
+slots:
+  filters:
+    title: Filters

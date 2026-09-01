@@ -1,0 +1,68 @@
+name: Feature Card
+machineName: feature-card
+description: >-
+  Icon, title and short body describing a single capability or benefit. Lighter
+  than Card - no cover image, designed to sit three or four across inside a Card
+  Grid.
+status: true
+required:
+  - title
+props:
+  properties:
+    icon:
+      title: Icon
+      type: object
+      examples:
+        - src: https://placehold.co/96x96@2x.png
+          alt: ''
+          width: 96
+          height: 96
+      $ref: json-schema-definitions://canvas.module/image
+    title:
+      title: Title
+      type: string
+      examples:
+        - Fast to launch
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>One or two sentences describing this capability.</p>
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /features
+    linkLabel:
+      title: Link Label
+      type: string
+      examples:
+        - Learn more
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - bordered
+        - filled
+      meta:enum:
+        plain: Plain
+        bordered: Bordered
+        filled: Filled
+      examples:
+        - plain
+    align:
+      title: Align
+      type: string
+      enum:
+        - left
+        - center
+      meta:enum:
+        left: Left
+        center: Center
+      examples:
+        - left
+slots: []

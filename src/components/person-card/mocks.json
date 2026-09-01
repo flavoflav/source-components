@@ -1,0 +1,36 @@
+{
+  "mocks": [
+    {
+      "name": "Leadership",
+      "props": {
+        "name": "Priya Raman",
+        "role": "Chief Technology Officer",
+        "photo": {
+          "src": "https://placehold.co/600x750@2x.png",
+          "alt": "",
+          "width": 600,
+          "height": 750
+        },
+        "bio": "<p>Two sentences on background and what they work on.</p>",
+        "linkedinUrl": "https://linkedin.com/in/example",
+        "align": "left",
+        "photoShape": "rounded"
+      }
+    },
+    {
+      "name": "Circle avatar",
+      "props": {
+        "name": "Sam Okafor",
+        "role": "Head of Security",
+        "photo": {
+          "src": "https://placehold.co/600x600@2x.png",
+          "alt": "",
+          "width": 600,
+          "height": 600
+        },
+        "align": "center",
+        "photoShape": "circle"
+      }
+    }
+  ]
+}

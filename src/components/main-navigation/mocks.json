@@ -1,0 +1,23 @@
+{
+  "mocks": [
+    {
+      "name": "Horizontal",
+      "props": { "label": "Main", "layout": "horizontal" },
+      "slots": { "items": ["a", "b", "c"] },
+      "elements": {
+        "a": {
+          "type": "nav-item",
+          "props": { "label": "Products", "url": "/products" }
+        },
+        "b": {
+          "type": "nav-item",
+          "props": { "label": "Solutions", "url": "/solutions" }
+        },
+        "c": {
+          "type": "nav-item",
+          "props": { "label": "Pricing", "url": "/pricing" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "mocks": [
+    {
+      "name": "Three columns with feature",
+      "props": { "columnCount": 3 },
+      "slots": { "sections": ["c1", "c2", "c3"], "feature": ["promo"] },
+      "elements": {
+        "c1": {
+          "type": "link-list",
+          "props": { "heading": "Platform" },
+          "slots": { "items": ["a1", "a2"] }
+        },
+        "a1": {
+          "type": "link-item",
+          "props": { "label": "Overview", "url": "/platform" }
+        },
+        "a2": {
+          "type": "link-item",
+          "props": { "label": "Security", "url": "/security" }
+        },
+        "c2": {
+          "type": "link-list",
+          "props": { "heading": "Solutions" },
+          "slots": { "items": ["b1", "b2"] }
+        },
+        "b1": {
+          "type": "link-item",
+          "props": { "label": "Enterprise", "url": "/enterprise" }
+        },
+        "b2": {
+          "type": "link-item",
+          "props": { "label": "Public sector", "url": "/public-sector" }
+        },
+        "c3": {
+          "type": "link-list",
+          "props": { "heading": "Resources" },
+          "slots": { "items": ["d1"] }
+        },
+        "d1": {
+          "type": "link-item",
+          "props": { "label": "Documentation", "url": "/docs" }
+        },
+        "promo": {
+          "type": "card",
+          "props": {
+            "eyebrow": "Featured",
+            "title": "The 2026 platform report",
+            "body": "<p>See what changed this year.</p>",
+            "url": "/report",
+            "linkLabel": "Read it",
+            "variant": "plain"
+          }
+        }
+      }
+    }
+  ]
+}

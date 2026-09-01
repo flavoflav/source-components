@@ -1,0 +1,71 @@
+{
+  "mocks": [
+    {
+      "name": "Five logos",
+      "props": {
+        "title": "Trusted by teams at",
+        "columnCount": 5,
+        "background": "light",
+        "grayscale": true
+      },
+      "slots": { "logos": ["a", "b", "c", "d", "e"] },
+      "elements": {
+        "a": {
+          "type": "logo-tile",
+          "props": {
+            "logo": {
+              "src": "https://placehold.co/240x80@2x.png",
+              "alt": "Customer one",
+              "width": 240,
+              "height": 80
+            }
+          }
+        },
+        "b": {
+          "type": "logo-tile",
+          "props": {
+            "logo": {
+              "src": "https://placehold.co/240x80@2x.png",
+              "alt": "Customer two",
+              "width": 240,
+              "height": 80
+            }
+          }
+        },
+        "c": {
+          "type": "logo-tile",
+          "props": {
+            "logo": {
+              "src": "https://placehold.co/240x80@2x.png",
+              "alt": "Customer three",
+              "width": 240,
+              "height": 80
+            }
+          }
+        },
+        "d": {
+          "type": "logo-tile",
+          "props": {
+            "logo": {
+              "src": "https://placehold.co/240x80@2x.png",
+              "alt": "Customer four",
+              "width": 240,
+              "height": 80
+            }
+          }
+        },
+        "e": {
+          "type": "logo-tile",
+          "props": {
+            "logo": {
+              "src": "https://placehold.co/240x80@2x.png",
+              "alt": "Customer five",
+              "width": 240,
+              "height": 80
+            }
+          }
+        }
+      }
+    }
+  ]
+}

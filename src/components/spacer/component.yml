@@ -1,0 +1,28 @@
+name: Spacer
+machineName: spacer
+description: >-
+  Empty vertical gap between components. Use sparingly, only where a design
+  genuinely needs extra breathing room that the surrounding Section padding
+  cannot provide.
+status: true
+required: []
+props:
+  properties:
+    height:
+      title: Height
+      type: string
+      enum:
+        - extra_small
+        - small
+        - medium
+        - large
+        - extra_large
+      meta:enum:
+        extra_small: Extra small
+        small: Small
+        medium: Medium
+        large: Large
+        extra_large: Extra large
+      examples:
+        - medium
+slots: []

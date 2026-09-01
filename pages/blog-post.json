@@ -1,0 +1,176 @@
+{
+  "title": "Component libraries that scale",
+  "path": "/blog/component-libraries-that-scale",
+  "description": "Article page - breadcrumb, full reading layout with pull quote and footer slots, plus a live related-articles feed.",
+  "elements": {
+    "036c5f02-6418-55ed-9337-4bcaa34d4953": {
+      "type": "js.breadcrumb",
+      "props": {
+        "label": "Breadcrumb"
+      },
+      "slots": {
+        "items": [
+          "138ed824-1e12-5326-b0d6-6c81eedeb37a",
+          "a3a7bbef-03d5-5870-85c4-dcac7e78069b",
+          "d1938713-3b78-518b-a56c-dfb3598e9107",
+          "a91747e7-0159-5d0f-b772-859b3ae7b5aa"
+        ]
+      }
+    },
+    "138ed824-1e12-5326-b0d6-6c81eedeb37a": {
+      "type": "js.breadcrumb-item",
+      "props": {
+        "label": "Home",
+        "url": "/"
+      }
+    },
+    "a3a7bbef-03d5-5870-85c4-dcac7e78069b": {
+      "type": "js.breadcrumb-item",
+      "props": {
+        "label": "Blog",
+        "url": "/blog"
+      }
+    },
+    "d1938713-3b78-518b-a56c-dfb3598e9107": {
+      "type": "js.breadcrumb-item",
+      "props": {
+        "label": "Design",
+        "url": "/blog?topic=design"
+      }
+    },
+    "a91747e7-0159-5d0f-b772-859b3ae7b5aa": {
+      "type": "js.breadcrumb-item",
+      "props": {
+        "label": "Component libraries that scale",
+        "url": "/blog/component-libraries-that-scale",
+        "current": true
+      }
+    },
+    "9b7ade24-a65f-546e-8c4f-b6f731a95df9": {
+      "type": "js.article-body",
+      "props": {
+        "title": "Component libraries that survive contact with marketing",
+        "standfirst": "Most design systems fail at the handover. Here is what separates the ones that stick.",
+        "body": "<p>Most design systems do not fail in Figma. They fail at the handover, when the first marketer opens the tool and discovers that the thing they need to build is not one of the twelve components somebody drew six months ago.</p><h2>The handover is the product</h2><p>A component library is not a deliverable you hand to another team. It is the interface between the people who own the brand and the people who publish under it. Treat it as infrastructure and it survives. Treat it as documentation and it rots.</p><h3>Three failure modes</h3><ul><li><strong>Too specific.</strong> A component built for one campaign is dead the week after that campaign ends.</li><li><strong>Too configurable.</strong> Twenty props for colour, size and alignment is not flexibility, it is an unmaintained design system with extra steps.</li><li><strong>Too rigid.</strong> If a component caps the number of cards at three, someone will eventually need four and will paste in raw HTML to get it.</li></ul><blockquote>The right question is not \"what does this page need?\" but \"where else could this appear, and what would differ?\"</blockquote><h2>What good looks like</h2><p>Parents own layout and the section heading. Children own item content. Repeatable things are slots, not numbered props. Styling is a small set of named variants rather than a colour picker per text element.</p><p>None of this is novel. It is just unglamorous enough that it usually gets skipped.</p>",
+        "heroImage": {
+          "src": "/sites/default/files/2026-09/1600x900-2x-1ed18961.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/1600x900-2x-1ed18961.png.avif%3Fitok%3DPB7DMwAz",
+          "alt": "",
+          "width": 3200,
+          "height": 1800
+        },
+        "category": "Design",
+        "date": "12 March 2026",
+        "authorName": "Jamie Lee",
+        "authorTitle": "Principal Design Engineer",
+        "authorImage": {
+          "src": "/sites/default/files/2026-09/200x200-2x-a28f3faa.png?alternateWidths=/sites/default/files/styles/canvas_parametrized_width--%7Bwidth%7D/public/2026-09/200x200-2x-a28f3faa.png.avif%3Fitok%3DQTeBq1dx",
+          "alt": "",
+          "width": 400,
+          "height": 400
+        },
+        "readingTime": "8 min read"
+      },
+      "slots": {
+        "aside": ["59733b6a-50e0-5e6e-be11-cde3c8c8451b"],
+        "footer": [
+          "2a27002d-4441-5000-aad9-83e8a0648c1e",
+          "752e18a3-38bd-5525-82e6-d3e29ba120d8"
+        ]
+      },
+      "_provenance": {
+        "heroImage": {
+          "target_id": 16,
+          "source_url": "https://placehold.co/1600x900@2x.png"
+        },
+        "authorImage": {
+          "target_id": 11,
+          "source_url": "https://placehold.co/200x200@2x.png"
+        }
+      }
+    },
+    "59733b6a-50e0-5e6e-be11-cde3c8c8451b": {
+      "type": "js.testimonial-card",
+      "props": {
+        "quote": "<p>The moment we let editors add a fourth card, the paste-in-raw-HTML problem disappeared overnight.</p>",
+        "authorName": "Lena Vogt",
+        "authorTitle": "Head of Web, Halcyon Group",
+        "variant": "filled",
+        "size": "medium"
+      }
+    },
+    "2a27002d-4441-5000-aad9-83e8a0648c1e": {
+      "type": "js.spec-list",
+      "props": {
+        "title": "Article details",
+        "columnCount": 2,
+        "variant": "divided"
+      },
+      "slots": {
+        "items": [
+          "48ce0a87-7294-5997-8194-58ea747ae66e",
+          "130a88f3-5b47-5479-a29f-fb708165777d",
+          "6d7f8fb9-9652-5e52-b360-315c81f3e2f0",
+          "a3746d28-e43f-561d-a384-d68f91101464"
+        ]
+      }
+    },
+    "48ce0a87-7294-5997-8194-58ea747ae66e": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Topic",
+        "value": "Design systems"
+      }
+    },
+    "130a88f3-5b47-5479-a29f-fb708165777d": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Reading time",
+        "value": "8 minutes"
+      }
+    },
+    "6d7f8fb9-9652-5e52-b360-315c81f3e2f0": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Published",
+        "value": "12 March 2026"
+      }
+    },
+    "a3746d28-e43f-561d-a384-d68f91101464": {
+      "type": "js.spec-item",
+      "props": {
+        "label": "Last reviewed",
+        "value": "2 April 2026"
+      }
+    },
+    "752e18a3-38bd-5525-82e6-d3e29ba120d8": {
+      "type": "js.cta-banner",
+      "props": {
+        "title": "Want the library we use?",
+        "body": "<p>Sixty-one components, MIT licensed, ready to rebrand.</p>",
+        "background": "light",
+        "layout": "inline"
+      },
+      "slots": {
+        "actions": ["5350d650-762c-5829-a441-9bf36cfb98b6"]
+      }
+    },
+    "5350d650-762c-5829-a441-9bf36cfb98b6": {
+      "type": "js.button",
+      "props": {
+        "label": "Get the library",
+        "url": "/component-library",
+        "variant": "primary"
+      }
+    },
+    "3223d5f9-cfae-5c62-9ea5-e9eef10dc115": {
+      "type": "js.related-articles",
+      "props": {
+        "title": "More on design systems",
+        "entityType": "node--article",
+        "itemCount": 3,
+        "columnCount": 3
+      }
+    }
+  },
+  "uuid": "1c2c5b5d-79ce-4d2b-b74b-7fe8f740748b"
+}

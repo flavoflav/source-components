@@ -1,0 +1,67 @@
+name: Heading
+machineName: heading
+description: >-
+  Standalone heading with independent semantic level and visual size, so an
+  author can keep a correct document outline (h2) while choosing how big it
+  looks. Use for one-off titles; use Section Heading when you also need an
+  eyebrow and intro paragraph.
+status: true
+required:
+  - text
+props:
+  properties:
+    text:
+      title: Text
+      type: string
+      examples:
+        - A clear, specific headline
+    level:
+      title: Level
+      type: string
+      enum:
+        - h1
+        - h2
+        - h3
+        - h4
+        - h5
+        - h6
+      meta:enum:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+      examples:
+        - h2
+    size:
+      title: Size
+      type: string
+      enum:
+        - small
+        - medium
+        - large
+        - extra_large
+        - display
+      meta:enum:
+        small: Small
+        medium: Medium
+        large: Large
+        extra_large: Extra large
+        display: Display
+      examples:
+        - large
+    align:
+      title: Align
+      type: string
+      enum:
+        - left
+        - center
+        - right
+      meta:enum:
+        left: Left
+        center: Center
+        right: Right
+      examples:
+        - left
+slots: []

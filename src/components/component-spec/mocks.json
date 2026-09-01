@@ -1,0 +1,53 @@
+{
+  "mocks": [
+    {
+      "name": "Collapsed",
+      "props": {
+        "componentName": "Card Grid",
+        "componentId": "card-grid",
+        "family": "Sections",
+        "description": "<p>The workhorse content band - optional eyebrow, title and intro above a responsive grid of any card components.</p>",
+        "propsTable": "Name | Type | Required | Example\ntitle | string |  | Built for the way your team works\ncolumnCount | enum |  | 3\nbackground | enum |  | light",
+        "slotNames": "items\nactions",
+        "mockNames": "Three feature cards",
+        "usedOn": "Home\nHealthcare\nRidgeway Group",
+        "capabilities": "slots\nrich text",
+        "defaultOpen": false
+      }
+    },
+    {
+      "name": "Expanded with source",
+      "props": {
+        "componentName": "Badge",
+        "componentId": "badge",
+        "family": "Primitives",
+        "description": "<p>Small pill label used for categories, tags, statuses and eyebrow labels.</p>",
+        "propsTable": "Name | Type | Required | Example\nlabel | string | yes | New\ntone | enum |  | primary",
+        "slotNames": "",
+        "mockNames": "Primary\nCategory",
+        "usedOn": "Component Library Showcase",
+        "capabilities": "",
+        "defaultOpen": true
+      },
+      "slots": { "sources": ["jsx", "yml"] },
+      "elements": {
+        "jsx": {
+          "type": "code-block",
+          "props": {
+            "code": "import { cn } from 'drupal-canvas';\n\nconst Badge = ({ label, tone = 'neutral', className }) => {\n  if (!label) {\n    return null;\n  }\n\n  return <span className={cn('rounded-full px-3 py-1', className)}>{label}</span>;\n};\n\nexport default Badge;",
+            "language": "jsx",
+            "filename": "index.jsx"
+          }
+        },
+        "yml": {
+          "type": "code-block",
+          "props": {
+            "code": "name: Badge\nmachineName: badge\nstatus: true\nrequired:\n  - label\nslots: []",
+            "language": "yaml",
+            "filename": "component.yml"
+          }
+        }
+      }
+    }
+  ]
+}

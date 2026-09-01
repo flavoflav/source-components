@@ -1,0 +1,27 @@
+{
+  "mocks": [
+    {
+      "name": "Three levels",
+      "props": { "label": "Breadcrumb" },
+      "slots": { "items": ["a", "b", "c"] },
+      "elements": {
+        "a": {
+          "type": "breadcrumb-item",
+          "props": { "label": "Home", "url": "/" }
+        },
+        "b": {
+          "type": "breadcrumb-item",
+          "props": { "label": "Resources", "url": "/resources" }
+        },
+        "c": {
+          "type": "breadcrumb-item",
+          "props": {
+            "label": "Guides",
+            "url": "/resources/guides",
+            "current": true
+          }
+        }
+      }
+    }
+  ]
+}

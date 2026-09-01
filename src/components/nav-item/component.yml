@@ -1,0 +1,32 @@
+name: Nav Item
+machineName: nav-item
+description: >-
+  A single top-level menu entry. Leave the panel slot empty for a plain link, or
+  drop a Link List or Mega Menu into it to get a hover/click dropdown. This is
+  how multi-level navigation is modelled - there is no nested array of children
+  props.
+status: true
+required:
+  - label
+  - url
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Products
+    url:
+      title: Url
+      type: string
+      format: uri-reference
+      examples:
+        - /products
+    active:
+      title: Active
+      type: boolean
+      examples:
+        - false
+slots:
+  panel:
+    title: Dropdown panel

@@ -1,0 +1,32 @@
+name: Step Item
+machineName: step-item
+description: >-
+  One step inside a Step List. The number is supplied by the parent, so this
+  component only owns the step title, explanation and an optional illustration.
+status: true
+required:
+  - title
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Connect your content
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Point the workspace at your existing Drupal site.</p>
+    image:
+      title: Image
+      type: object
+      examples:
+        - src: https://placehold.co/900x500@2x.png
+          alt: ''
+          width: 900
+          height: 500
+      $ref: json-schema-definitions://canvas.module/image
+slots: []

@@ -1,0 +1,53 @@
+{
+  "mocks": [
+    {
+      "name": "Three specs",
+      "props": {
+        "title": "Component index",
+        "intro": "<p>Every component in the library, with its props, slots and source.</p>",
+        "searchPlaceholder": "Search name, prop, slot or description",
+        "groupByFamily": true
+      },
+      "slots": { "components": ["a", "b", "c"] },
+      "elements": {
+        "a": {
+          "type": "component-spec",
+          "props": {
+            "componentName": "Badge",
+            "componentId": "badge",
+            "family": "Primitives",
+            "description": "<p>Small pill label used for categories, tags and statuses.</p>",
+            "propsTable": "Name | Type | Required | Example\nlabel | string | yes | New\ntone | enum |  | primary",
+            "mockNames": "Primary\nCategory",
+            "capabilities": ""
+          }
+        },
+        "b": {
+          "type": "component-spec",
+          "props": {
+            "componentName": "Card Grid",
+            "componentId": "card-grid",
+            "family": "Sections",
+            "description": "<p>Titled band above a responsive grid of any card components.</p>",
+            "propsTable": "Name | Type | Required | Example\ntitle | string |  | Built for the way your team works\ncolumnCount | enum |  | 3",
+            "slotNames": "items\nactions",
+            "mockNames": "Three feature cards",
+            "capabilities": "slots\nrich text"
+          }
+        },
+        "c": {
+          "type": "component-spec",
+          "props": {
+            "componentName": "News Feed",
+            "componentId": "news-feed",
+            "family": "Content",
+            "description": "<p>Live listing of Drupal content pulled over JSON:API.</p>",
+            "propsTable": "Name | Type | Required | Example\nentityType | string |  | node--article\nitemCount | number |  | 6",
+            "mockNames": "Articles, three across",
+            "capabilities": "fetches data\nrich text"
+          }
+        }
+      }
+    }
+  ]
+}

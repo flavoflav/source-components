@@ -1,0 +1,18 @@
+name: Breadcrumb
+machineName: breadcrumb
+description: >-
+  Trail of ancestor links showing where the current page sits. Fill the items
+  slot with Breadcrumb Item components, marking the last one as current. Drop it
+  into the breadcrumb slot of Page Banner or place it directly above content.
+status: true
+required: []
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Breadcrumb
+slots:
+  items:
+    title: Items

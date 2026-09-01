@@ -1,0 +1,13 @@
+{
+  "mocks": [
+    {
+      "name": "Three articles",
+      "props": {
+        "title": "More like this",
+        "entityType": "node--article",
+        "itemCount": 3,
+        "columnCount": 3
+      }
+    }
+  ]
+}

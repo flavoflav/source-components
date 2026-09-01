@@ -1,0 +1,22 @@
+{
+  "mocks": [
+    {
+      "name": "Plain link",
+      "props": { "label": "Pricing", "url": "/pricing" }
+    },
+    {
+      "name": "Rich link",
+      "props": {
+        "label": "Platform",
+        "url": "/platform",
+        "description": "Everything the team needs in one place.",
+        "icon": {
+          "src": "https://placehold.co/48x48@2x.png",
+          "alt": "",
+          "width": 48,
+          "height": 48
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "mocks": [
+    {
+      "name": "Media last",
+      "props": {
+        "eyebrow": "Content operations",
+        "title": "Publish without waiting on a release",
+        "body": "<p>Explain the capability in two or three sentences.</p>",
+        "image": {
+          "src": "https://placehold.co/1200x900@2x.png",
+          "alt": "",
+          "width": 1200,
+          "height": 900
+        },
+        "mediaPosition": "end"
+      },
+      "slots": { "actions": ["cta"] },
+      "elements": {
+        "cta": {
+          "type": "button",
+          "props": {
+            "label": "See how it works",
+            "url": "/how-it-works",
+            "variant": "primary"
+          }
+        }
+      }
+    },
+    {
+      "name": "Media first, dark",
+      "props": {
+        "title": "Every change is reviewable",
+        "body": "<ul><li>Full audit trail</li><li>One-click revert</li><li>Role-based approval</li></ul>",
+        "image": {
+          "src": "https://placehold.co/1200x900@2x.png",
+          "alt": "",
+          "width": 1200,
+          "height": 900
+        },
+        "mediaPosition": "start",
+        "background": "dark"
+      }
+    }
+  ]
+}

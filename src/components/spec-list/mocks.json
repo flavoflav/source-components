@@ -1,0 +1,27 @@
+{
+  "mocks": [
+    {
+      "name": "Specifications",
+      "props": {
+        "title": "Specifications",
+        "columnCount": 1,
+        "variant": "divided"
+      },
+      "slots": { "items": ["a", "b", "c"] },
+      "elements": {
+        "a": {
+          "type": "spec-item",
+          "props": { "label": "Deployment", "value": "Cloud or self-hosted" }
+        },
+        "b": {
+          "type": "spec-item",
+          "props": { "label": "SSO", "value": "SAML 2.0, OIDC" }
+        },
+        "c": {
+          "type": "spec-item",
+          "props": { "label": "Support", "value": "24/7 with 1 hour response" }
+        }
+      }
+    }
+  ]
+}

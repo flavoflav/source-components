@@ -1,0 +1,62 @@
+{
+  "mocks": [
+    {
+      "name": "Light with nav",
+      "props": {
+        "siteName": "Acme",
+        "logoUrl": "/",
+        "variant": "light",
+        "sticky": true
+      },
+      "slots": { "navigation": ["nav"], "actions": ["cta"] },
+      "elements": {
+        "nav": {
+          "type": "main-navigation",
+          "props": {},
+          "slots": { "items": ["n1", "n2", "n3"] }
+        },
+        "n1": {
+          "type": "nav-item",
+          "props": { "label": "Products", "url": "/products" }
+        },
+        "n2": {
+          "type": "nav-item",
+          "props": { "label": "Solutions", "url": "/solutions" }
+        },
+        "n3": {
+          "type": "nav-item",
+          "props": { "label": "Pricing", "url": "/pricing" }
+        },
+        "cta": {
+          "type": "button",
+          "props": {
+            "label": "Book a demo",
+            "url": "/demo",
+            "variant": "primary",
+            "size": "small"
+          }
+        }
+      }
+    },
+    {
+      "name": "Dark",
+      "props": { "siteName": "Acme", "variant": "dark" },
+      "slots": { "navigation": ["nav"] },
+      "elements": {
+        "nav": {
+          "type": "main-navigation",
+          "props": {},
+          "slots": { "items": ["n1", "n2"] }
+        },
+        "n1": {
+          "type": "nav-item",
+          "props": { "label": "Platform", "url": "/platform" }
+        },
+        "n2": {
+          "type": "nav-item",
+          "props": { "label": "Docs", "url": "/docs" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+name: Spec List
+machineName: spec-list
+description: >-
+  Label-and-value list for structured detail - technical specifications,
+  ingredients, event facts, pricing inclusions or entity metadata. Fill the
+  items slot with Spec Item components.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Specifications
+    columnCount:
+      title: Column Count
+      type: integer
+      enum:
+        - 1
+        - 2
+      meta:enum:
+        1: One
+        2: Two
+      examples:
+        - 1
+    variant:
+      title: Variant
+      type: string
+      enum:
+        - plain
+        - divided
+        - bordered
+      meta:enum:
+        plain: Plain
+        divided: Divided rows
+        bordered: Bordered box
+      examples:
+        - divided
+slots:
+  items:
+    title: Items

@@ -1,0 +1,52 @@
+name: Social Links
+machineName: social-links
+description: >-
+  Row of social profile icons with built-in LinkedIn, X, YouTube, Facebook and
+  Instagram marks. Leave a URL empty to hide that network. Used in Site Footer
+  and contact pages - no image uploads needed.
+status: true
+required: []
+props:
+  properties:
+    linkedinUrl:
+      title: Linkedin Url
+      type: string
+      format: uri-reference
+      examples:
+        - https://linkedin.com/company/example
+    xUrl:
+      title: X Url
+      type: string
+      format: uri-reference
+      examples:
+        - https://x.com/example
+    youtubeUrl:
+      title: Youtube Url
+      type: string
+      format: uri-reference
+      examples:
+        - https://youtube.com/@example
+    facebookUrl:
+      title: Facebook Url
+      type: string
+      format: uri-reference
+      examples:
+        - https://facebook.com/example
+    instagramUrl:
+      title: Instagram Url
+      type: string
+      format: uri-reference
+      examples:
+        - https://instagram.com/example
+    size:
+      title: Size
+      type: string
+      enum:
+        - small
+        - medium
+      meta:enum:
+        small: Small
+        medium: Medium
+      examples:
+        - medium
+slots: []

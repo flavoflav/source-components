@@ -1,0 +1,47 @@
+{
+  "mocks": [
+    {
+      "name": "Three feature cards",
+      "props": {
+        "eyebrow": "Capabilities",
+        "title": "Built for the way your team works",
+        "intro": "<p>A sentence or two introducing the cards below.</p>",
+        "columnCount": 3,
+        "align": "center",
+        "background": "light"
+      },
+      "slots": { "items": ["a", "b", "c"], "actions": ["cta"] },
+      "elements": {
+        "a": {
+          "type": "feature-card",
+          "props": {
+            "title": "Fast to launch",
+            "body": "<p>Ship the first page on day one.</p>"
+          }
+        },
+        "b": {
+          "type": "feature-card",
+          "props": {
+            "title": "Governed by default",
+            "body": "<p>Every change is reviewable.</p>"
+          }
+        },
+        "c": {
+          "type": "feature-card",
+          "props": {
+            "title": "Composable",
+            "body": "<p>Swap any block without a rebuild.</p>"
+          }
+        },
+        "cta": {
+          "type": "button",
+          "props": {
+            "label": "See all capabilities",
+            "url": "/capabilities",
+            "variant": "primary"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "mocks": [
+    {
+      "name": "Dark with four columns",
+      "props": {
+        "siteName": "Acme",
+        "tagline": "The governed platform for modern digital experiences.",
+        "copyright": "© 2026 Acme, Inc. All rights reserved.",
+        "columnCount": 3,
+        "variant": "dark"
+      },
+      "slots": {
+        "linkColumns": ["c1", "c2", "c3"],
+        "social": ["soc"],
+        "legal": ["l1", "l2"]
+      },
+      "elements": {
+        "c1": {
+          "type": "link-list",
+          "props": { "heading": "Product" },
+          "slots": { "items": ["p1", "p2"] }
+        },
+        "p1": {
+          "type": "link-item",
+          "props": { "label": "Platform", "url": "/platform" }
+        },
+        "p2": {
+          "type": "link-item",
+          "props": { "label": "Pricing", "url": "/pricing" }
+        },
+        "c2": {
+          "type": "link-list",
+          "props": { "heading": "Company" },
+          "slots": { "items": ["q1", "q2"] }
+        },
+        "q1": {
+          "type": "link-item",
+          "props": { "label": "About", "url": "/about" }
+        },
+        "q2": {
+          "type": "link-item",
+          "props": { "label": "Careers", "url": "/careers" }
+        },
+        "c3": {
+          "type": "link-list",
+          "props": { "heading": "Resources" },
+          "slots": { "items": ["r1"] }
+        },
+        "r1": {
+          "type": "link-item",
+          "props": { "label": "Documentation", "url": "/docs" }
+        },
+        "soc": {
+          "type": "social-links",
+          "props": {
+            "linkedinUrl": "https://linkedin.com/company/example",
+            "youtubeUrl": "https://youtube.com/@example"
+          }
+        },
+        "l1": {
+          "type": "link-item",
+          "props": { "label": "Privacy", "url": "/privacy" }
+        },
+        "l2": {
+          "type": "link-item",
+          "props": { "label": "Terms", "url": "/terms" }
+        }
+      }
+    }
+  ]
+}

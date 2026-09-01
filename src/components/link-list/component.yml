@@ -1,0 +1,29 @@
+name: Link List
+machineName: link-list
+description: >-
+  Optionally titled list of links, stacked or inline. Used for footer columns,
+  in-page jump lists, sidebar navigation and quick links. Place Link Item
+  components in the items slot.
+status: true
+required: []
+props:
+  properties:
+    heading:
+      title: Heading
+      type: string
+      examples:
+        - Products
+    layout:
+      title: Layout
+      type: string
+      enum:
+        - stacked
+        - inline
+      meta:enum:
+        stacked: Stacked
+        inline: Inline
+      examples:
+        - stacked
+slots:
+  items:
+    title: Items

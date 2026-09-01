@@ -1,0 +1,61 @@
+name: Carousel
+machineName: carousel
+description: >-
+  Horizontally sliding band that shows one to three items at a time with
+  previous and next controls. Put any card components in the slides slot - this
+  single component covers the testimonial carousel, story carousel, product
+  carousel and hero slider patterns.
+status: true
+required: []
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - What our customers say
+    intro:
+      title: Intro
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Results from teams already running on the platform.</p>
+    slidesPerView:
+      title: Slides Per View
+      type: integer
+      enum:
+        - 1
+        - 2
+        - 3
+      meta:enum:
+        1: One
+        2: Two
+        3: Three
+      examples:
+        - 1
+    background:
+      title: Background
+      type: string
+      enum:
+        - none
+        - white
+        - light
+        - dark
+        - primary
+      meta:enum:
+        none: None (inherit)
+        white: White
+        light: Light gray
+        dark: Dark
+        primary: Primary
+      examples:
+        - light
+    showArrows:
+      title: Show Arrows
+      type: boolean
+      examples:
+        - true
+slots:
+  slides:
+    title: Slides

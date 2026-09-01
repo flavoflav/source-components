@@ -1,0 +1,74 @@
+name: Newsletter Signup
+machineName: newsletter-signup
+description: >-
+  Email capture band - headline, supporting line and a single email field
+  posting to your list provider or a Canvas form endpoint. For anything needing
+  more than an email address, use Contact Form instead.
+status: true
+required:
+  - title
+props:
+  properties:
+    title:
+      title: Title
+      type: string
+      examples:
+        - Get the monthly digest
+    body:
+      title: Body
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples:
+        - <p>Product news and practical guides, once a month. No noise.</p>
+    action:
+      title: Action
+      type: string
+      format: uri-reference
+      examples:
+        - /newsletter/subscribe
+    emailFieldName:
+      title: Email Field Name
+      type: string
+      examples:
+        - email
+    placeholder:
+      title: Placeholder
+      type: string
+      examples:
+        - you@company.com
+    buttonLabel:
+      title: Button Label
+      type: string
+      examples:
+        - Subscribe
+    consentText:
+      title: Consent Text
+      type: string
+      examples:
+        - By subscribing you agree to our privacy policy. Unsubscribe any time.
+    background:
+      title: Background
+      type: string
+      enum:
+        - light
+        - dark
+        - primary
+      meta:enum:
+        light: Light gray
+        dark: Dark
+        primary: Primary
+      examples:
+        - light
+    layout:
+      title: Layout
+      type: string
+      enum:
+        - inline
+        - stacked
+      meta:enum:
+        inline: Copy left, form right
+        stacked: Stacked and centered
+      examples:
+        - inline
+slots: []
