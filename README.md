@@ -1,103 +1,116 @@
-# Nebula
+# Drupal Source components
 
-Nebula provides a template repository for
-[`@drupal-canvas/create`](https://www.npmjs.com/package/@drupal-canvas/create)
-to scaffold a new codebase for working with
-[Drupal Canvas Code Components](https://project.pages.drupalcode.org/canvas/code-components).
-The codebase serves as a development environment fully set up with tooling and
-examples for AI-assisted development workflows.
+A neutral, AI-ready component library for **Drupal Canvas / Acquia Source**. 65
+components, each with its React implementation, Canvas metadata and Workbench
+mocks — installable into any Nebula project with one command.
 
-## Getting started
+## Install
 
-Instead of cloning this repository, create a new project interactively:
-
-```
-npx @drupal-canvas/create@latest
-```
-
-## AI-assisted development
-
-[Agent skills](https://agentskills.io) are located in `.agents/skills/`.
-
-- `nebula-*` skills provide conventions and workflows specific for this
-  repository.
-- `canvas-*` skills are generic Canvas Code Component component guidance
-  installed from
-  [`drupal-canvas/skills`](https://github.com/drupal-canvas/skills).
-
-### Setup
-
-No setup is required for the following coding agents; they read directly from
-`.agents/skills/`: Amp, Codex, Gemini CLI, GitHub Copilot, Kimi Code CLI,
-OpenCode. (This list can become outdated quickly; by the time you read this,
-additional coding agents may already standardize on this directory.)
-
-If your coding agent does not standardize on this directory (for example, Cursor
-or Claude Code), manually symlink the relevant skill from `.agents/skills/`:
+From inside a fresh Nebula project:
 
 ```bash
-# For Claude Code
-ln -s .agents/skills/<skill-name> .claude/skills/<skill-name>
-
-# For Cursor
-ln -s .agents/skills/<skill-name> .cursor/skills/<skill-name>
+npx drupal-source-components
 ```
 
-### Adding new skills
-
-Install new skills from [skills.sh](https://skills.sh). For example:
+That copies all 65 components into the project's configured component directory
+and merges the theme tokens into its global CSS. Then:
 
 ```bash
-npx skills add vercel-labs/agent-skills
+npm run dev
 ```
 
-### Updating skills
+Every component appears in Workbench with its preview states, ready to compose
+into pages.
 
-Update the Drupal Canvas skills by re-adding and selecting all of them:
+### Running it before the repo has a remote
+
+The command above resolves once this package is reachable by name. Until then,
+point `npx` straight at the checkout — same behaviour:
 
 ```bash
-npx skills add drupal-canvas/skills
+npx /path/to/drupal-source-components          # from inside the target project
+npx github:OWNER/REPO                          # once you push it
 ```
 
-Once [vercel-labs/skills#337](https://github.com/vercel-labs/skills/issues/337)
-is resolved, you'll be able to use the `npx skills check` and
-`npx skills update` to check for and apply updates more efficiently.
+### Options
 
-## Features
+| Flag             | Effect                                                     |
+| ---------------- | ---------------------------------------------------------- |
+| `--target <dir>` | Install into another directory instead of the current one  |
+| `--only a,b,c`   | Install just these components                              |
+| `--force`        | Replace components that already exist (skipped by default) |
+| `--no-theme`     | Leave the target's global CSS alone                        |
+| `--dry-run`      | Report what would change, write nothing                    |
 
-- [`@drupal-canvas/cli`](https://www.npmjs.com/package/@drupal-canvas/cli)
-  installed
-  - `.env.example` file with instructions specific to this codebase
-- [`@drupal-canvas/eslint-config`](https://www.npmjs.com/package/@drupal-canvas/eslint-config)
-  configured
-  - Recommended rules are added on top of the required validation for the
-    components to work in Drupal Canvas
-- [Canvas Workbench](https://project.pages.drupalcode.org/canvas/code-components/workbench/)
-  for developing and previewing components locally
-  - React component compilation
-  - [Tailwind CSS](https://tailwindcss.com) styling
-- [Prettier](https://prettier.io/) with plugins configured
-  - [`prettier-plugin-tailwindcss`](https://www.npmjs.com/package/prettier-plugin-tailwindcss)
-  - [`@ianvs/prettier-plugin-sort-imports`](https://www.npmjs.com/package/@ianvs/prettier-plugin-sort-imports)
-- Pre-commit hook with [Husky](https://typicode.github.io/husky) for linting and
-  formatting staged files using
-  [`lint-staged`](https://www.npmjs.com/package/lint-staged)
-- [GitHub Actions](https://github.com/features/actions) workflows:
-  - Static code checks
-  - Validating PR titles against
-    [the Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0)
-    (delete `.github/workflows/lint-pr.yml` if you don't want this)
-- Example components
+Existing components are never overwritten without `--force`, and the theme block
+is written between markers so re-running updates it in place rather than
+appending a second copy.
 
-## Commands
+## What you get
 
-| Command                          | Description                                                                                       |
-| -------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `npx canvas [command] [options]` | Runs Drupal Canvas CLI commands <br> (`npx canvas` lists available commands)                      |
-| `npm run dev`                    | Starts [Canvas Workbench](https://project.pages.drupalcode.org/canvas/code-components/workbench/) |
-| `npm run code:check`             | Runs all code checks                                                                              |
-| `npm run code:check:prettier`    | Checks code formatting with Prettier                                                              |
-| `npm run code:check:eslint`      | Checks code with ESLint                                                                           |
-| `npm run code:fix`               | Runs all code fixes                                                                               |
-| `npm run code:fix:prettier`      | Fixes code formatting with Prettier                                                               |
-| `npm run code:fix:eslint`        | Fixes code with ESLint                                                                            |
+| Family        | Components                                                                                                                                                                                                                                                                                                      |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Primitives    | section, grid-container, two-column, heading, text, image, spacer, badge, button, link-list, link-item                                                                                                                                                                                                          |
+| Site chrome   | site-header, main-navigation, nav-item, mega-menu, sub-nav, announcement-bar, site-footer, social-links, search-form, breadcrumb, breadcrumb-item                                                                                                                                                               |
+| Page sections | hero, page-banner, section-heading, card-grid, feature-card, feature-split, cta-banner, cta-tile, stat-card, logo-wall, logo-tile, testimonial-card, carousel, accordion, accordion-item, tabs, tab-panel, video-embed, newsletter-signup, contact-form, step-list, step-item, spec-list, spec-item, data-table |
+| Content       | card, article-card, article-body, story-card, resource-card, person-card, event-card, product-card, location-card, news-feed, related-articles, pagination, filter-bar, filter-select                                                                                                                           |
+| Documentation | component-explorer, component-spec, code-block                                                                                                                                                                                                                                                                  |
+| Theming       | theme-switch                                                                                                                                                                                                                                                                                                    |
+
+Full reference:
+**[src/components/COMPONENTS.md](src/components/COMPONENTS.md)**. Where they
+came from: **[src/components/PROVENANCE.md](src/components/PROVENANCE.md)**.
+
+## Conventions
+
+| Rule                                                                | Why                                                                                                   |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Repeatable content is a parent **slot** plus a child component      | Editors decide how many items appear; children stay reusable                                          |
+| One image is one **object prop** using the Canvas image schema      | Matches the Drupal media picker (`examples` before `$ref`)                                            |
+| Images render with a plain `<img>`                                  | The Canvas `<Image>` helper needs an `alternateWidths` parameter that media-library URLs do not carry |
+| Buttons go in an `actions` slot                                     | Sections carry no `ctaLabel` / `ctaUrl` props                                                         |
+| `variant` / `background` / `align` enums, not per-text colour props | Short editor forms, consistent type scale                                                             |
+| Folder name === `machineName`, no project prefix                    | Portable between projects                                                                             |
+| `description` in every `component.yml`                              | What Canvas, Drupal and coding agents read to pick the right component                                |
+
+## Theming
+
+Every colour routes through four token ramps in `src/global.css` — `white`,
+`black`, `gray-*` and `primary-*` — so the whole library re-themes from one
+block without touching a component.
+
+The ramps are named by **role**, not literal colour: `--color-white` is the page
+surface and `--color-black` is maximum-contrast ink. That is what lets
+`bg-gray-900 text-white` stay a correct contrast band in both themes.
+
+It ships **dark by default**, with a light palette under
+`:root[data-theme='light']`. The `theme-switch` component flips it and remembers
+the choice; you can also set the attribute yourself:
+
+```html
+<html data-theme="light"></html>
+```
+
+To rebrand, edit the two ramps. No component file needs changing.
+
+## Components that need a live Drupal
+
+`news-feed` and `related-articles` fetch over JSON:API with SWR. Without a
+connected site they render a loading skeleton and then an explicit empty state —
+expected, not a bug. Everything else previews offline.
+
+## Developing the library
+
+This repo is itself a Canvas workspace, so `npm run dev` previews the components
+here too.
+
+```bash
+npm install
+npm run dev            # Workbench
+npm run code:fix       # prettier + eslint
+npx canvas validate    # check components against the Canvas contract
+```
+
+`scripts/build-component-explorer-page.mjs` regenerates a Canvas page that
+documents the library using the library — a filterable index of every component
+with its props, slots and full source.

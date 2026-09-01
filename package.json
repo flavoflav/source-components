@@ -1,8 +1,27 @@
 {
-  "name": "component_library",
-  "version": "0.0.0",
+  "name": "drupal-source-components",
+  "version": "1.0.0",
+  "description": "A neutral, AI-ready component library for Drupal Canvas / Acquia Source, installable into any Nebula project with one command.",
+  "keywords": [
+    "drupal",
+    "drupal-canvas",
+    "acquia-source",
+    "nebula",
+    "component-library"
+  ],
   "private": true,
-  "description": "Starter template for @drupal-canvas/create with tooling for AI-assisted development",
+  "type": "module",
+  "bin": {
+    "drupal-source-components": "bin/install.mjs"
+  },
+  "files": [
+    "bin",
+    "src/components",
+    "src/global.css",
+    "src/layout.jsx",
+    "canvas.config.json",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/acquia/nebula.git"
@@ -10,7 +29,19 @@
   "author": "Acquia Engineering (https://www.acquia.com)",
   "bugs": "https://github.com/acquia/nebula/issues",
   "homepage": "https://github.com/acquia/nebula#readme",
-  "type": "module",
+  "scripts": {
+    "canvas": "canvas",
+    "dev": "canvas-workbench",
+    "code:check": "run-s -c -n code:check:**",
+    "code:check:prettier": "npm run s:prettier -- --check",
+    "code:check:eslint": "npm run s:eslint",
+    "code:fix": "run-s -c -n code:fix:**",
+    "code:fix:prettier": "npm run s:prettier -- --write",
+    "code:fix:eslint": "npm run s:eslint -- --fix",
+    "s:prettier": "prettier \"**/*.{css,js,jsx,json,html,md,mdx,yml}\"",
+    "s:eslint": "eslint \"**/*.{js,jsx,yml,yaml}\"",
+    "prepare": "husky"
+  },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -38,18 +69,5 @@
   "lint-staged": {
     "*.{css,js,jsx,json,html,md,mdx,yml}": "prettier --write",
     "*.{js,jsx,yml,yaml}": "eslint --fix"
-  },
-  "scripts": {
-    "canvas": "canvas",
-    "dev": "canvas-workbench",
-    "code:check": "run-s -c -n code:check:**",
-    "code:check:prettier": "npm run s:prettier -- --check",
-    "code:check:eslint": "npm run s:eslint",
-    "code:fix": "run-s -c -n code:fix:**",
-    "code:fix:prettier": "npm run s:prettier -- --write",
-    "code:fix:eslint": "npm run s:eslint -- --fix",
-    "s:prettier": "prettier \"**/*.{css,js,jsx,json,html,md,mdx,yml}\"",
-    "s:eslint": "eslint \"**/*.{js,jsx,yml,yaml}\"",
-    "prepare": "husky"
   }
 }
