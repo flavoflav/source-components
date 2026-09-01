@@ -3,7 +3,7 @@
     {
       "name": "With image and stat",
       "props": {
-        "customerName": "Northwind",
+        "customerName": "Acme",
         "image": {
           "src": "https://placehold.co/900x600@2x.png",
           "alt": "",

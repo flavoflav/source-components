@@ -14,13 +14,13 @@ props:
       title: Customer Name
       type: string
       examples:
-        - Northwind
+        - Acme
     logo:
       title: Logo
       type: object
       examples:
         - src: https://placehold.co/240x80@2x.png
-          alt: Northwind
+          alt: Acme
           width: 240
           height: 80
       $ref: json-schema-definitions://canvas.module/image

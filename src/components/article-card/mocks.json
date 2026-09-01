@@ -21,7 +21,7 @@
     {
       "name": "Horizontal bordered",
       "props": {
-        "title": "How Northwind cut publishing time in half",
+        "title": "How one team cut publishing time in half",
         "url": "/customers/northwind",
         "summary": "A short teaser of two or three lines.",
         "image": {

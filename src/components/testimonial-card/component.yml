@@ -27,7 +27,7 @@ props:
       title: Author Title
       type: string
       examples:
-        - Director of Digital, Northwind
+        - Director of Digital
     authorImage:
       title: Author Image
       type: object
