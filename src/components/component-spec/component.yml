@@ -3,10 +3,11 @@ machineName: component-spec
 description: >-
   One entry in a Component Explorer - a collapsible card documenting a single
   component's name, machine name, description, props, slots, mocks and source.
-  Props are entered as pipe-separated rows exactly like Data Table, and Code
-  Block children in the sources slot become the source tabs. The explorer reads
-  this component's props to filter and search, so keep Family and Capabilities
-  filled in.
+  Props are entered as pipe-separated rows exactly like Data Table, Component
+  Preview children in the preview slot show the component rendered live, and
+  Code Block children in the sources slot become the source tabs. The explorer
+  reads this component's props to filter and search, so keep Family and
+  Capabilities filled in.
 status: true
 required:
   - componentName
@@ -67,5 +68,7 @@ props:
       examples:
         - false
 slots:
+  preview:
+    title: Preview
   sources:
     title: Sources

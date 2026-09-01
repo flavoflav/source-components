@@ -32,6 +32,19 @@ const FAMILIES = {
 const FAMILY_ORDER = Object.keys(FAMILIES);
 const famOf = Object.fromEntries(Object.entries(FAMILIES).flatMap(([f, ms]) => ms.map(m => [m, f])));
 
+// How big a component is on a page decides how its preview is framed. Page
+// chrome and full-bleed bands get scaled down inside a fixed-height box; the
+// rest render at actual size and fit their content.
+const PAGE_SCALE = new Set(['site-header','site-footer','hero','page-banner','sub-nav','announcement-bar','cta-banner','mega-menu','article-body','contact-form','component-explorer']);
+const SECTION_SCALE = new Set(['card-grid','feature-split','carousel','tabs','accordion','logo-wall','step-list','data-table','newsletter-signup','video-embed','news-feed','related-articles','spec-list','breadcrumb','main-navigation']);
+// Documenting components must not preview themselves - that recurses.
+const NO_PREVIEW = new Set(['component-explorer','component-spec','component-preview','code-block']);
+
+const frameFor = (id) =>
+  PAGE_SCALE.has(id) ? { scale: 'half', height: 'medium', ground: 'page' }
+  : SECTION_SCALE.has(id) ? { scale: 'three_quarter', height: 'small', ground: 'page' }
+  : { scale: 'actual', height: 'auto', ground: 'surface' };
+
 const kindOf = (pv) =>
   pv.$ref ? 'image'
   : pv.enum ? `enum: ${pv.enum.join(', ')}`
@@ -92,6 +105,7 @@ const components = fs.readdirSync(SRC)
       propsTable: rows.map(r => r.map(escapeCell).join(' | ')).join('\n'),
       slotNames: slots.join('\n'),
       mockNames: (JSON.parse(mocksRaw).mocks ?? []).map(m => m.name ?? 'Untitled').join('\n'),
+      firstMock: (JSON.parse(mocksRaw).mocks ?? [])[0] ?? null,
       usedOn: [...(usage[d.machineName] ?? [])].sort().join('\n'),
       capabilities: caps.join('\n'),
       src: { jsx, yml, mocks: mocksRaw },
@@ -129,7 +143,35 @@ function buildPage({ file, title, pagePath, banner, intro, list }) {
     align: 'left',
   }, null, true);
 
+  // Turn a mock's slots/elements graph into real nested page components.
+  const emitMockTree = (key, elements) => {
+    const node = elements?.[key];
+    if (!node?.type) return null;
+    const slots = {};
+    for (const [slotName, ids] of Object.entries(node.slots ?? {})) {
+      const kids = ids.map(i => emitMockTree(i, elements)).filter(Boolean);
+      if (kids.length) slots[slotName] = kids;
+    }
+    // add() already prefixes with js., so pass the bare machine name.
+    return add(node.type, node.props ?? {}, Object.keys(slots).length ? slots : undefined);
+  };
+
+  const previewFor = (c) => {
+    if (NO_PREVIEW.has(c.id) || !c.firstMock) return undefined;
+    const m = c.firstMock;
+    const elements = m.elements ?? {};
+    const rootSlots = {};
+    for (const [slotName, ids] of Object.entries(m.slots ?? {})) {
+      const kids = ids.map(i => emitMockTree(i, elements)).filter(Boolean);
+      if (kids.length) rootSlots[slotName] = kids;
+    }
+    const instance = add(c.id, m.props ?? {}, Object.keys(rootSlots).length ? rootSlots : undefined);
+    const frame = frameFor(c.id);
+    return [add('component-preview', { label: m.name ?? 'Default', ...frame, allowInteraction: true }, { content: [instance] })];
+  };
+
   const specIds = list.map(c => {
+    const preview = previewFor(c);
     const sources = [
       add('code-block', { code: c.src.jsx, language: 'jsx', filename: 'index.jsx', showLineNumbers: true, maxHeight: 'tall' }),
       add('code-block', { code: c.src.yml, language: 'yaml', filename: 'component.yml', showLineNumbers: true, maxHeight: 'tall' }),
@@ -146,7 +188,7 @@ function buildPage({ file, title, pagePath, banner, intro, list }) {
       usedOn: c.usedOn,
       capabilities: c.capabilities,
       defaultOpen: false,
-    }, { sources });
+    }, preview ? { preview, sources } : { sources });
   });
 
   add('component-explorer', {

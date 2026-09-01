@@ -6,8 +6,9 @@ lives in each component's `component.yml` under `description`, which is what
 Canvas and Drupal read.
 
 A rendered, filterable version of this catalog is published as a Canvas page at
-`pages/component-explorer.json` — regenerate it with
-`node scripts/build-component-explorer-page.mjs`.
+`pages/component-explorer.json` - regenerate it with
+`node scripts/build-component-explorer-page.mjs`. Each entry there shows the
+component rendered live, from its own mocks.
 
 **How this library is meant to be used**
 
@@ -17,16 +18,15 @@ A rendered, filterable version of this catalog is published as a Canvas page at
 - **Repeatable content goes in slots.** Parents own layout and the section
   heading; children own item content. There are no `card1Title` / `card2Title`
   prop groups anywhere.
-- **One image is one object prop** (`{ src, alt, width, height }`), never
-  separate `imageUrl` / `imageAlt` props, and it is rendered with a plain
-  `<img>` tag.
+- **One image is one object prop** (`{ src, alt, width, height }`), rendered
+  with a plain `<img>` tag.
 - **Styling is neutral.** Stock Tailwind utilities plus the `primary-*` and
-  `gray-*` scales defined in `src/global.css`. Rebrand by editing those scales,
-  not the components.
+  `gray-*` scales defined in `src/global.css`. The palette ships dark; rebrand
+  by editing those scales.
 - **Buttons are components, not props.** Sections expose an `actions` slot; put
   `button` components in it.
 
-**64 components** across 5 families.
+**65 components** across 5 families.
 
 ## Quick index
 
@@ -47,7 +47,7 @@ A rendered, filterable version of this catalog is published as a Canvas page at
   `product-card`, `location-card`, `news-feed`, `related-articles`,
   `pagination`, `filter-bar`, `filter-select`
 - **Documentation — the library documenting itself** — `component-explorer`,
-  `component-spec`, `code-block`
+  `component-spec`, `component-preview`, `code-block`
 
 ---
 
@@ -1117,10 +1117,11 @@ Slots: `components`
 
 One entry in a Component Explorer - a collapsible card documenting a single
 component's name, machine name, description, props, slots, mocks and source.
-Props are entered as pipe-separated rows exactly like Data Table, and Code Block
-children in the sources slot become the source tabs. The explorer reads this
-component's props to filter and search, so keep Family and Capabilities filled
-in.
+Props are entered as pipe-separated rows exactly like Data Table, Component
+Preview children in the preview slot show the component rendered live, and Code
+Block children in the sources slot become the source tabs. The explorer reads
+this component's props to filter and search, so keep Family and Capabilities
+filled in.
 
 | Prop            | Type      | Required |
 | --------------- | --------- | -------- |
@@ -1135,7 +1136,26 @@ in.
 | `capabilities`  | string    |          |
 | `defaultOpen`   | boolean   |          |
 
-Slots: `sources`
+Slots: `preview`, `sources`
+
+### `component-preview` — Component Preview
+
+A bounded frame that renders a live component instance safely inside a page. It
+traps sticky and fixed children so page chrome cannot escape onto the host page,
+and holds the preview inert until someone presses Interact, so an interactive
+preview cannot act on the real document by accident. Use it in the preview slot
+of Component Spec. Isolation lives here and nowhere else, so it can be swapped
+for an iframe later without touching any caller.
+
+| Prop               | Type                              | Required |
+| ------------------ | --------------------------------- | -------- |
+| `label`            | string                            |          |
+| `scale`            | enum(actual, three_quarter, half) |          |
+| `height`           | enum(auto, small, medium, large)  |          |
+| `ground`           | enum(page, surface)               |          |
+| `allowInteraction` | boolean                           |          |
+
+Slots: `content`
 
 ### `code-block` — Code Block
 

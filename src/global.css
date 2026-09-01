@@ -82,8 +82,9 @@
  *
  * The @theme block above is the DEFAULT (dark). This block restores the
  * original light ramps and wins on specificity (0,1,1 beats :root's 0,0,1),
- * so setting data-theme="light" on <html> flips the entire site. The Theme
- * Switch component sets that attribute; nothing else needs to change.
+ * so setting data-theme="light" on <html> flips the entire site. Nothing sets
+ * that attribute at runtime - it is a manual opt-in for consumers who want the
+ * light palette. The default, and this site, are dark.
  *
  * Because the ramps are named by role, `bg-gray-900 text-white` stays a
  * contrast band in BOTH themes - dark-on-light here, light-on-dark above.

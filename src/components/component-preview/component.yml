@@ -1,0 +1,65 @@
+name: Component Preview
+machineName: component-preview
+description: >-
+  A bounded frame that renders a live component instance safely inside a page.
+  It traps sticky and fixed children so page chrome cannot escape onto the host
+  page, and holds the preview inert until someone presses Interact, so an
+  interactive preview cannot act on the real document by accident. Use it in the
+  preview slot of Component Spec. Isolation lives here and nowhere else, so it
+  can be swapped for an iframe later without touching any caller.
+status: true
+required: []
+props:
+  properties:
+    label:
+      title: Label
+      type: string
+      examples:
+        - Default
+    scale:
+      title: Scale
+      type: string
+      enum:
+        - actual
+        - three_quarter
+        - half
+      meta:enum:
+        actual: Actual size
+        three_quarter: 75% - large sections
+        half: 50% - full page chrome
+      examples:
+        - actual
+    height:
+      title: Height
+      type: string
+      enum:
+        - auto
+        - small
+        - medium
+        - large
+      meta:enum:
+        auto: Fit content
+        small: Short, scrolls
+        medium: Medium, scrolls
+        large: Tall, scrolls
+      examples:
+        - auto
+    ground:
+      title: Ground
+      type: string
+      enum:
+        - page
+        - surface
+      meta:enum:
+        page: Page ground, no padding
+        surface: Padded surface
+      examples:
+        - page
+    allowInteraction:
+      title: Allow Interaction
+      type: boolean
+      examples:
+        - true
+slots:
+  content:
+    title: Content

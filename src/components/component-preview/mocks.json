@@ -1,0 +1,73 @@
+{
+  "mocks": [
+    {
+      "name": "Inline component",
+      "props": {
+        "label": "Primary",
+        "scale": "actual",
+        "height": "auto",
+        "ground": "surface",
+        "allowInteraction": true
+      },
+      "slots": { "content": ["b"] },
+      "elements": {
+        "b": { "type": "badge", "props": { "label": "New", "tone": "primary" } }
+      }
+    },
+    {
+      "name": "Sticky chrome trapped",
+      "props": {
+        "label": "Site Header",
+        "scale": "half",
+        "height": "small",
+        "ground": "page",
+        "allowInteraction": true
+      },
+      "slots": { "content": ["h"] },
+      "elements": {
+        "h": {
+          "type": "site-header",
+          "props": { "siteName": "Acme", "variant": "light", "sticky": true },
+          "slots": { "navigation": ["n"] }
+        },
+        "n": {
+          "type": "main-navigation",
+          "props": { "label": "Main", "layout": "horizontal" },
+          "slots": { "items": ["i1", "i2"] }
+        },
+        "i1": {
+          "type": "nav-item",
+          "props": { "label": "Docs", "url": "/docs" }
+        },
+        "i2": {
+          "type": "nav-item",
+          "props": { "label": "Examples", "url": "/examples" }
+        }
+      }
+    },
+    {
+      "name": "Full page band, scaled",
+      "props": {
+        "label": "Hero",
+        "scale": "half",
+        "height": "medium",
+        "ground": "page",
+        "allowInteraction": true
+      },
+      "slots": { "content": ["hero"] },
+      "elements": {
+        "hero": {
+          "type": "hero",
+          "props": {
+            "layout": "centered",
+            "eyebrow": "Open source",
+            "title": "A full-bleed band, contained",
+            "body": "<p>Rendered at 50% inside a fixed-height box.</p>",
+            "background": "light",
+            "height": "medium"
+          }
+        }
+      }
+    }
+  ]
+}

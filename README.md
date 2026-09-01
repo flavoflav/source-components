@@ -55,7 +55,6 @@ appending a second copy.
 | Page sections | hero, page-banner, section-heading, card-grid, feature-card, feature-split, cta-banner, cta-tile, stat-card, logo-wall, logo-tile, testimonial-card, carousel, accordion, accordion-item, tabs, tab-panel, video-embed, newsletter-signup, contact-form, step-list, step-item, spec-list, spec-item, data-table |
 | Content       | card, article-card, article-body, story-card, resource-card, person-card, event-card, product-card, location-card, news-feed, related-articles, pagination, filter-bar, filter-select                                                                                                                           |
 | Documentation | component-explorer, component-spec, code-block                                                                                                                                                                                                                                                                  |
-| Theming       | theme-switch                                                                                                                                                                                                                                                                                                    |
 
 Full reference:
 **[src/components/COMPONENTS.md](src/components/COMPONENTS.md)**. Where they
@@ -83,13 +82,15 @@ The ramps are named by **role**, not literal colour: `--color-white` is the page
 surface and `--color-black` is maximum-contrast ink. That is what lets
 `bg-gray-900 text-white` stay a correct contrast band in both themes.
 
-It ships **dark by default**, with a light palette under
-`:root[data-theme='light']`. The `theme-switch` component flips it and remembers
-the choice; you can also set the attribute yourself:
+It ships **dark by default**. A light palette is defined under
+`:root[data-theme='light']`, so a consumer who wants light can opt in by setting
+the attribute on the document:
 
 ```html
 <html data-theme="light"></html>
 ```
+
+Nothing toggles this at runtime — the site this library documents is dark.
 
 To rebrand, edit the two ramps. No component file needs changing.
 

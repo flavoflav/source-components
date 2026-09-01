@@ -18,6 +18,7 @@ const ComponentSpec = ({
   usedOn,
   capabilities,
   defaultOpen = false,
+  preview,
   sources,
   className,
 }) => {
@@ -90,6 +91,15 @@ const ComponentSpec = ({
 
       {open && (
         <div className="flex flex-col gap-6 border-t border-gray-200 px-4 py-5">
+          {preview && (
+            <section>
+              <h4 className="mb-2 font-mono text-[0.65rem] tracking-widest text-gray-500 uppercase">
+                Preview
+              </h4>
+              {preview}
+            </section>
+          )}
+
           {description && (
             <FormattedText className="max-w-3xl leading-relaxed text-gray-700">
               {description}
