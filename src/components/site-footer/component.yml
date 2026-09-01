@@ -57,15 +57,17 @@ props:
       title: Variant
       type: string
       enum:
+        - black
         - dark
         - light
         - white
       meta:enum:
+        black: Black (fixed, ignores the palette)
         dark: Dark
         light: Light gray
         white: White
       examples:
-        - dark
+        - black
 slots:
   linkColumns:
     title: Link columns

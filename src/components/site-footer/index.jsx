@@ -1,6 +1,11 @@
 import { cn } from 'drupal-canvas';
 
 const variants = {
+  // `black` is deliberately literal rather than routed through the token ramps.
+  // The ramps are role-based, so `bg-gray-900 text-white` means "inverted
+  // relative to the page" and lands light on a dark palette. A footer that must
+  // read as black in any palette cannot be expressed that way.
+  black: 'bg-[#05080a] text-slate-100',
   dark: 'bg-gray-900 text-white',
   light: 'bg-gray-50 text-gray-900',
   white: 'bg-white text-gray-900 border-t border-gray-200',
