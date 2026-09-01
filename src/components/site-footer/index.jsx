@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn } from 'drupal-canvas';
 
 const variants = {
@@ -55,7 +56,7 @@ const SiteFooter = ({
               {tagline}
             </p>
           )}
-          {social && <div className="mt-2">{social}</div>}
+          {Children.count(social) > 0 && <div className="mt-2">{social}</div>}
         </div>
 
         <div
@@ -70,7 +71,9 @@ const SiteFooter = ({
 
       <div className="mt-14 flex flex-col gap-4 border-t border-current/15 pt-8 text-sm opacity-70 md:flex-row md:items-center md:justify-between">
         {copyright && <p>{copyright}</p>}
-        {legal && <div className="flex flex-wrap gap-x-6 gap-y-2">{legal}</div>}
+        {Children.count(legal) > 0 && (
+          <div className="flex flex-wrap gap-x-6 gap-y-2">{legal}</div>
+        )}
       </div>
     </div>
   </footer>

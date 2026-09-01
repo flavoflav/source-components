@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const backgrounds = {
@@ -42,7 +43,9 @@ const FeatureSplit = ({
             {body}
           </FormattedText>
         )}
-        {actions && <div className="mt-2 flex flex-wrap gap-4">{actions}</div>}
+        {Children.count(actions) > 0 && (
+          <div className="mt-2 flex flex-wrap gap-4">{actions}</div>
+        )}
       </div>
       <div
         className={cn(mediaPosition === 'start' ? 'md:order-1' : 'md:order-2')}

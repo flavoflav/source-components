@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Children, useState } from 'react';
 import { cn } from 'drupal-canvas';
 
 const variants = {
@@ -47,7 +47,9 @@ const SiteHeader = ({
 
         <div className="hidden flex-1 items-center justify-end gap-8 lg:flex">
           {navigation}
-          {actions && <div className="flex items-center gap-3">{actions}</div>}
+          {Children.count(actions) > 0 && (
+            <div className="flex items-center gap-3">{actions}</div>
+          )}
         </div>
 
         <button
@@ -79,7 +81,9 @@ const SiteHeader = ({
         <div className="border-t border-current/15 px-6 py-6 lg:hidden">
           <div className="flex flex-col gap-6">
             {navigation}
-            {actions && <div className="flex flex-wrap gap-3">{actions}</div>}
+            {Children.count(actions) > 0 && (
+              <div className="flex flex-wrap gap-3">{actions}</div>
+            )}
           </div>
         </div>
       )}

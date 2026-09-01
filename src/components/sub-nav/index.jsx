@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn } from 'drupal-canvas';
 
 const SubNav = ({
@@ -31,7 +32,9 @@ const SubNav = ({
       <ul className="flex flex-1 flex-wrap items-center gap-x-6 gap-y-2">
         {items}
       </ul>
-      {actions && <div className="flex items-center gap-3">{actions}</div>}
+      {Children.count(actions) > 0 && (
+        <div className="flex items-center gap-3">{actions}</div>
+      )}
     </div>
   </div>
 );

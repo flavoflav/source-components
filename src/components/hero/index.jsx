@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const backgrounds = {
@@ -109,7 +110,7 @@ const Hero = ({
               {body}
             </FormattedText>
           )}
-          {actions && (
+          {Children.count(actions) > 0 && (
             <div
               className={cn(
                 'mt-2 flex flex-wrap gap-4',

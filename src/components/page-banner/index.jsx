@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const backgrounds = {
@@ -43,7 +44,9 @@ const PageBanner = ({
         </>
       )}
       <div className="relative mx-auto max-w-7xl px-6 py-14 md:py-20">
-        {breadcrumb && <div className="mb-6">{breadcrumb}</div>}
+        {Children.count(breadcrumb) > 0 && (
+          <div className="mb-6">{breadcrumb}</div>
+        )}
         <div className={cn('flex max-w-3xl flex-col gap-3', aligns[align])}>
           {eyebrow && (
             <p className="text-sm font-semibold tracking-widest uppercase opacity-75">

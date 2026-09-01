@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const backgrounds = {
@@ -63,7 +64,7 @@ const CtaBanner = ({
               </FormattedText>
             )}
           </div>
-          {actions && (
+          {Children.count(actions) > 0 && (
             <div
               className={cn(
                 'relative flex flex-wrap gap-4',

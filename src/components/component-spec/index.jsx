@@ -91,7 +91,7 @@ const ComponentSpec = ({
 
       {open && (
         <div className="flex flex-col gap-6 border-t border-gray-200 px-4 py-5">
-          {preview && (
+          {Children.count(preview) > 0 && (
             <section>
               <h4 className="mb-2 font-mono text-[0.65rem] tracking-widest text-gray-500 uppercase">
                 Preview

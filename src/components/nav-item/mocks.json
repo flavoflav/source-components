@@ -2,17 +2,40 @@
   "mocks": [
     {
       "name": "Plain link",
-      "props": { "label": "Pricing", "url": "/pricing" }
+      "props": {
+        "label": "Pricing",
+        "url": "/pricing"
+      }
+    },
+    {
+      "name": "Empty panel slot",
+      "props": {
+        "label": "Docs",
+        "url": "/docs"
+      },
+      "slots": {
+        "panel": []
+      },
+      "elements": {}
     },
     {
       "name": "With dropdown",
-      "props": { "label": "Products", "url": "/products" },
-      "slots": { "panel": ["list"] },
+      "props": {
+        "label": "Products",
+        "url": "/products"
+      },
+      "slots": {
+        "panel": ["list"]
+      },
       "elements": {
         "list": {
           "type": "link-list",
-          "props": { "layout": "stacked" },
-          "slots": { "items": ["a", "b"] }
+          "props": {
+            "layout": "stacked"
+          },
+          "slots": {
+            "items": ["a", "b"]
+          }
         },
         "a": {
           "type": "link-item",

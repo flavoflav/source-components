@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const TabPanel = ({ title, body, image, content, actions, className }) => (
@@ -20,7 +21,9 @@ const TabPanel = ({ title, body, image, content, actions, className }) => (
         </FormattedText>
       )}
       {content}
-      {actions && <div className="mt-2 flex flex-wrap gap-4">{actions}</div>}
+      {Children.count(actions) > 0 && (
+        <div className="mt-2 flex flex-wrap gap-4">{actions}</div>
+      )}
     </div>
     {image?.src && (
       <img

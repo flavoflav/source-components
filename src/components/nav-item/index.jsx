@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { Children, useState } from 'react';
 import { cn } from 'drupal-canvas';
 
 const NavItem = ({ label, url, active = false, panel, className }) => {
   const [open, setOpen] = useState(false);
-  const hasPanel = Boolean(panel);
+  // A declared-but-empty slot still arrives as a truthy value, so testing the
+  // slot itself renders a chevron and an empty dropdown. Count the children.
+  const hasPanel = Children.count(panel) > 0;
 
   if (!label) {
     return null;

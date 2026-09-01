@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const ArticleBody = ({
@@ -75,8 +76,8 @@ const ArticleBody = ({
         </FormattedText>
       )}
 
-      {aside && <div className="my-10">{aside}</div>}
-      {footer && (
+      {Children.count(aside) > 0 && <div className="my-10">{aside}</div>}
+      {Children.count(footer) > 0 && (
         <div className="mt-12 border-t border-gray-200 pt-8">{footer}</div>
       )}
     </div>

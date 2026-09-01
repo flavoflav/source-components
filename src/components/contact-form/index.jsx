@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const backgrounds = {
@@ -102,7 +103,9 @@ const ContactForm = ({
         </form>
       </div>
 
-      {aside && <div className="flex flex-col gap-6">{aside}</div>}
+      {Children.count(aside) > 0 && (
+        <div className="flex flex-col gap-6">{aside}</div>
+      )}
     </div>
   </section>
 );

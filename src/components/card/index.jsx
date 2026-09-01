@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const variants = {
@@ -65,10 +66,10 @@ const Card = ({
           {body}
         </FormattedText>
       )}
-      {actions && (
+      {Children.count(actions) > 0 && (
         <div className="mt-auto flex flex-wrap gap-3 pt-2">{actions}</div>
       )}
-      {!actions && linkLabel && (
+      {Children.count(actions) === 0 && linkLabel && (
         <span className="mt-auto pt-2 text-sm font-semibold underline underline-offset-4 group-hover:no-underline">
           {linkLabel}
         </span>

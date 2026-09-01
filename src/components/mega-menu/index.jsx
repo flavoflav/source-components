@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import { cn } from 'drupal-canvas';
 
 const columns = {
@@ -16,7 +17,7 @@ const MegaMenu = ({ columnCount = 3, sections, feature, className }) => (
     >
       {sections}
     </div>
-    {feature && (
+    {Children.count(feature) > 0 && (
       <div className="w-full shrink-0 rounded-xl bg-gray-50 p-5 lg:w-72">
         {feature}
       </div>
