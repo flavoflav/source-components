@@ -1,0 +1,27 @@
+{
+  "status": true,
+  "elements": {
+    "250a149b-b7f8-41b3-b7f7-8fc5dc2fbcde": {
+      "type": "js.site-footer",
+      "props": {
+        "siteName": "Source Components",
+        "logoUrl": "/",
+        "tagline": "An open source component library for Acquia Source. Free to use, fork and contribute to.",
+        "copyright": "Released under the MIT License.",
+        "columnCount": 2,
+        "variant": "black",
+        "logo": {
+          "src": "/sites/default/files/2026-09/acquia-source-logo-reverse.png",
+          "alt": "Acquia Source",
+          "width": 288,
+          "height": 93
+        }
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 251
+        }
+      }
+    }
+  }
+}

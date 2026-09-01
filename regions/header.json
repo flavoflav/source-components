@@ -1,0 +1,65 @@
+{
+  "status": true,
+  "elements": {
+    "c560bcea-365d-4401-a3f3-b3d78ade270d": {
+      "type": "js.site-header",
+      "props": {
+        "siteName": "Source Components",
+        "logoUrl": "/",
+        "variant": "light",
+        "sticky": true,
+        "logo": {
+          "src": "/sites/default/files/2026-09/acquia-logo-blue.png",
+          "alt": "Acquia",
+          "width": 1200,
+          "height": 259
+        }
+      },
+      "slots": {
+        "navigation": [
+          "55a62de6-0b2c-4fb8-8e8c-75170fae92b0"
+        ]
+      },
+      "_provenance": {
+        "logo": {
+          "target_id": 246
+        }
+      }
+    },
+    "55a62de6-0b2c-4fb8-8e8c-75170fae92b0": {
+      "type": "js.main-navigation",
+      "props": {
+        "label": "Main",
+        "layout": "horizontal"
+      },
+      "slots": {
+        "items": [
+          "706e6300-6d73-4ea7-9e0d-c8287a365766",
+          "317433ad-a0c1-41ba-ac72-03e340665738",
+          "f160ec48-e211-4549-aee4-0fb43f7a7ac9"
+        ]
+      }
+    },
+    "706e6300-6d73-4ea7-9e0d-c8287a365766": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Docs",
+        "url": "/docs"
+      }
+    },
+    "317433ad-a0c1-41ba-ac72-03e340665738": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Component Explorer",
+        "url": "/component-explorer"
+      }
+    },
+    "f160ec48-e211-4549-aee4-0fb43f7a7ac9": {
+      "type": "js.nav-item",
+      "props": {
+        "label": "Example Layouts",
+        "url": "/examples"
+      }
+    }
+  }
+}
