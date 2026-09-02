@@ -9,7 +9,7 @@ mocks — installable into any Nebula project with one command.
 From inside a fresh Nebula project:
 
 ```bash
-npx drupal-source-components
+npx --allow-git=all github:flavoflav/source-components
 ```
 
 That copies all 65 components into the project's configured component directory
@@ -22,15 +22,34 @@ npm run dev
 Every component appears in Workbench with its preview states, ready to compose
 into pages.
 
-### Running it before the repo has a remote
+`--allow-git=all` is required on npm 12 and later, which refuses to fetch
+git-hosted packages unless you opt in. On npm 11 and earlier you can drop it.
 
-The command above resolves once this package is reachable by name. Until then,
-point `npx` straight at the checkout — same behaviour:
+This package is not published to the npm registry, so
+`npx drupal-source-components` will not resolve it. Install from the repository,
+or from a local checkout:
 
 ```bash
-npx /path/to/drupal-source-components          # from inside the target project
-npx github:OWNER/REPO                          # once you push it
+npx /path/to/source-components   # from inside the target project
 ```
+
+### If the install exits without printing anything
+
+npm reports a failed git-dependency install as a bare exit code with no message.
+Re-run it as `npm install --allow-git=all github:flavoflav/source-components` to
+see the real error.
+
+The common cause is an `allow-scripts` entry in your user `~/.npmrc`. npm
+prepares a git dependency by spawning a child install that inherits it and then
+rejects it:
+
+```
+npm error code EALLOWSCRIPTS
+npm error --allow-scripts is not allowed in project-scoped installs.
+```
+
+Move that entry into the `allowScripts` field of the individual project's
+`package.json` and the install proceeds.
 
 ### Options
 
@@ -107,10 +126,15 @@ here too.
 
 ```bash
 npm install
+npm run hooks          # one-time: install the Husky pre-commit hooks
 npm run dev            # Workbench
 npm run code:fix       # prettier + eslint
 npx canvas validate    # check components against the Canvas contract
 ```
+
+The hooks are a manual step rather than a `prepare` script, because npm runs
+`prepare` when this repository is installed as a git dependency — which broke
+the `npx` install for consumers.
 
 `scripts/build-component-explorer-page.mjs` regenerates a Canvas page that
 documents the library using the library — a filterable index of every component

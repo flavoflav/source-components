@@ -26,6 +26,18 @@ Pull requests must also adhere to the following guidelines:
 - PRs must comply with coding standards and best practices as defined by the
   project maintainers.
 
+## Setting up a checkout
+
+```bash
+npm install
+npm run hooks
+```
+
+`npm run hooks` installs the Husky pre-commit hooks. It is a one-time manual
+step rather than a `prepare` script, because npm runs `prepare` when this
+repository is installed as a git dependency — which pulled in every
+devDependency and broke `npx github:flavoflav/source-components` for consumers.
+
 ## Running tests locally
 
 Code checks run automatically on commit via pre-commit hooks. Before submitting

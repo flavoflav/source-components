@@ -24,11 +24,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acquia/nebula.git"
+    "url": "git+https://github.com/flavoflav/source-components.git"
   },
   "author": "Acquia Engineering (https://www.acquia.com)",
-  "bugs": "https://github.com/acquia/nebula/issues",
-  "homepage": "https://github.com/acquia/nebula#readme",
+  "bugs": "https://github.com/flavoflav/source-components/issues",
+  "homepage": "https://github.com/flavoflav/source-components#readme",
   "scripts": {
     "canvas": "canvas",
     "dev": "canvas-workbench",
@@ -40,7 +40,7 @@
     "code:fix:eslint": "npm run s:eslint -- --fix",
     "s:prettier": "prettier \"**/*.{css,js,jsx,json,html,md,mdx,yml}\"",
     "s:eslint": "eslint \"**/*.{js,jsx,yml,yaml}\"",
-    "prepare": "husky"
+    "hooks": "husky"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
