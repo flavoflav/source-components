@@ -9,7 +9,7 @@ mocks — installable into any Nebula project with one command.
 From inside a fresh Nebula project:
 
 ```bash
-npx --allow-git=all github:flavoflav/source-components
+npx drupal-source-components
 ```
 
 That copies all 65 components into the project's configured component directory
@@ -22,34 +22,16 @@ npm run dev
 Every component appears in Workbench with its preview states, ready to compose
 into pages.
 
-`--allow-git=all` is required on npm 12 and later, which refuses to fetch
-git-hosted packages unless you opt in. On npm 11 and earlier you can drop it.
-
-This package is not published to the npm registry, so
-`npx drupal-source-components` will not resolve it. Install from the repository,
-or from a local checkout:
+To install an unreleased revision, point `npx` at the repository or a local
+checkout instead:
 
 ```bash
-npx /path/to/source-components   # from inside the target project
+npx --allow-git=all github:flavoflav/source-components
+npx /path/to/source-components
 ```
 
-### If the install exits without printing anything
-
-npm reports a failed git-dependency install as a bare exit code with no message.
-Re-run it as `npm install --allow-git=all github:flavoflav/source-components` to
-see the real error.
-
-The common cause is an `allow-scripts` entry in your user `~/.npmrc`. npm
-prepares a git dependency by spawning a child install that inherits it and then
-rejects it:
-
-```
-npm error code EALLOWSCRIPTS
-npm error --allow-scripts is not allowed in project-scoped installs.
-```
-
-Move that entry into the `allowScripts` field of the individual project's
-`package.json` and the install proceeds.
+`--allow-git=all` is required on npm 12 and later, which refuses to fetch
+git-hosted packages unless you opt in.
 
 ### Options
 

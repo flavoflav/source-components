@@ -1,6 +1,6 @@
 {
   "name": "drupal-source-components",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A neutral, AI-ready component library for Drupal Canvas / Acquia Source, installable into any Nebula project with one command.",
   "keywords": [
     "drupal",
@@ -9,7 +9,6 @@
     "nebula",
     "component-library"
   ],
-  "private": true,
   "type": "module",
   "bin": {
     "drupal-source-components": "bin/install.mjs"
@@ -26,7 +25,8 @@
     "type": "git",
     "url": "git+https://github.com/flavoflav/source-components.git"
   },
-  "author": "Acquia Engineering (https://www.acquia.com)",
+  "author": "John Faber <john@jfaber.net>",
+  "license": "MIT",
   "bugs": "https://github.com/flavoflav/source-components/issues",
   "homepage": "https://github.com/flavoflav/source-components#readme",
   "scripts": {
