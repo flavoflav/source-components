@@ -1,4 +1,4 @@
-import { Children, useState } from 'react';
+import { Children, useEffect, useState } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const backgrounds = {
@@ -15,6 +15,30 @@ const perView = {
   3: 'basis-full sm:basis-1/2 lg:basis-1/3',
 };
 
+// Mirrors the `perView` breakpoints above (sm = 640px, lg = 1024px) so the
+// slide offset and the last reachable index match what is actually rendered.
+const useVisibleSlides = (slidesPerView) => {
+  const [visible, setVisible] = useState(slidesPerView);
+
+  useEffect(() => {
+    const update = () => {
+      const width = window.innerWidth;
+      if (width < 640) {
+        setVisible(1);
+      } else if (width < 1024) {
+        setVisible(Math.min(slidesPerView, 2));
+      } else {
+        setVisible(slidesPerView);
+      }
+    };
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, [slidesPerView]);
+
+  return visible;
+};
+
 const Carousel = ({
   title,
   intro,
@@ -24,10 +48,14 @@ const Carousel = ({
   slides,
   className,
 }) => {
-  const [index, setIndex] = useState(0);
+  const [requestedIndex, setIndex] = useState(0);
   const count = Children.count(slides);
-  const step = 100 / slidesPerView;
-  const maxIndex = Math.max(0, count - slidesPerView);
+  const visible = useVisibleSlides(slidesPerView);
+  const step = 100 / visible;
+  const maxIndex = Math.max(0, count - visible);
+  // Clamp so shrinking the slide list or widening the viewport never leaves
+  // the track scrolled past the last slide.
+  const index = Math.min(requestedIndex, maxIndex);
 
   return (
     <section className={cn('w-full py-16', backgrounds[background], className)}>
@@ -63,12 +91,12 @@ const Carousel = ({
           </div>
         </div>
 
-        {showArrows && count > slidesPerView && (
+        {showArrows && count > visible && (
           <div className="mt-8 flex items-center justify-center gap-3">
             <button
               type="button"
               aria-label="Previous slide"
-              onClick={() => setIndex((v) => Math.max(0, v - 1))}
+              onClick={() => setIndex(Math.max(0, index - 1))}
               disabled={index === 0}
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-current/30 disabled:opacity-30"
             >
@@ -89,7 +117,7 @@ const Carousel = ({
             <button
               type="button"
               aria-label="Next slide"
-              onClick={() => setIndex((v) => Math.min(maxIndex, v + 1))}
+              onClick={() => setIndex(Math.min(maxIndex, index + 1))}
               disabled={index >= maxIndex}
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-current/30 disabled:opacity-30"
             >

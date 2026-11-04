@@ -1,21 +1,70 @@
-import { Children, useState } from 'react';
+import { Children, useEffect, useRef, useState } from 'react';
 import { cn } from 'drupal-canvas';
 
 const NavItem = ({ label, url, active = false, panel, className }) => {
   const [open, setOpen] = useState(false);
+  const itemRef = useRef(null);
+  const toggleRef = useRef(null);
   // A declared-but-empty slot still arrives as a truthy value, so testing the
   // slot itself renders a chevron and an empty dropdown. Count the children.
   const hasPanel = Children.count(panel) > 0;
+
+  // While open, close on an outside tap, on Escape, and when focus leaves.
+  useEffect(() => {
+    if (!open) {
+      return undefined;
+    }
+    const onPointerDown = (event) => {
+      if (itemRef.current && !itemRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+        toggleRef.current?.focus();
+      }
+    };
+    const onFocusOut = (event) => {
+      if (!itemRef.current?.contains(event.relatedTarget)) {
+        setOpen(false);
+      }
+    };
+    const item = itemRef.current;
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    item?.addEventListener('focusout', onFocusOut);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+      item?.removeEventListener('focusout', onFocusOut);
+    };
+  }, [open]);
 
   if (!label) {
     return null;
   }
 
+  // Hover only applies to a real mouse. Touch taps also emit compatibility
+  // mouse events, which opened the panel just before the click handler toggled
+  // it shut again.
+  const onPointerEnter = (event) => {
+    if (event.pointerType === 'mouse') {
+      setOpen(true);
+    }
+  };
+  const onPointerLeave = (event) => {
+    if (event.pointerType === 'mouse') {
+      setOpen(false);
+    }
+  };
+
   return (
     <li
+      ref={itemRef}
       className={cn('relative list-none', className)}
-      onMouseEnter={hasPanel ? () => setOpen(true) : undefined}
-      onMouseLeave={hasPanel ? () => setOpen(false) : undefined}
+      onPointerEnter={hasPanel ? onPointerEnter : undefined}
+      onPointerLeave={hasPanel ? onPointerLeave : undefined}
     >
       <div className="flex items-center gap-1">
         <a
@@ -30,6 +79,7 @@ const NavItem = ({ label, url, active = false, panel, className }) => {
         </a>
         {hasPanel && (
           <button
+            ref={toggleRef}
             type="button"
             aria-expanded={open}
             aria-label={`Toggle ${label} menu`}
