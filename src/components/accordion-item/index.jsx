@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const AccordionItem = ({
@@ -8,6 +8,9 @@ const AccordionItem = ({
   className,
 }) => {
   const [open, setOpen] = useState(defaultOpen);
+  const baseId = useId();
+  const buttonId = `${baseId}-button`;
+  const panelId = `${baseId}-panel`;
 
   if (!question) {
     return null;
@@ -18,7 +21,9 @@ const AccordionItem = ({
       <h3>
         <button
           type="button"
+          id={buttonId}
           aria-expanded={open}
+          aria-controls={panelId}
           onClick={() => setOpen((value) => !value)}
           className="flex w-full items-center justify-between gap-6 py-5 text-left text-lg font-semibold"
         >
@@ -38,11 +43,14 @@ const AccordionItem = ({
           </svg>
         </button>
       </h3>
-      {open && answer && (
-        <FormattedText className="pb-6 leading-relaxed opacity-80 [&_p]:mb-3 [&_p:last-child]:mb-0 [&_ul]:list-disc [&_ul]:pl-5">
-          {answer}
-        </FormattedText>
-      )}
+      {/* Always rendered (hidden when closed) so aria-controls resolves. */}
+      <div id={panelId} role="region" aria-labelledby={buttonId} hidden={!open}>
+        {answer && (
+          <FormattedText className="pb-6 leading-relaxed opacity-80 [&_p]:mb-3 [&_p:last-child]:mb-0 [&_ul]:list-disc [&_ul]:pl-5">
+            {answer}
+          </FormattedText>
+        )}
+      </div>
     </div>
   );
 };

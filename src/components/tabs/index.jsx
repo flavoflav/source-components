@@ -1,4 +1,4 @@
-import { Children, useState } from 'react';
+import { Children, useId, useRef, useState } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const backgrounds = {
@@ -16,8 +16,28 @@ const Tabs = ({
   panels,
   className,
 }) => {
-  const [active, setActive] = useState(0);
+  const [requested, setActive] = useState(0);
   const items = Children.toArray(panels);
+  const baseId = useId();
+  const tabRefs = useRef([]);
+  // Clamp so removing panels never leaves a stale index selecting nothing.
+  const active = Math.min(requested, Math.max(0, items.length - 1));
+
+  const onKeyDown = (event) => {
+    const last = items.length - 1;
+    const keys = {
+      ArrowRight: active === last ? 0 : active + 1,
+      ArrowLeft: active === 0 ? last : active - 1,
+      Home: 0,
+      End: last,
+    };
+    if (!(event.key in keys)) {
+      return;
+    }
+    event.preventDefault();
+    setActive(keys[event.key]);
+    tabRefs.current[keys[event.key]]?.focus();
+  };
 
   return (
     <section className={cn('w-full py-16', backgrounds[background], className)}>
@@ -52,9 +72,16 @@ const Tabs = ({
           {items.map((panel, i) => (
             <button
               key={i}
+              ref={(node) => {
+                tabRefs.current[i] = node;
+              }}
+              id={`${baseId}-tab-${i}`}
               type="button"
               role="tab"
+              onKeyDown={onKeyDown}
               aria-selected={active === i}
+              aria-controls={`${baseId}-panel-${i}`}
+              tabIndex={active === i ? 0 : -1}
               onClick={() => setActive(i)}
               className={cn(
                 '-mb-px border-b-2 px-5 py-3 text-sm font-semibold transition-colors',
@@ -68,7 +95,14 @@ const Tabs = ({
           ))}
         </div>
 
-        <div role="tabpanel">{items[active]}</div>
+        <div
+          role="tabpanel"
+          id={`${baseId}-panel-${active}`}
+          aria-labelledby={`${baseId}-tab-${active}`}
+          tabIndex={0}
+        >
+          {items[active]}
+        </div>
       </div>
     </section>
   );
