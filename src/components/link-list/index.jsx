@@ -6,7 +6,7 @@ const layouts = {
 };
 
 const LinkList = ({ heading, layout = 'stacked', items, className }) => (
-  <nav className={cn('w-full', className)}>
+  <nav aria-label={heading || undefined} className={cn('w-full', className)}>
     {heading && (
       <p className="mb-4 text-sm font-semibold tracking-wide uppercase">
         {heading}

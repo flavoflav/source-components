@@ -1,4 +1,4 @@
-import { Children, useMemo, useState } from 'react';
+import { Children, useId, useMemo, useState } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const splitLines = (value) =>
@@ -40,6 +40,7 @@ const ComponentExplorer = ({
   components,
   className,
 }) => {
+  const searchId = `${useId()}-search`;
   const [query, setQuery] = useState('');
   const [families, setFamilies] = useState([]);
   const [caps, setCaps] = useState([]);
@@ -143,11 +144,11 @@ const ComponentExplorer = ({
 
         <div className="flex flex-col gap-4 rounded-md border border-gray-200 bg-gray-50 p-4">
           <div className="flex flex-wrap items-center gap-3">
-            <label className="sr-only" htmlFor="component-explorer-search">
+            <label className="sr-only" htmlFor={searchId}>
               {searchPlaceholder}
             </label>
             <input
-              id="component-explorer-search"
+              id={searchId}
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}

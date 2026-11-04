@@ -48,11 +48,13 @@ const ResourceCard = ({
           {summary}
         </p>
       )}
-      <p className="mt-auto flex flex-wrap items-center gap-x-3 gap-y-1 pt-3 text-xs opacity-60">
-        {fileFormat && <span className="font-semibold">{fileFormat}</span>}
-        {fileSize && <span>{fileSize}</span>}
-        {gated && <span>Registration required</span>}
-      </p>
+      {(fileFormat || fileSize || gated) && (
+        <p className="mt-auto flex flex-wrap items-center gap-x-3 gap-y-1 pt-3 text-xs opacity-60">
+          {fileFormat && <span className="font-semibold">{fileFormat}</span>}
+          {fileSize && <span>{fileSize}</span>}
+          {gated && <span>Registration required</span>}
+        </p>
+      )}
       {url && (
         <a
           href={url}

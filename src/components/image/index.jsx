@@ -31,7 +31,8 @@ const Image = ({
   return (
     <figure className={cn('w-full', className)}>
       <img
-        {...{ src, alt, width, height }}
+        {...{ src, width, height }}
+        alt={alt || ''}
         className={cn('w-full', ratios[ratio], rounding[radius])}
       />
       {caption && (

@@ -12,6 +12,14 @@ const icons = {
     'M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 3.4a6.44 6.44 0 100 12.88 6.44 6.44 0 000-12.88zm0 10.62a4.18 4.18 0 110-8.36 4.18 4.18 0 010 8.36zm6.69-10.87a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z',
 };
 
+const labels = {
+  linkedin: 'LinkedIn',
+  x: 'X',
+  youtube: 'YouTube',
+  facebook: 'Facebook',
+  instagram: 'Instagram',
+};
+
 const sizes = {
   small: 'h-8 w-8',
   medium: 'h-10 w-10',
@@ -23,7 +31,7 @@ const SocialLink = ({ href, name, size }) =>
       href={href}
       target="_blank"
       rel="noreferrer noopener"
-      aria-label={name}
+      aria-label={labels[name] || name}
       className={cn(
         'inline-flex items-center justify-center rounded-full border border-current/25 transition-opacity hover:opacity-70',
         sizes[size],

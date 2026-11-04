@@ -19,7 +19,13 @@ const DataTable = ({
     .split('\n')
     .map((row) => row.trim())
     .filter(Boolean)
-    .map((row) => row.split('|').map((cell) => cell.trim()));
+    .map((row) => row.split('|').map((cell) => cell.trim()))
+    // Pad short rows so every row has one cell per header.
+    .map((row) =>
+      row.length < headerCells.length
+        ? [...row, ...Array(headerCells.length - row.length).fill('')]
+        : row,
+    );
 
   if (headerCells.length === 0 && bodyRows.length === 0) {
     return null;
@@ -55,9 +61,9 @@ const DataTable = ({
             {headerCells.length > 0 && (
               <thead className="bg-gray-50">
                 <tr>
-                  {headerCells.map((cell) => (
+                  {headerCells.map((cell, i) => (
                     <th
-                      key={cell}
+                      key={`${i}-${cell}`}
                       scope="col"
                       className={cn(
                         'border-b border-gray-200 font-semibold',

@@ -1,5 +1,23 @@
 import { cn } from 'drupal-canvas';
 
+// Day and month for the date badge. Accepts "12 May" style text or an ISO
+// date ("2026-05-12"); anything else falls back to splitting on the first space.
+const badgeParts = (value) => {
+  const iso = /^(\d{4})-(\d{2})-(\d{2})/.exec(value);
+  if (iso) {
+    const date = new Date(Date.UTC(+iso[1], +iso[2] - 1, +iso[3]));
+    return [
+      String(date.getUTCDate()),
+      new Intl.DateTimeFormat('en-GB', {
+        month: 'short',
+        timeZone: 'UTC',
+      }).format(date),
+    ];
+  }
+  const [day, ...rest] = value.split(' ');
+  return [day, rest.join(' ')];
+};
+
 const EventCard = ({
   title,
   url,
@@ -30,10 +48,10 @@ const EventCard = ({
       {startDate && !image?.src && (
         <div className="flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-lg bg-primary-600 text-white">
           <span className="text-xl leading-none font-semibold tabular-nums">
-            {startDate.split(' ')[0]}
+            {badgeParts(startDate)[0]}
           </span>
           <span className="mt-1 text-[0.65rem] tracking-widest uppercase">
-            {startDate.split(' ')[1]}
+            {badgeParts(startDate)[1]}
           </span>
         </div>
       )}

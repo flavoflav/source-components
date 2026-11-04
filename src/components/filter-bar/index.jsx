@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useId, useRef } from 'react';
 import { cn } from 'drupal-canvas';
 
 const FilterBar = ({
@@ -13,6 +13,7 @@ const FilterBar = ({
   className,
 }) => {
   const searchRef = useRef(null);
+  const searchId = `${useId()}-${searchFieldName}`;
 
   // Keep the search term after the GET submit reloads the page.
   useEffect(() => {
@@ -41,14 +42,14 @@ const FilterBar = ({
         {showSearch && (
           <div className="flex min-w-56 flex-1 flex-col gap-1.5">
             <label
-              htmlFor={`filter-${searchFieldName}`}
+              htmlFor={searchId}
               className="text-xs font-semibold tracking-wide uppercase opacity-60"
             >
               Search
             </label>
             <input
               ref={searchRef}
-              id={`filter-${searchFieldName}`}
+              id={searchId}
               type="search"
               name={searchFieldName}
               placeholder={searchPlaceholder}

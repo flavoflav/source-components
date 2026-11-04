@@ -77,7 +77,9 @@ const ArticleCard = ({
             {author && <span>{author}</span>}
             {author && date && <span aria-hidden="true">·</span>}
             {date && <time>{date}</time>}
-            {readingTime && <span aria-hidden="true">·</span>}
+            {readingTime && (author || date) && (
+              <span aria-hidden="true">·</span>
+            )}
             {readingTime && <span>{readingTime}</span>}
           </p>
         )}

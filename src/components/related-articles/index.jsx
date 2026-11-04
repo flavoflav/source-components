@@ -12,14 +12,16 @@ const columns = {
 };
 
 const formatDate = (iso) => {
-  if (!iso) {
+  const date = iso ? new Date(iso) : null;
+  // Guard against unparseable values, which would render "Invalid Date".
+  if (!date || Number.isNaN(date.getTime())) {
     return '';
   }
   return new Intl.DateTimeFormat('en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-  }).format(new Date(iso));
+  }).format(date);
 };
 
 const RelatedArticles = ({

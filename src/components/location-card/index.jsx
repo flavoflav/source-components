@@ -34,37 +34,39 @@ const LocationCard = ({
         {addressLines}
       </address>
     )}
-    <dl className="flex flex-col gap-1 text-sm">
-      {phone && (
-        <div className="flex gap-2">
-          <dt className="opacity-60">Phone</dt>
-          <dd>
-            <a
-              href={`tel:${phone.replace(/\s/g, '')}`}
-              className="hover:underline"
-            >
-              {phone}
-            </a>
-          </dd>
-        </div>
-      )}
-      {email && (
-        <div className="flex gap-2">
-          <dt className="opacity-60">Email</dt>
-          <dd>
-            <a href={`mailto:${email}`} className="hover:underline">
-              {email}
-            </a>
-          </dd>
-        </div>
-      )}
-      {hours && (
-        <div className="flex gap-2">
-          <dt className="opacity-60">Hours</dt>
-          <dd>{hours}</dd>
-        </div>
-      )}
-    </dl>
+    {(phone || email || hours) && (
+      <dl className="flex flex-col gap-1 text-sm">
+        {phone && (
+          <div className="flex gap-2">
+            <dt className="opacity-60">Phone</dt>
+            <dd>
+              <a
+                href={`tel:${phone.replace(/\s/g, '')}`}
+                className="hover:underline"
+              >
+                {phone}
+              </a>
+            </dd>
+          </div>
+        )}
+        {email && (
+          <div className="flex gap-2">
+            <dt className="opacity-60">Email</dt>
+            <dd>
+              <a href={`mailto:${email}`} className="hover:underline">
+                {email}
+              </a>
+            </dd>
+          </div>
+        )}
+        {hours && (
+          <div className="flex gap-2">
+            <dt className="opacity-60">Hours</dt>
+            <dd>{hours}</dd>
+          </div>
+        )}
+      </dl>
+    )}
     {mapUrl && (
       <a
         href={mapUrl}

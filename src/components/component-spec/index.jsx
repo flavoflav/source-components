@@ -1,4 +1,4 @@
-import { Children, useState } from 'react';
+import { Children, useId, useRef, useState } from 'react';
 import { cn, FormattedText } from 'drupal-canvas';
 
 const splitLines = (value) =>
@@ -24,6 +24,8 @@ const ComponentSpec = ({
 }) => {
   const [open, setOpen] = useState(defaultOpen);
   const [tab, setTab] = useState(0);
+  const baseId = useId();
+  const tabRefs = useRef([]);
 
   if (!componentName) {
     return null;
@@ -250,10 +252,30 @@ const ComponentSpec = ({
                   {files.map((file, i) => (
                     <button
                       key={i}
+                      ref={(node) => {
+                        tabRefs.current[i] = node;
+                      }}
+                      id={`${baseId}-tab-${i}`}
                       type="button"
                       role="tab"
                       aria-selected={tab === i}
+                      aria-controls={`${baseId}-panel`}
+                      tabIndex={tab === i ? 0 : -1}
                       onClick={() => setTab(i)}
+                      onKeyDown={(event) => {
+                        const last = files.length - 1;
+                        const next = {
+                          ArrowRight: i === last ? 0 : i + 1,
+                          ArrowLeft: i === 0 ? last : i - 1,
+                          Home: 0,
+                          End: last,
+                        }[event.key];
+                        if (next !== undefined) {
+                          event.preventDefault();
+                          setTab(next);
+                          tabRefs.current[next]?.focus();
+                        }
+                      }}
                       className={cn(
                         'rounded border px-3 py-1 font-mono text-xs',
                         tab === i
@@ -266,7 +288,17 @@ const ComponentSpec = ({
                   ))}
                 </div>
               )}
-              {files[Math.min(tab, files.length - 1)]}
+              <div
+                role={files.length > 1 ? 'tabpanel' : undefined}
+                id={`${baseId}-panel`}
+                aria-labelledby={
+                  files.length > 1
+                    ? `${baseId}-tab-${Math.min(tab, files.length - 1)}`
+                    : undefined
+                }
+              >
+                {files[Math.min(tab, files.length - 1)]}
+              </div>
             </section>
           )}
 

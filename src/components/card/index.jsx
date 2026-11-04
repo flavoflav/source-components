@@ -9,15 +9,6 @@ const variants = {
   dark: 'bg-gray-900 text-white',
 };
 
-const CardShell = ({ url, className, children }) =>
-  url ? (
-    <a href={url} className={className}>
-      {children}
-    </a>
-  ) : (
-    <div className={className}>{children}</div>
-  );
-
 const Card = ({
   image,
   eyebrow,
@@ -30,10 +21,11 @@ const Card = ({
   actions,
   className,
 }) => (
-  <CardShell
-    url={url}
+  // The card is a plain container; a link is layered over it ("stretched
+  // link") so the actions slot can hold its own links without nesting anchors.
+  <div
     className={cn(
-      'group flex h-full overflow-hidden rounded-xl transition-shadow',
+      'group relative flex h-full overflow-hidden rounded-xl transition-shadow',
       horizontal ? 'flex-col sm:flex-row' : 'flex-col',
       variants[variant],
       url && 'hover:shadow-lg',
@@ -59,7 +51,18 @@ const Card = ({
         </p>
       )}
       {title && (
-        <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
+        <h3 className="text-xl font-semibold tracking-tight">
+          {url ? (
+            <a
+              href={url}
+              className="after:absolute after:inset-0 after:content-['']"
+            >
+              {title}
+            </a>
+          ) : (
+            title
+          )}
+        </h3>
       )}
       {body && (
         <FormattedText className="text-sm leading-relaxed opacity-80 [&_p]:mb-2 [&_p:last-child]:mb-0">
@@ -67,7 +70,16 @@ const Card = ({
         </FormattedText>
       )}
       {Children.count(actions) > 0 && (
-        <div className="mt-auto flex flex-wrap gap-3 pt-2">{actions}</div>
+        <div className="relative z-10 mt-auto flex flex-wrap gap-3 pt-2">
+          {actions}
+        </div>
+      )}
+      {url && !title && (
+        <a
+          href={url}
+          aria-label={linkLabel || 'Read more'}
+          className="absolute inset-0"
+        />
       )}
       {Children.count(actions) === 0 && linkLabel && (
         <span className="mt-auto pt-2 text-sm font-semibold underline underline-offset-4 group-hover:no-underline">
@@ -75,7 +87,7 @@ const Card = ({
         </span>
       )}
     </div>
-  </CardShell>
+  </div>
 );
 
 export default Card;

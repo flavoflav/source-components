@@ -10,7 +10,8 @@ const SubNav = ({
   actions,
   className,
 }) => (
-  <div
+  <nav
+    aria-label={productLabel || 'Section'}
     className={cn(
       'z-30 w-full border-b',
       sticky && 'sticky top-0',
@@ -36,7 +37,7 @@ const SubNav = ({
         <div className="flex items-center gap-3">{actions}</div>
       )}
     </div>
-  </div>
+  </nav>
 );
 
 export default SubNav;

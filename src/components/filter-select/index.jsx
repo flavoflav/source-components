@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useId, useRef } from 'react';
 import { cn } from 'drupal-canvas';
 
 const FilterSelect = ({
@@ -9,6 +9,7 @@ const FilterSelect = ({
   className,
 }) => {
   const selectRef = useRef(null);
+  const selectId = `${useId()}-${fieldName}`;
 
   // The form is a plain GET, so the page reloads on submit. Restore the chosen
   // option from the URL, otherwise every filter snaps back to "All".
@@ -37,14 +38,14 @@ const FilterSelect = ({
   return (
     <div className={cn('flex min-w-44 flex-col gap-1.5', className)}>
       <label
-        htmlFor={`filter-${fieldName}`}
+        htmlFor={selectId}
         className="text-xs font-semibold tracking-wide uppercase opacity-60"
       >
         {label}
       </label>
       <select
         ref={selectRef}
-        id={`filter-${fieldName}`}
+        id={selectId}
         name={fieldName}
         defaultValue=""
         className="h-11 rounded-md border border-gray-300 bg-white px-3 focus:border-primary-500 focus:outline-2 focus:outline-offset-2 focus:outline-primary-500"
