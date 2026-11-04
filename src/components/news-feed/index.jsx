@@ -20,14 +20,16 @@ const backgrounds = {
 };
 
 const formatDate = (iso) => {
-  if (!iso) {
+  const date = iso ? new Date(iso) : null;
+  // Guard against unparseable values, which would render "Invalid Date".
+  if (!date || Number.isNaN(date.getTime())) {
     return '';
   }
   return new Intl.DateTimeFormat('en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-  }).format(new Date(iso));
+  }).format(date);
 };
 
 const NewsFeed = ({
@@ -39,6 +41,7 @@ const NewsFeed = ({
   itemCount = 6,
   columnCount = 3,
   sortField = 'created',
+  sortDirection = 'desc',
   background = 'none',
   cardVariant = 'plain',
   viewAllLabel,
@@ -51,7 +54,7 @@ const NewsFeed = ({
       {
         queryString: new DrupalJsonApiParams()
           .addInclude([imageField, 'uid'])
-          .addSort(sortField, 'DESC')
+          .addSort(sortField, sortDirection === 'asc' ? 'ASC' : 'DESC')
           .addPageLimit(itemCount)
           .getQueryString(),
       },

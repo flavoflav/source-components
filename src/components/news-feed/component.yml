@@ -43,6 +43,17 @@ props:
       type: string
       examples:
         - created
+    sortDirection:
+      title: Sort Direction
+      type: string
+      enum:
+        - desc
+        - asc
+      meta:enum:
+        desc: Descending (newest or Z-A first)
+        asc: Ascending (oldest or A-Z first)
+      examples:
+        - desc
     itemCount:
       title: Item Count
       type: integer
