@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { cn } from 'drupal-canvas';
 
 const FilterSelect = ({
@@ -7,6 +8,23 @@ const FilterSelect = ({
   allLabel = 'All',
   className,
 }) => {
+  const selectRef = useRef(null);
+
+  // The form is a plain GET, so the page reloads on submit. Restore the chosen
+  // option from the URL, otherwise every filter snaps back to "All".
+  useEffect(() => {
+    if (!fieldName || !selectRef.current) {
+      return;
+    }
+    const current = new URLSearchParams(window.location.search).get(fieldName);
+    if (
+      current !== null &&
+      [...selectRef.current.options].some((o) => o.value === current)
+    ) {
+      selectRef.current.value = current;
+    }
+  }, [fieldName, options]);
+
   if (!label || !fieldName) {
     return null;
   }
@@ -25,6 +43,7 @@ const FilterSelect = ({
         {label}
       </label>
       <select
+        ref={selectRef}
         id={`filter-${fieldName}`}
         name={fieldName}
         defaultValue=""
